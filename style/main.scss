@@ -76,10 +76,12 @@
             h2 {
                 font-size: 2rem;
                 font-weight: bold;
+                padding-block: 1rem;
             }
             &__counter {
                 display: flex;
                 justify-content: space-around;
+                padding: 1rem;
                 p:first-child {
                     font-size: 2rem;
                 }
@@ -88,6 +90,9 @@
                 color: white;
                 background-color: $color_purple;
                 border: none;
+                width: 90%;
+                padding: 1rem;
+                border-radius: .5rem;
             }
         }
     }
