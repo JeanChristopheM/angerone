@@ -86,19 +86,30 @@ table {
 }
 
 .footer {
-  background-color: black;
+  background-color: #282828;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  height: 350px;
+  font-family: poppins;
 }
 
 .footer__nav1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   text-transform: uppercase;
+  margin: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer__nav2 {
+  width: 60px;
+  height: 60px;
 }
 /*# sourceMappingURL=main.css.map */
