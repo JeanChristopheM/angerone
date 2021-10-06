@@ -1,18 +1,23 @@
 @import 'reset';
+@import 'vars';
 .header {
-    background-color: grey;
+    background-color: $color_darkgrey;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    padding: .5rem;
     &__hamburger {
         color: white;
         font-size: 2rem;
-        padding: .5rem;
+    }
+    &__logo {
+        padding: 0 1rem 0 1rem;
     }
     &__options {
         color: white;
         font-size: 2rem;
-        padding: .5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 0 0 0 auto;
     }
 }
 .footer{

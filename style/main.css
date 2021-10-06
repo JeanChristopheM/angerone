@@ -58,28 +58,31 @@ table {
 }
 
 .header {
-  background-color: grey;
+  background-color: #282828;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding: .5rem;
 }
 
 .header__hamburger {
   color: white;
   font-size: 2rem;
-  padding: .5rem;
+}
+
+.header__logo {
+  padding: 0 1rem 0 1rem;
 }
 
 .header__options {
   color: white;
   font-size: 2rem;
-  padding: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 0 0 auto;
 }
 
 .footer {
