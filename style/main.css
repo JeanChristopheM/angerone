@@ -101,4 +101,33 @@ table {
       justify-content: space-around;
   text-transform: uppercase;
 }
+
+.main__banner {
+  border: 1px solid black;
+  background-image: url("../ressources/images/homapage-banner-img.jpg");
+  background-size: cover;
+  height: 400px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__banner__container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.main__banner__container h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  -webkit-text-stroke: 2px white;
+  color: rgba(0, 0, 0, 0);
+}
 /*# sourceMappingURL=main.css.map */
