@@ -1,14 +1,17 @@
 @import 'reset';
-header {
-    background-color: black;
+.header {
+    background-color: grey;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     &__hamburger {
-        color: blue;
-    }
-    &__logo {
-        color: black;
+        color: white;
+        font-size: 2rem;
+        padding: .5rem;
     }
     &__options {
-        color: yellow;
+        color: white;
+        font-size: 2rem;
+        padding: .5rem;
     }
 }
