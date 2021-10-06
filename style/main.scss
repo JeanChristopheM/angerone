@@ -87,4 +87,74 @@
             }
         }
     }
+    &__about {
+        padding: 1rem;
+        &__image {
+            img {
+                border-radius: .5rem;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        &__text {
+            h2 {
+                font-size: 2rem;
+                padding-block: 1rem;
+            }
+            p {
+                padding-bottom: 1rem;
+            }
+            q {
+                display: block;
+                padding-bottom: 1rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    &__discography {
+        padding: 3rem 1rem 3rem 1rem;
+        color: white;
+        background-color: blue;
+        text-align: center;
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        button {
+            color: white;
+            background-color: $color_purple;
+            border: none;
+            width: 90%;
+            padding: 1rem;
+            border-radius: .5rem;
+        }
+    }
+    &__releases {
+        text-align: center;
+        &__description {
+            padding-block: 1rem;
+            h2 {
+                font-size: 2rem;
+            }
+        }
+        &__album {
+            padding: 1rem;
+            img {
+                width: 100%;
+            }
+            figcaption {
+                display: flex;
+                flex-direction: column;
+            }
+            &__title {
+                font-size: 1.5rem;
+                padding-block: .5rem;
+            }
+        }
+    }
+    &__fanbase {
+        img {
+            max-width: 100%;
+        }
+    }
 }
