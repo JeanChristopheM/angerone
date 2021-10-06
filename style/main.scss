@@ -15,8 +15,13 @@
         padding: .5rem;
     }
 }
-footer{
+.footer{
+    background-color:black;
+    align-items: center;
+    text-align: center;
     &__nav1{
+        display: flex;
+        justify-content: space-around;
         text-transform: uppercase;
     }
 }
