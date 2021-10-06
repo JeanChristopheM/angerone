@@ -1,0 +1,14 @@
+@import 'reset';
+header {
+    color: white;
+    width: 1000px;
+    &__hamburger {
+        color: blue;
+    }
+    &__logo {
+        color: black;
+    }
+    &__options {
+        color: yellow;
+    }
+}
