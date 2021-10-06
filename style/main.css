@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,6 +56,10 @@ table {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
 }
 
 .header {
@@ -138,7 +143,7 @@ table {
 }
 
 .main__concert__container {
-  background-color: black;
+  background-color: #282828;
   border-radius: .5rem;
   padding: 1rem;
   -webkit-transform: translateY(-3rem);
@@ -201,8 +206,12 @@ table {
 .main__discography {
   padding: 3rem 1rem 3rem 1rem;
   color: white;
-  background-color: blue;
   text-align: center;
+  background-color: turquoise;
+  background-image: url("../ressources/images/homepage-latest-releases-background.jpg");
+  background-position: 0px -700%;
+  background-size: cover;
+  background-repeat: repeat-y;
 }
 
 .main__discography h2 {
@@ -254,7 +263,55 @@ table {
   padding-block: .5rem;
 }
 
-.main__fanbase img {
+.main__fanbase {
+  background-color: #282828;
+}
+
+.main__fanbase__images {
+  padding: 1rem;
+  background-image: url("../ressources/images/bg-circle-2.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: 900%;
+}
+
+.main__fanbase__images img {
   max-width: 100%;
+}
+
+.main__fanbase__text {
+  padding: 1rem;
+  position: relative;
+  color: white;
+}
+
+.main__fanbase__text::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../ressources/images/bg-circle-2.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: 900%;
+  -webkit-transform: rotate(180);
+          transform: rotate(180);
+  -moz-transform: rotate(180deg);
+}
+
+.main__fanbase__text h2 {
+  font-size: 2rem;
+}
+
+.main__fanbase__text h3 {
+  font-size: 1.5rem;
+}
+
+.main__fanbase__text__item {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

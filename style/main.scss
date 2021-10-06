@@ -1,5 +1,10 @@
 @import 'reset';
 @import 'vars';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 .header {
     background-color: $color_darkgrey;
     display: flex;
@@ -60,7 +65,7 @@
         color: white;
         text-align: center;
         &__container {
-            background-color: black;
+            background-color: $color_darkgrey;
             border-radius: .5rem;
             padding: 1rem;
             transform: translateY(-3rem);
@@ -114,8 +119,12 @@
     &__discography {
         padding: 3rem 1rem 3rem 1rem;
         color: white;
-        background-color: blue;
         text-align: center;
+        background-color: turquoise;
+        background-image: url('../ressources/images/homepage-latest-releases-background.jpg');
+        background-position: 0px -700%;
+        background-size: cover;
+        background-repeat: repeat-y;
         h2 {
             font-size: 2rem;
             margin-bottom: 2rem;
@@ -153,8 +162,46 @@
         }
     }
     &__fanbase {
-        img {
-            max-width: 100%;
+        background-color: $color_darkgrey;
+        &__images {
+            padding: 1rem;
+            background-image: url('../ressources/images/bg-circle-2.png');
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: bottom;
+            background-size: 900%;
+            img {
+                max-width: 100%;
+            }
+        }
+        &__text {
+            padding: 1rem;
+            position: relative;
+            color: white;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url('../ressources/images/bg-circle-2.png');
+                background-repeat: no-repeat;
+                background-position-x: center;
+                background-position-y: bottom;
+                background-size: 900%;
+                transform: rotate(180);
+                -moz-transform: rotate(180deg);
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+            &__item {
+                text-align: center;
+            }
         }
     }
 }
