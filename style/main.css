@@ -148,6 +148,7 @@ table {
 .main__concert__container h2 {
   font-size: 2rem;
   font-weight: bold;
+  padding-block: 1rem;
 }
 
 .main__concert__container__counter {
@@ -156,6 +157,7 @@ table {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 1rem;
 }
 
 .main__concert__container__counter p:first-child {
@@ -166,5 +168,8 @@ table {
   color: white;
   background-color: #8121e0;
   border: none;
+  width: 90%;
+  padding: 1rem;
+  border-radius: .5rem;
 }
 /*# sourceMappingURL=main.css.map */
