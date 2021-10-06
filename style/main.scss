@@ -64,4 +64,31 @@
             }
         }
     }
+    &__concert {
+        padding: 1rem;
+        color: white;
+        text-align: center;
+        &__container {
+            background-color: black;
+            border-radius: .5rem;
+            padding: 1rem;
+            transform: translateY(-3rem);
+            h2 {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+            &__counter {
+                display: flex;
+                justify-content: space-around;
+                p:first-child {
+                    font-size: 2rem;
+                }
+            }
+            button {
+                color: white;
+                background-color: $color_purple;
+                border: none;
+            }
+        }
+    }
 }
