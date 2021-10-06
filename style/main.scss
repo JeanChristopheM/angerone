@@ -40,3 +40,28 @@
         height: 60px;
     }
 }
+
+.main {
+    &__banner {
+        border: 1px solid black;
+        background-image: url('../ressources/images/homapage-banner-img.jpg');
+        background-size: cover;
+        height: 400px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__container {
+            h2 {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+            h3 {
+                font-size: 3rem;
+                font-weight: bold;
+                -webkit-text-stroke: 2px white;
+                color: hsla(0, 0%, 0%, 0)
+            }
+        }
+    }
+}
