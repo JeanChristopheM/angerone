@@ -1,7 +1,7 @@
 @import 'reset';
 header {
-    color: white;
-    width: 1000px;
+    background-color: black;
+    display: flex;
     &__hamburger {
         color: blue;
     }
