@@ -59,6 +59,62 @@
                 color: hsla(0, 0%, 0%, 0)
             }
         }
+        &.page_about {
+            background-image: url('../ressources/images/banner-img.jpg');
+            height: 200px;
+            h4 {
+                font-size: .8rem;
+                font-weight: 600;
+                margin: 0;
+                padding: 1rem;
+                text-align: center;
+            }
+            span+span {
+                padding-left: 1rem;
+                position: relative;
+                &::before {
+                    content: '';
+                    width: .3rem;
+                    height: .3rem;
+                    border-radius: .15rem;
+                    background-color: orange;
+                    position: absolute;
+                    top: 50%;
+                    left: .35rem;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+    &__touch {
+        padding: 1rem;
+        &__text {
+            h2 {
+                font-size: 2rem;
+            }
+            p {
+                font-weight: 300;
+                padding-block: 1rem;
+            }
+            p+p {
+                font-size: 1.2rem;
+            }
+            figure {
+                display: flex;
+                justify-content: flex-end;
+            }
+            button {
+                color: white;
+                background-color: $color_purple;
+                border: none;
+                width: 90%;
+                padding: 1rem;
+                border-radius: .5rem;
+            }
+        }
+        &__image {
+            padding-block: 1rem;
+        }
     }
     &__concert {
         padding: 1rem;
@@ -178,6 +234,7 @@
             padding: 1rem;
             position: relative;
             color: white;
+            isolation: isolate;
             &::after {
                 content: '';
                 position: absolute;
@@ -192,6 +249,7 @@
                 background-size: 900%;
                 transform: rotate(180);
                 -moz-transform: rotate(180deg);
+                z-index: -1;
             }
             h2 {
                 font-size: 2rem;
@@ -201,6 +259,19 @@
             }
             &__item {
                 text-align: center;
+            }
+        }
+        &.page_about {
+            background-color: rgb(213, 213, 213);
+            .main__fanbase__text {
+                text-align: center;
+                color: black;
+                isolation: isolate;
+                &::after {
+                    transform: initial;
+                    -moz-transform: initial;
+                    z-index: -1;
+                }
             }
         }
     }
