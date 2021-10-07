@@ -214,6 +214,8 @@ table {
   width: 90%;
   padding: 1rem;
   border-radius: .5rem;
+  display: block;
+  margin: 0 auto;
 }
 
 .main__touch__image {
@@ -444,6 +446,10 @@ table {
 
 .main__images {
   text-align: center;
+}
+
+.main__images img {
+  max-width: 100%;
 }
 
 .main__subscribe {

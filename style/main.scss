@@ -125,6 +125,8 @@
                 width: 90%;
                 padding: 1rem;
                 border-radius: .5rem;
+                display: block;
+                margin: 0 auto;
             }
         }
         &__image {
@@ -313,6 +315,9 @@
     }
     &__images {
         text-align: center;
+        img {
+            max-width: 100%;
+        }
     }
     &__subscribe {
         background-size: auto;
