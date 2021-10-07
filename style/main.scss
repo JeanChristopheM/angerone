@@ -1,8 +1,9 @@
 @import 'reset';
 @import 'vars';
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
 
 .header {
     background-color: $color_darkgrey;
@@ -117,5 +118,174 @@
         text-decoration: none;
         color:$white;
         padding: 30px;
+    }
+}
+
+.main {
+    &__banner {
+        border: 1px solid black;
+        background-image: url('../ressources/images/homapage-banner-img.jpg');
+        background-size: cover;
+        height: 400px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__container {
+            h2 {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+            h3 {
+                font-size: 3rem;
+                font-weight: bold;
+                -webkit-text-stroke: 2px white;
+                color: hsla(0, 0%, 0%, 0)
+            }
+        }
+    }
+    &__concert {
+        padding: 1rem;
+        color: white;
+        text-align: center;
+        &__container {
+            background-color: $color_darkgrey;
+            border-radius: .5rem;
+            padding: 1rem;
+            transform: translateY(-3rem);
+            h2 {
+                font-size: 2rem;
+                font-weight: bold;
+                padding-block: 1rem;
+            }
+            &__counter {
+                display: flex;
+                justify-content: space-around;
+                padding: 1rem;
+                p:first-child {
+                    font-size: 2rem;
+                }
+            }
+            button {
+                color: white;
+                background-color: $color_purple;
+                border: none;
+                width: 90%;
+                padding: 1rem;
+                border-radius: .5rem;
+            }
+        }
+    }
+    &__about {
+        padding: 1rem;
+        &__image {
+            img {
+                border-radius: .5rem;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        &__text {
+            h2 {
+                font-size: 2rem;
+                padding-block: 1rem;
+            }
+            p {
+                padding-bottom: 1rem;
+            }
+            q {
+                display: block;
+                padding-bottom: 1rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    &__discography {
+        padding: 3rem 1rem 3rem 1rem;
+        color: white;
+        text-align: center;
+        background-color: turquoise;
+        background-image: url('../ressources/images/homepage-latest-releases-background.jpg');
+        background-position: 0px -700%;
+        background-size: cover;
+        background-repeat: repeat-y;
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        button {
+            color: white;
+            background-color: $color_purple;
+            border: none;
+            width: 90%;
+            padding: 1rem;
+            border-radius: .5rem;
+        }
+    }
+    &__releases {
+        text-align: center;
+        &__description {
+            padding-block: 1rem;
+            h2 {
+                font-size: 2rem;
+            }
+        }
+        &__album {
+            padding: 1rem;
+            img {
+                width: 100%;
+            }
+            figcaption {
+                display: flex;
+                flex-direction: column;
+            }
+            &__title {
+                font-size: 1.5rem;
+                padding-block: .5rem;
+            }
+        }
+    }
+    &__fanbase {
+        background-color: $color_darkgrey;
+        &__images {
+            padding: 1rem;
+            background-image: url('../ressources/images/bg-circle-2.png');
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: bottom;
+            background-size: 900%;
+            img {
+                max-width: 100%;
+            }
+        }
+        &__text {
+            padding: 1rem;
+            position: relative;
+            color: white;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url('../ressources/images/bg-circle-2.png');
+                background-repeat: no-repeat;
+                background-position-x: center;
+                background-position-y: bottom;
+                background-size: 900%;
+                transform: rotate(180);
+                -moz-transform: rotate(180deg);
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+            &__item {
+                text-align: center;
+            }
+        }
     }
 }
