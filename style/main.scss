@@ -25,6 +25,7 @@
         margin: 0 0 0 auto;
     }
 }
+
 .main {
     &__banner {
         border: 1px solid black;
@@ -128,6 +129,9 @@
         }
         &__image {
             padding-block: 1rem;
+            img {
+                max-width: 100%;
+            }
         }
     }
     &__concert {
@@ -293,73 +297,72 @@
             }
         }
     }
-    &__partners{
-        font-family:Poppins,sans-serif;
+    &__partners {
+        font-family: Poppins, sans-serif;
         color: $white;
         text-align: center;
         font-style: 30px;
         background-image: url('../ressources/images/homepage-sponsors-background.jpg');
         height: 450px;
         //background-repeat: no-repeat;
-        background-size:cover;
-        &__p{
+        background-size: cover;
+        &__p {
             padding: 60px;
             font-size: 30px;
         }
     }
-    &__images{
+    &__images {
         text-align: center;
-        
     }
-    &__subscribe{        
+    &__subscribe {
         background-size: auto;
         height: 150px;
-        text-align: center;  
+        text-align: center;
         background-image: url('../ressources/images/homepage-footer-background.jpg');
-        
-        &__p1{
+        &__p1 {
             font-size: 30px;
             color: $white;
-            font-family:Poppins,sans-serif;
+            font-family: Poppins, sans-serif;
             text-align: center;
-            padding: 60px;            
+            padding: 60px;
         }
-        & input{
+        & input {
             size: 30px;
         }
+    }
 }
-}
-.footer{
-    background-color:$color_darkgrey;
+
+.footer {
+    background-color: $color_darkgrey;
     align-items: center;
     text-align: center;
-    font-family:Poppins,sans-serif;
+    font-family: Poppins, sans-serif;
     color: $white;
-    &__figure{
+    &__figure {
         padding-top: 120px;
         padding-bottom: 60px;
     }
-    
-    &__nav1{
+    &__nav1 {
         display: flex;
-        justify-content:center;
-        text-transform: uppercase;       
+        flex-direction: column;
+        justify-content: center;
+        text-transform: uppercase;
         padding: 10px;
         font-weight: bold;
     }
-    &__nav2{
+    &__nav2 {
         display: flex;
         justify-content: center;
-        padding: 50px;          
+        padding: 50px;
     }
-    &__p1{
+    &__p1 {
         padding-top: 50px;
         color: $grey;
         padding-bottom: 120px;
     }
-    & a{
+    & a {
         text-decoration: none;
-        color:$white;
+        color: $white;
         padding: 30px;
     }
 }
