@@ -53,102 +53,6 @@
         color: white;
         text-align: center;
         &__container {
-            background-color: black;
-            border-radius: .5rem;
-            padding: 1rem;
-            transform: translateY(-3rem);
-            h2 {
-                font-size: 2rem;
-                font-weight: bold;
-                padding-block: 1rem;
-            }
-            &__counter {
-                display: flex;
-                justify-content: space-around;
-                padding: 1rem;
-                p:first-child {
-                    font-size: 2rem;
-                }
-            }
-            button {
-                color: white;
-                background-color: $color_purple;
-                border: none;
-                width: 90%;
-                padding: 1rem;
-                border-radius: .5rem;
-            }
-        }
-    }
-    &__subscribe{
-        background-image: url('../ressources/images/homepage-footer-background.jpg');
-        background-size: 20%;
-        height: 150px;
-    }
-}
-.footer{
-    background-color:$color_darkgrey;
-    align-items: center;
-    text-align: center;
-    font-family:Poppins,sans-serif;
-    color: $white;
-    &__figure{
-        padding-top: 120px;
-        padding-bottom: 60px;
-    }
-    
-    &__nav1{
-        display: flex;
-        justify-content:center;
-        text-transform: uppercase;       
-        padding: 10px;
-        font-weight: bold;
-    }
-    &__nav2{
-        display: flex;
-        justify-content: center;
-        padding: 50px;          
-    }
-    &__p1{
-        padding-top: 50px;
-        color: $grey;
-        padding-bottom: 120px;
-    }
-    & a{
-        text-decoration: none;
-        color:$white;
-        padding: 30px;
-    }
-}
-
-.main {
-    &__banner {
-        border: 1px solid black;
-        background-image: url('../ressources/images/homapage-banner-img.jpg');
-        background-size: cover;
-        height: 400px;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        &__container {
-            h2 {
-                font-size: 2rem;
-                font-weight: bold;
-            }
-            h3 {
-                font-size: 3rem;
-                font-weight: bold;
-                -webkit-text-stroke: 2px white;
-                color: hsla(0, 0%, 0%, 0)
-            }
-        }
-    }
-    &__concert {
-        padding: 1rem;
-        color: white;
-        text-align: center;
-        &__container {
             background-color: $color_darkgrey;
             border-radius: .5rem;
             padding: 1rem;
@@ -287,5 +191,74 @@
                 text-align: center;
             }
         }
+    }
+    &__partners{
+        font-family:Poppins,sans-serif;
+        color: $white;
+        text-align: center;
+        font-style: 30px;
+        background-image: url('../ressources/images/homepage-sponsors-background.jpg');
+        height: 450px;
+        //background-repeat: no-repeat;
+        background-size:cover;
+        &__p{
+            padding: 60px;
+            font-size: 30px;
+        }
+    }
+    &__images{
+        text-align: center;
+        
+    }
+    &__subscribe{        
+        background-size: auto;
+        height: 150px;
+        text-align: center;  
+        background-image: url('../ressources/images/homepage-footer-background.jpg');
+        
+        &__p1{
+            font-size: 30px;
+            color: $white;
+            font-family:Poppins,sans-serif;
+            text-align: center;
+            padding: 60px;            
+        }
+        & input{
+            size: 30px;
+        }
+}
+}
+.footer{
+    background-color:$color_darkgrey;
+    align-items: center;
+    text-align: center;
+    font-family:Poppins,sans-serif;
+    color: $white;
+    &__figure{
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+    
+    &__nav1{
+        display: flex;
+        justify-content:center;
+        text-transform: uppercase;       
+        padding: 10px;
+        font-weight: bold;
+    }
+    &__nav2{
+        display: flex;
+        justify-content: center;
+        padding: 50px;          
+    }
+    &__p1{
+        padding-top: 50px;
+        color: $grey;
+        padding-bottom: 120px;
+    }
+    & a{
+        text-decoration: none;
+        color:$white;
+        padding: 30px;
     }
 }
