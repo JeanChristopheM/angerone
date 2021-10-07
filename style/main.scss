@@ -4,7 +4,14 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
-
+h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+h3{
+    font-size: 20px;
+    font-weight: 500;
+}
 .header {
     background-color: $color_darkgrey;
     display: flex;
@@ -199,22 +206,42 @@
         font-style: 30px;
         background-image: url('../ressources/images/homepage-sponsors-background.jpg');
         height: 450px;
-        //background-repeat: no-repeat;
         background-size:cover;
         &__p{
             padding: 60px;
             font-size: 30px;
         }
+        &__ulsponsors{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 50px;
+        }
+               
     }
     &__images{
         text-align: center;
         
     }
+    &__news{
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        
+        
+        &__section{
+            text-align: justify;
+            padding: 30px;
+            width: 400px;
+            
+        }
+    }
     &__subscribe{        
-        background-size: auto;
-        height: 150px;
+        
+        //height: 150px;
         text-align: center;  
         background-image: url('../ressources/images/homepage-footer-background.jpg');
+        background-size: cover;
         
         &__p1{
             font-size: 30px;
@@ -226,7 +253,16 @@
         & input{
             size: 30px;
         }
-}
+    }
+    .dotz{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 130px;
+        & li{
+            padding: 15px;
+        }
+    } 
 }
 .footer{
     background-color:$color_darkgrey;
