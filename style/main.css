@@ -475,6 +475,11 @@ table {
   color: white;
 }
 
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
 .footer__figure {
   padding-top: 120px;
   padding-bottom: 60px;
@@ -496,6 +501,10 @@ table {
   font-weight: bold;
 }
 
+.footer__nav1 a {
+  padding-block: 1rem;
+}
+
 .footer__nav2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -506,15 +515,11 @@ table {
   padding: 50px;
 }
 
-.footer__p1 {
-  padding-top: 50px;
-  color: #686868;
-  padding-bottom: 120px;
+.footer__nav2 a {
+  padding: 0 1rem;
 }
 
-.footer a {
-  text-decoration: none;
-  color: white;
-  padding: 30px;
+.footer p {
+  padding-bottom: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

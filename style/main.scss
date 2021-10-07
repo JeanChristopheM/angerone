@@ -338,6 +338,10 @@
     text-align: center;
     font-family: Poppins, sans-serif;
     color: $white;
+    a {
+        text-decoration: none;
+        color: $white;
+    }
     &__figure {
         padding-top: 120px;
         padding-bottom: 60px;
@@ -349,20 +353,19 @@
         text-transform: uppercase;
         padding: 10px;
         font-weight: bold;
+        a {
+            padding-block: 1rem;
+        }
     }
     &__nav2 {
         display: flex;
         justify-content: center;
         padding: 50px;
+        a {
+            padding: 0 1rem;
+        }
     }
-    &__p1 {
-        padding-top: 50px;
-        color: $grey;
-        padding-bottom: 120px;
-    }
-    & a {
-        text-decoration: none;
-        color: $white;
-        padding: 30px;
+    p {
+        padding-bottom: 2rem;
     }
 }
