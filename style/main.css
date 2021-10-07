@@ -167,6 +167,37 @@ table {
           transform: translateY(-50%);
 }
 
+.main__banner.page_discography {
+  background-image: url("../ressources/images/banner-img.jpg");
+  height: 200px;
+}
+
+.main__banner.page_discography h4 {
+  font-size: .8rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.main__banner.page_discography span + span {
+  padding-left: 1rem;
+  position: relative;
+}
+
+.main__banner.page_discography span + span::before {
+  content: '';
+  width: .3rem;
+  height: .3rem;
+  border-radius: .15rem;
+  background-color: orange;
+  position: absolute;
+  top: 50%;
+  left: .35rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .main__touch {
   padding: 1rem;
 }
@@ -331,6 +362,11 @@ table {
 .main__releases__album__title {
   font-size: 1.5rem;
   padding-block: .5rem;
+}
+
+.main__releases__album__date {
+  font-size: .8rem;
+  font-weight: 300;
 }
 
 .main__fanbase {

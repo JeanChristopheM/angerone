@@ -85,6 +85,32 @@
                 }
             }
         }
+        &.page_discography {
+            background-image: url('../ressources/images/banner-img.jpg');
+            height: 200px;
+            h4 {
+                font-size: .8rem;
+                font-weight: 600;
+                margin: 0;
+                padding: 1rem;
+                text-align: center;
+            }
+            span+span {
+                padding-left: 1rem;
+                position: relative;
+                &::before {
+                    content: '';
+                    width: .3rem;
+                    height: .3rem;
+                    border-radius: .15rem;
+                    background-color: orange;
+                    position: absolute;
+                    top: 50%;
+                    left: .35rem;
+                    transform: translateY(-50%);
+                }
+            }
+        }
     }
     &__touch {
         padding: 1rem;
@@ -214,6 +240,10 @@
             &__title {
                 font-size: 1.5rem;
                 padding-block: .5rem;
+            }
+            &__date {
+                font-size: .8rem;
+                font-weight: 300;
             }
         }
     }
