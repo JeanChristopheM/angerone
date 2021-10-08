@@ -55,7 +55,16 @@
             <div class="main__banner__container">
                 <h2>New Single</h2>
                 <h3>Feel the Rythm</h3>
-                <audio controls src="https://www.bensound.com/bensound-music/bensound-creativeminds.mp3"></audio>
+                <div class="main__banner__container__audio">
+                    <audio id="player" src="https://www.bensound.com/bensound-music/bensound-creativeminds.mp3"></audio>
+                    <button id="play">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <div class="progress">
+                        <div class="progressBar"></div>
+                    </div>
+                    <p><span class="currentTime">00:00</span> - <span class="duration">04-27</span></p>
+                </div>
             </div>
         </section>
         <section class="main__concert">
@@ -324,7 +333,7 @@
         </nav>
         <p class="footer__p1"><span>&#169;</span> 2021 DJ Angerone. Privacy policy</p>
     </footer>
-    <script src="./script/main.js"></script>
+    <script src="./script/main.js" type="module"></script>
 </body>
 
 </html>
