@@ -277,6 +277,68 @@ h3 {
           transform: translateY(-50%);
 }
 
+.main__banner.page_tour {
+  background-image: url("../ressources/images/banner-img.jpg");
+  height: 200px;
+}
+
+.main__banner.page_tour h4 {
+  font-size: .8rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.main__banner.page_tour span + span {
+  padding-left: 1rem;
+  position: relative;
+}
+
+.main__banner.page_tour span + span::before {
+  content: '';
+  width: .3rem;
+  height: .3rem;
+  border-radius: .15rem;
+  background-color: orange;
+  position: absolute;
+  top: 50%;
+  left: .35rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.main__banner.page_gallery {
+  background-image: url("../ressources/images/banner-img.jpg");
+  height: 200px;
+}
+
+.main__banner.page_gallery h4 {
+  font-size: .8rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.main__banner.page_gallery span + span {
+  padding-left: 1rem;
+  position: relative;
+}
+
+.main__banner.page_gallery span + span::before {
+  content: '';
+  width: .3rem;
+  height: .3rem;
+  border-radius: .15rem;
+  background-color: orange;
+  position: absolute;
+  top: 50%;
+  left: .35rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .main__touch {
   padding: 1rem;
 }
@@ -523,6 +585,17 @@ h3 {
           transform: initial;
   -moz-transform: initial;
   z-index: -1;
+}
+
+.main__tour {
+  text-align: center;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.main__tour div {
+  width: 400px;
+  text-align: left;
 }
 
 .main__partners {
