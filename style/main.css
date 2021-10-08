@@ -346,6 +346,7 @@ h3 {
 }
 
 .main__news__section {
+  margin: 0 auto;
   text-align: justify;
   padding: 30px;
   width: 400px;

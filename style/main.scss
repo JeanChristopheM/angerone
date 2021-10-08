@@ -199,6 +199,9 @@ h3{
             }
         }
     }
+    &__tour{
+        
+    }
     &__partners{
         font-family:Poppins,sans-serif;
         color: $white;
@@ -230,6 +233,7 @@ h3{
         
         
         &__section{
+            margin: 0 auto;
             text-align: justify;
             padding: 30px;
             width: 400px;
