@@ -366,7 +366,7 @@ h3 {
             }
         }
     }
-    &__tour {}
+    //&__tour {}
     &__partners {
         font-family: Poppins, sans-serif;
         color: $white;
@@ -384,6 +384,9 @@ h3 {
             flex-wrap: wrap;
             justify-content: center;
             padding-top: 50px;
+            img {
+                max-width: 100%;
+            }
         }
     }
     &__images {

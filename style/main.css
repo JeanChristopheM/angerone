@@ -552,6 +552,10 @@ h3 {
   padding-top: 50px;
 }
 
+.main__partners__ulsponsors img {
+  max-width: 100%;
+}
+
 .main__images {
   text-align: center;
 }
