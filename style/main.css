@@ -249,6 +249,7 @@ h3 {
 .main__banner.page_discography {
   background-image: url("../ressources/images/banner-img.jpg");
   height: 200px;
+  margin-bottom: 3rem;
 }
 
 .main__banner.page_discography h4 {
@@ -281,20 +282,62 @@ h3 {
   padding: 1rem;
 }
 
+.main__touch__text {
+  font-weight: 300;
+}
+
 .main__touch__text h2 {
   font-size: 2rem;
+  font-weight: 400;
+  padding: 3rem 0 1rem 0;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
 }
 
-.main__touch__text p {
-  font-weight: 300;
-  padding-block: 1rem;
+.main__touch__text h2::after {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 1px;
+  background-color: #bdbdbd;
+  bottom: 0;
+  left: 0;
 }
 
-.main__touch__text p + p {
+.main__touch__text ul {
   font-size: 1.2rem;
 }
 
-.main__touch__text figure {
+.main__touch__text ul .fas,
+.main__touch__text ul .far {
+  color: #bdbdbd;
+  padding-right: 1rem;
+}
+
+.main__touch__text ul li {
+  padding-bottom: 1rem;
+}
+
+.main__touch__text ul a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main__touch__text p {
+  font-weight: 100;
+  padding-block: 1rem;
+  line-height: 1.5rem;
+}
+
+.main__touch__text p + p {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+.main__touch__text__signature {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,11 +350,11 @@ h3 {
   color: white;
   background-color: #8121e0;
   border: none;
-  width: 90%;
-  padding: 1rem;
+  width: 55%;
+  padding: 1.2rem 1rem;
   border-radius: .5rem;
   display: block;
-  margin: 0 auto;
+  margin-top: 1rem;
 }
 
 .main__touch__image {
@@ -419,11 +462,16 @@ h3 {
 }
 
 .main__releases__description {
-  padding-block: 1rem;
+  padding: 1rem;
 }
 
 .main__releases__description h2 {
   font-size: 2rem;
+  padding: 3rem 0 1rem 0;
+}
+
+.main__releases__description p {
+  font-weight: 300;
 }
 
 .main__releases__album {
@@ -446,7 +494,7 @@ h3 {
 
 .main__releases__album__title {
   font-size: 1.5rem;
-  padding-block: .5rem;
+  padding-block: 1rem;
 }
 
 .main__releases__album__date {
@@ -496,20 +544,35 @@ h3 {
   z-index: -1;
 }
 
+.main__fanbase__text i {
+  font-size: 3rem;
+  padding-block: 1rem;
+}
+
 .main__fanbase__text h2 {
   font-size: 2rem;
 }
 
 .main__fanbase__text h3 {
   font-size: 1.5rem;
+  padding-block: 1rem;
+}
+
+.main__fanbase__text p {
+  font-weight: 300;
 }
 
 .main__fanbase__text__item {
   text-align: center;
+  padding-top: 2rem;
+}
+
+.main__fanbase__text__item:last-child {
+  padding-bottom: 2rem;
 }
 
 .main__fanbase.page_about {
-  background-color: #d5d5d5;
+  background-color: #efefef;
 }
 
 .main__fanbase.page_about .main__fanbase__text {
@@ -523,6 +586,10 @@ h3 {
           transform: initial;
   -moz-transform: initial;
   z-index: -1;
+}
+
+.main__fanbase.page_about .main__fanbase__text h2 {
+  padding-block: 2rem;
 }
 
 .main__partners {
@@ -627,8 +694,7 @@ h3 {
 }
 
 .footer__figure {
-  padding-top: 120px;
-  padding-bottom: 60px;
+  padding: 3rem 0 1rem 0;
 }
 
 .footer__nav1 {
@@ -648,7 +714,7 @@ h3 {
 }
 
 .footer__nav1 a {
-  padding-block: 1rem;
+  padding-block: .5rem;
 }
 
 .footer__nav2 {
@@ -665,7 +731,27 @@ h3 {
   padding: 0 1rem;
 }
 
+.footer__nav2 i {
+  background-color: #3e3e3e;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .footer p {
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
+}
+
+.footer.page_discography {
+  margin-top: 3rem;
 }
 /*# sourceMappingURL=main.css.map */

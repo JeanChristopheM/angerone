@@ -144,6 +144,7 @@ h3 {
         &.page_discography {
             background-image: url('../ressources/images/banner-img.jpg');
             height: 200px;
+            margin-bottom: 3rem;
             h4 {
                 font-size: .8rem;
                 font-weight: 600;
@@ -171,17 +172,51 @@ h3 {
     &__touch {
         padding: 1rem;
         &__text {
+            font-weight: 300;
             h2 {
                 font-size: 2rem;
+                font-weight: 400;
+                padding: 3rem 0 1rem 0;
+                position: relative;
+                display: inline-block;
+                margin-bottom: 2rem;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 110%;
+                    height: 1px;
+                    background-color: rgb(189, 189, 189);
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+            ul {
+                font-size: 1.2rem;
+                .fas,
+                .far {
+                    color: rgb(189, 189, 189);
+                    padding-right: 1rem;
+                }
+                li {
+                    padding-bottom: 1rem;
+                }
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                }
             }
             p {
-                font-weight: 300;
+                font-weight: 100;
                 padding-block: 1rem;
+                line-height: 1.5rem;
             }
             p+p {
+                font-weight: 200;
+                font-style: italic;
                 font-size: 1.2rem;
+                line-height: 1.7rem;
             }
-            figure {
+            &__signature {
                 display: flex;
                 justify-content: flex-end;
             }
@@ -189,11 +224,11 @@ h3 {
                 color: white;
                 background-color: $color_purple;
                 border: none;
-                width: 90%;
-                padding: 1rem;
+                width: 55%;
+                padding: 1.2rem 1rem;
                 border-radius: .5rem;
                 display: block;
-                margin: 0 auto;
+                margin-top: 1rem;
             }
         }
         &__image {
@@ -284,9 +319,13 @@ h3 {
     &__releases {
         text-align: center;
         &__description {
-            padding-block: 1rem;
+            padding: 1rem;
             h2 {
                 font-size: 2rem;
+                padding: 3rem 0 1rem 0;
+            }
+            p {
+                font-weight: 300;
             }
         }
         &__album {
@@ -300,7 +339,7 @@ h3 {
             }
             &__title {
                 font-size: 1.5rem;
-                padding-block: .5rem;
+                padding-block: 1rem;
             }
             &__date {
                 font-size: .8rem;
@@ -342,18 +381,30 @@ h3 {
                 -moz-transform: rotate(180deg);
                 z-index: -1;
             }
+            i {
+                font-size: 3rem;
+                padding-block: 1rem;
+            }
             h2 {
                 font-size: 2rem;
             }
             h3 {
                 font-size: 1.5rem;
+                padding-block: 1rem;
+            }
+            p {
+                font-weight: 300;
             }
             &__item {
                 text-align: center;
+                padding-top: 2rem;
+                &:last-child {
+                    padding-bottom: 2rem;
+                }
             }
         }
         &.page_about {
-            background-color: rgb(213, 213, 213);
+            background-color: rgb(239, 239, 239);
             .main__fanbase__text {
                 text-align: center;
                 color: black;
@@ -362,6 +413,9 @@ h3 {
                     transform: initial;
                     -moz-transform: initial;
                     z-index: -1;
+                }
+                h2 {
+                    padding-block: 2rem;
                 }
             }
         }
@@ -444,8 +498,7 @@ h3 {
         color: $white;
     }
     &__figure {
-        padding-top: 120px;
-        padding-bottom: 60px;
+        padding: 3rem 0 1rem 0;
     }
     &__nav1 {
         display: flex;
@@ -455,7 +508,7 @@ h3 {
         padding: 10px;
         font-weight: bold;
         a {
-            padding-block: 1rem;
+            padding-block: .5rem;
         }
     }
     &__nav2 {
@@ -465,8 +518,20 @@ h3 {
         a {
             padding: 0 1rem;
         }
+        i {
+            background-color: rgb(62, 62, 62);
+            height: 3rem;
+            width: 3rem;
+            border-radius: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
     p {
-        padding-bottom: 2rem;
+        padding-bottom: 4rem;
+    }
+    &.page_discography {
+        margin-top: 3rem;
     }
 }
