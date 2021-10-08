@@ -333,6 +333,10 @@ h3 {
         text-align: center;
         &__container {
             background-color: $color_darkgrey;
+            background-image: url('../ressources/images/soundwave.jpg');
+            background-size: cover;
+            background-position-y: center;
+            background-blend-mode: color;
             border-radius: .5rem;
             padding: 1rem;
             transform: translateY(-3rem);

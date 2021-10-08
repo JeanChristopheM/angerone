@@ -502,6 +502,10 @@ h3 {
 
 .main__concert__container {
   background-color: #282828;
+  background-image: url("../ressources/images/soundwave.jpg");
+  background-size: cover;
+  background-position-y: center;
+  background-blend-mode: color;
   border-radius: .5rem;
   padding: 1rem;
   -webkit-transform: translateY(-3rem);
