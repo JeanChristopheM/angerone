@@ -786,16 +786,35 @@ h3 {
   background-size: cover;
 }
 
-.main__subscribe__p1 {
-  font-size: 30px;
-  color: white;
-  font-family: Poppins, sans-serif;
-  text-align: center;
-  padding: 60px;
+.main__subscribe__div {
+  padding-block: 2rem;
 }
 
-.main__subscribe input {
-  size: 30px;
+.main__subscribe__div__p1 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  padding-block: 2rem;
+}
+
+.main__subscribe__div input {
+  padding: 1rem;
+  width: 90%;
+  border-radius: .5rem;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+.main__subscribe__div button {
+  color: white;
+  background-color: #8121e0;
+  border: none;
+  width: 90%;
+  padding: 1rem;
+  border-radius: .5rem;
+  margin-block: 1rem;
 }
 
 .footer {
