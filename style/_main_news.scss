@@ -1,0 +1,10 @@
+&__news {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    &__section {
+        margin: 0 auto;
+        text-align: justify;
+        padding: 30px;
+    }
+}

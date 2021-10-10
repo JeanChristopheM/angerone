@@ -1,0 +1,84 @@
+&__fanbase {
+    background-color: $color_darkgrey;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    &__images {
+        padding: 1rem;
+        img {
+            max-width: 100%;
+        }
+    }
+    &__text {
+        padding: 1rem;
+        position: relative;
+        color: white;
+        i {
+            font-size: 3rem;
+            padding-block: 1rem;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            padding-block: 1rem;
+        }
+        p {
+            font-weight: 300;
+        }
+        &__item {
+            text-align: center;
+            padding-top: 2rem;
+            &:last-child {
+                padding-bottom: 2rem;
+            }
+        }
+    }
+    &::after {
+        position:absolute;
+        content:'';
+        width: 50vw;
+        aspect-ratio: 1;
+        top: 50%;
+        left:50%;
+        border-radius: 50%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        border: .2rem solid $color_transparentWhite;
+        box-shadow: 
+            0px 0px 0px 10rem $color_darkgrey,
+            0px 0px 0px 10.2rem $color_transparentWhite,
+            0px 0px 0px 20rem $color_darkgrey,
+            0px 0px 0px 20.2rem $color_transparentWhite,
+            0px 0px 0px 30rem $color_darkgrey,
+            0px 0px 0px 30.2rem $color_transparentWhite,
+            0px 0px 0px 40rem $color_darkgrey,
+            0px 0px 0px 40.2rem $color_transparentWhite,
+            0px 0px 0px 50rem $color_darkgrey,
+            0px 0px 0px 50.2rem $color_transparentWhite,
+            0px 0px 0px 60rem $color_darkgrey,
+            0px 0px 0px 60.2rem $color_transparentWhite,
+            0px 0px 0px 70rem $color_darkgrey,
+            0px 0px 0px 70.2rem $color_transparentWhite,
+            0px 0px 0px 80rem $color_darkgrey,
+            0px 0px 0px 80.2rem $color_transparentWhite,
+            0px 0px 0px 90rem $color_darkgrey;
+    }
+    &.page_about {
+        background-color: rgb(239, 239, 239);
+        .main__fanbase__text {
+            text-align: center;
+            color: black;
+            isolation: isolate;
+            &::after {
+                transform: initial;
+                -moz-transform: initial;
+                z-index: -1;
+            }
+            h2 {
+                padding-block: 2rem;
+            }
+        }
+    }
+}

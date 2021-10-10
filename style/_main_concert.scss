@@ -1,0 +1,36 @@
+&__concert {
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    &__container {
+        background-color: $color_darkgrey;
+        background-image: url('../ressources/images/soundwave.jpg');
+        background-size: cover;
+        background-position-y: center;
+        background-blend-mode: color;
+        border-radius: .5rem;
+        padding: 1rem;
+        transform: translateY(-3rem);
+        h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            padding-block: 1rem;
+        }
+        &__counter {
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem;
+            p:first-child {
+                font-size: 2rem;
+            }
+        }
+        button {
+            color: white;
+            background-color: $color_purple;
+            border: none;
+            width: 90%;
+            padding: 1rem;
+            border-radius: .5rem;
+        }
+    }
+}
