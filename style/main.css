@@ -86,6 +86,10 @@ h3 {
   padding: .5rem 1rem;
 }
 
+.header img {
+  max-width: 100%;
+}
+
 .header__hamburger {
   color: white;
   font-size: 2rem;
@@ -142,6 +146,12 @@ h3 {
   cursor: pointer;
 }
 
+.header__mobile__menu__heading__options {
+  font-size: 2rem;
+  margin: 0 0 0 auto;
+  visibility: hidden;
+}
+
 .header__mobile__menu__heading img {
   -webkit-filter: invert(100%);
           filter: invert(100%);
@@ -160,7 +170,6 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   text-transform: uppercase;
-  padding: 10px;
   font-weight: bold;
   position: absolute;
   top: 50%;
@@ -255,7 +264,6 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   text-transform: uppercase;
-  padding: 10px;
   font-weight: bold;
   position: absolute;
   top: 50%;
@@ -592,10 +600,17 @@ h3 {
 
 .main__releases {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main__releases__description {
   padding: 1rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .main__releases__description h2 {
@@ -609,10 +624,12 @@ h3 {
 
 .main__releases__album {
   padding: 1rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .main__releases__album img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .main__releases__album figcaption {
@@ -637,15 +654,13 @@ h3 {
 
 .main__fanbase {
   background-color: #282828;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
 }
 
 .main__fanbase__images {
   padding: 1rem;
-  background-image: url("../ressources/images/bg-circle-2.png");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: bottom;
-  background-size: 900%;
 }
 
 .main__fanbase__images img {
@@ -656,25 +671,6 @@ h3 {
   padding: 1rem;
   position: relative;
   color: white;
-  isolation: isolate;
-}
-
-.main__fanbase__text::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../ressources/images/bg-circle-2.png");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: bottom;
-  background-size: 900%;
-  -webkit-transform: rotate(180);
-          transform: rotate(180);
-  -moz-transform: rotate(180deg);
-  z-index: -1;
 }
 
 .main__fanbase__text i {
@@ -704,6 +700,22 @@ h3 {
   padding-bottom: 2rem;
 }
 
+.main__fanbase::after {
+  position: absolute;
+  content: '';
+  width: 50vw;
+  aspect-ratio: 1;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 0.2rem solid rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 0px 0px 0px 10rem #282828, 0px 0px 0px 10.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 20rem #282828, 0px 0px 0px 20.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 30rem #282828, 0px 0px 0px 30.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 40rem #282828, 0px 0px 0px 40.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 50rem #282828, 0px 0px 0px 50.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 60rem #282828, 0px 0px 0px 60.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 70rem #282828, 0px 0px 0px 70.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 80rem #282828, 0px 0px 0px 80.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 90rem #282828;
+          box-shadow: 0px 0px 0px 10rem #282828, 0px 0px 0px 10.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 20rem #282828, 0px 0px 0px 20.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 30rem #282828, 0px 0px 0px 30.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 40rem #282828, 0px 0px 0px 40.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 50rem #282828, 0px 0px 0px 50.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 60rem #282828, 0px 0px 0px 60.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 70rem #282828, 0px 0px 0px 70.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 80rem #282828, 0px 0px 0px 80.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 90rem #282828;
+}
+
 .main__fanbase.page_about {
   background-color: #efefef;
 }
@@ -729,18 +741,17 @@ h3 {
   font-family: Poppins, sans-serif;
   color: white;
   text-align: center;
-  font-style: 30px;
   background-image: url("../ressources/images/homepage-sponsors-background.jpg");
-  height: 450px;
   background-size: cover;
 }
 
 .main__partners__p {
-  padding: 60px;
-  font-size: 30px;
+  padding-block: 2rem;
+  font-size: 2rem;
 }
 
 .main__partners__ulsponsors {
+  padding-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -749,7 +760,12 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 50px;
+}
+
+.main__partners__ulsponsors > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
 }
 
 .main__partners__ulsponsors img {
@@ -774,7 +790,6 @@ h3 {
   margin: 0 auto;
   text-align: justify;
   padding: 30px;
-  width: 400px;
 }
 
 .main__subscribe {
@@ -854,14 +869,10 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 50px;
-}
-
-.footer__nav2 a {
-  padding: 0 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
 }
 
 .footer__nav2 i {
