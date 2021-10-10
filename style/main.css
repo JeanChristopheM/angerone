@@ -772,6 +772,22 @@ h3 {
   max-width: 100%;
 }
 
+.main__partners .dotz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 130px;
+}
+
+.main__partners .dotz li {
+  padding: 15px;
+}
+
 .main__images {
   text-align: center;
 }
@@ -808,22 +824,6 @@ h3 {
 
 .main__subscribe input {
   size: 30px;
-}
-
-.main .dotz {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 130px;
-}
-
-.main .dotz li {
-  padding: 15px;
 }
 
 .footer {
