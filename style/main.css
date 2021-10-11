@@ -1130,6 +1130,7 @@ button:hover {
   text-align: center;
   background-image: url("../ressources/images/homepage-sponsors-background.jpg");
   background-size: cover;
+  background-position-y: center;
   padding-block: 2rem;
 }
 
