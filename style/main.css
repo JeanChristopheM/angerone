@@ -892,6 +892,7 @@ h3 {
   text-align: center;
   background-image: url("../ressources/images/homepage-sponsors-background.jpg");
   background-size: cover;
+  padding-block: 2rem;
 }
 
 .main__partners__p {
@@ -900,7 +901,7 @@ h3 {
 }
 
 .main__partners__ulsponsors {
-  padding-top: 2rem;
+  padding-block: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -913,8 +914,8 @@ h3 {
 
 .main__partners__ulsponsors > * {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 
 .main__partners__ulsponsors img {
@@ -987,11 +988,14 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 130px;
+  padding-block: 1rem;
+  gap: 1rem;
 }
 
 .main .dotz li {
-  padding: 15px;
+  padding: .5rem;
+  opacity: .5;
+  cursor: pointer;
 }
 
 .footer {
@@ -1065,5 +1069,10 @@ h3 {
 
 .footer.page_discography {
   margin-top: 3rem;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
 }
 /*# sourceMappingURL=main.css.map */

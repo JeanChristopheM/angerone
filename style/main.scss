@@ -28,6 +28,7 @@ h3 {
     @import 'main_fanbase';
     @import 'main_tour';
     @import 'main_partners';
+    @import 'main_tickets';
     @import 'main_images';
     @import 'main_news';
     @import 'main_subscribe';
@@ -35,11 +36,18 @@ h3 {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding-top: 130px;
+        padding-block: 1rem;
+        gap: 1rem;
         & li {
-            padding: 15px;
+            padding: .5rem;
+            opacity: .5;
+            cursor: pointer;
         }
     }
 }
 
 @import 'footer';
+.hidden {
+    display: none;
+    visibility: hidden;
+}

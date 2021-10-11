@@ -4,17 +4,18 @@
     text-align: center;
     background-image: url('../ressources/images/homepage-sponsors-background.jpg');
     background-size: cover;
+    padding-block: 2rem;
     &__p {
         padding-block: 2rem;
         font-size: 2rem;
     }
     &__ulsponsors {
-        padding-top: 2rem;
+        padding-block: 1rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         &>* {
-            flex: 1 1 50%;
+            flex: 1 1 100%;
         }
         img {
             max-width: 100%;
