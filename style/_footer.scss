@@ -1,5 +1,5 @@
 .footer {
-    background-color: $color_darkgrey;
+    background-color: $color_vdarkgrey;
     align-items: center;
     text-align: center;
     font-family: Poppins, sans-serif;
@@ -10,6 +10,9 @@
     }
     &__figure {
         padding: 3rem 0 1rem 0;
+        img {
+            max-width: 100%;
+        }
     }
     &__nav1 {
         display: flex;
@@ -28,23 +31,35 @@
     }
     &__nav2 {
         display: flex;
-        justify-content: center;
-        padding: 1rem;
-        gap: 1rem;
-        i {
-            background-color: rgb(62, 62, 62);
-            height: 3rem;
-            width: 3rem;
-            border-radius: 1.5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        max-width: 400px;
+        margin: 0 auto;
+        a {
+            font-size: .7rem;
+            i {
+                background-color: hsla(125, 0%, 100%, .05);
+                padding: .8rem;
+                border-radius: 50%;
+            }
         }
     }
     p {
-        padding-bottom: 4rem;
+        padding-block: 2rem;
     }
     &.page_discography {
         margin-top: 3rem;
+    }
+    @media screen and (max-width:300px){
+        &__nav2 {
+            padding: 2rem .5rem;
+            flex-wrap: wrap;
+            &>* {
+                flex: 0 0 50%;
+                display: block;
+                margin: 0 auto;
+                padding: 1rem;
+            }
+        }
     }
 }
