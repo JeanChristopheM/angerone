@@ -789,12 +789,21 @@ h3 {
 
 .main__tour {
   text-align: center;
-  width: 100px;
+  width: 100%;
   margin: 0 auto;
 }
 
-.main__tour div {
+.main__tour__news__list {
+  margin: 0 auto;
   width: 400px;
+}
+
+.main__tour__calendar li {
+  padding: 10px 0 0 10px;
+}
+
+.main__tour__news li {
+  padding: 50px 20px;
   text-align: left;
 }
 
