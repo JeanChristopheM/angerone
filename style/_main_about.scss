@@ -1,5 +1,7 @@
 &__about {
     padding: 1rem 1rem 3rem 1rem;
+    max-width: $limiter;
+    margin: 0 auto;
     &__image {
         figure {
             display: flex;
@@ -12,9 +14,7 @@
         }
     }
     &__text {
-        p {
-            font-weight: 300;
-        }
+        padding-top: 1rem;
         blockquote {
             padding-block: 1rem;
             font-size: 1.25rem;
@@ -35,8 +35,9 @@
             }
         }
     }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 768px) {
         display: flex;
+        padding: 3rem 1rem 6rem 1rem;
         &>* {
             flex: 1 0 50%;
         }

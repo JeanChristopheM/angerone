@@ -3,16 +3,16 @@
     display: flex;
     flex-wrap: wrap;
     padding-block: 2rem;
+    max-width: $limiter;
+    margin: 0 auto;
     &__description {
         padding: 1rem;
-        flex-basis: 100%;
-        p {
-            font-weight: 300;
-        }
+        flex: 1 0 100%;
     }
     &__album {
         padding: 1rem;
-        flex-basis: 100%;
+        flex: 1 0 100%;
+        justify-items: flex-start;
         img {
             max-width: 100%;
         }
@@ -27,6 +27,28 @@
         &__date {
             font-size: .8rem;
             font-weight: 300;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        &__description {
+            p {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
+        &__album {
+            flex: 0 0 50%;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        &__description {
+            p {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
+        &__album {
+            flex: 0 0 33%;
         }
     }
 }
