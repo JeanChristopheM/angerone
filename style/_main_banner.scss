@@ -45,6 +45,7 @@
     }
     @media screen and (min-width: 321px) {
         height: 60vh;
+        background-position-y: center;
     }
     &.page_about {
         background-image: url('../ressources/images/banner-img.jpg');
