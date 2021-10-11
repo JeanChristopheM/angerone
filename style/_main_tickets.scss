@@ -1,6 +1,8 @@
 &__tickets {
     padding: 2rem 1rem;
     text-align: center;
+    max-width: $limiter;
+    margin: 0 auto;
     &__container {
         color: $color_darkgrey;
         position: relative;
