@@ -959,7 +959,9 @@ button:hover {
 
 .main__tour {
   text-align: center;
-  padding: 1rem;
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .main__tour h2 {
@@ -1068,6 +1070,58 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.25);
   -webkit-transform: translateY(10%);
           transform: translateY(10%);
+}
+
+@media screen and (min-width: 500px) {
+  .main__tour {
+    padding: 5rem 3rem;
+  }
+  .main__tour__calendar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main__tour__calendar ul li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 0px;
+            flex: 0 0 0;
+    padding: 1rem;
+  }
+  .main__tour__calendar ul li.active {
+    color: white;
+  }
+  .main__tour__calendar ul li.active::after {
+    width: calc(100% - 2rem);
+    height: 5px;
+    bottom: -1rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main__tour__news li {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 33%;
+        grid-template-columns: 1fr 33%;
+  }
+  .main__tour__news li p, .main__tour__news li h3 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+  }
+  .main__tour__news li a {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
 }
 
 .main__partners {
