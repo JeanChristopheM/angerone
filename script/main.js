@@ -42,3 +42,6 @@ window.onload = () => {
 
 import * as carouselModule from './modules/carousel.js';
 carouselModule.initialize();
+window.onresize = () => {
+    carouselModule.reset();
+}

@@ -5,8 +5,12 @@ const initialize = () => {
         let target = e.target;
         if (target.nodeName === "LI") {
             let index = target.id.slice(-1, target.id.length);
-            carousel.children[index - 1].scrollIntoView({ block: "nearest", inline: "start" })
+            carousel.children[index - 1].scrollIntoView({ block: "nearest", inline: "start" });
         }
     });
 }
-export { initialize };
+const reset = () => {
+    let carousel = document.querySelector('.main__partners__logos__ulsponsors');
+    carousel.children[0].scrollIntoView({ block: "nearest", inline: "start" });
+}
+export { initialize, reset };
