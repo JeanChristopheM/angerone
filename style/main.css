@@ -74,6 +74,11 @@ h3 {
   padding-block: 1rem;
 }
 
+p,
+blockquote {
+  line-height: 150%;
+}
+
 .header {
   background-color: #282828;
   display: -webkit-box;
@@ -533,7 +538,7 @@ h3 {
 }
 
 .main__about {
-  padding: 1rem;
+  padding: 1rem 1rem 3rem 1rem;
 }
 
 .main__about__image img {
@@ -542,19 +547,29 @@ h3 {
   width: 100%;
 }
 
-.main__about__text h2 {
-  font-size: 2rem;
-  padding-block: 1rem;
-}
-
 .main__about__text p {
-  padding-bottom: 1rem;
+  font-weight: 300;
 }
 
-.main__about__text q {
-  display: block;
-  padding-bottom: 1rem;
-  font-size: 1.2rem;
+.main__about__text blockquote {
+  padding-block: 1rem;
+  font-size: 1.25rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.main__about__text blockquote::before {
+  content: '"';
+  position: absolute;
+  top: 4rem;
+  left: -2rem;
+  width: 1rem;
+  height: 1rem;
+  font-size: 10rem;
+  font-style: italic;
+  color: #8121e0;
+  z-index: -1;
+  opacity: .25;
 }
 
 .main__discography {

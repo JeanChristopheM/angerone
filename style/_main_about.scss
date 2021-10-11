@@ -1,5 +1,5 @@
 &__about {
-    padding: 1rem;
+    padding: 1rem 1rem 3rem 1rem;
     &__image {
         img {
             border-radius: .5rem;
@@ -8,17 +8,27 @@
         }
     }
     &__text {
-        h2 {
-            font-size: 2rem;
-            padding-block: 1rem;
-        }
         p {
-            padding-bottom: 1rem;
+            font-weight: 300;
         }
-        q {
-            display: block;
-            padding-bottom: 1rem;
-            font-size: 1.2rem;
+        blockquote {
+            padding-block: 1rem;
+            font-size: 1.25rem;
+            padding-left: 1rem;
+            position: relative;
+            &::before {
+                content: '"';
+                position: absolute;
+                top: 4rem;
+                left: -2rem;
+                width: 1rem;
+                height: 1rem;
+                font-size: 10rem;
+                font-style: italic;
+                color: $color_purple;
+                z-index: -1;
+                opacity: .25;
+            }
         }
     }
 }

@@ -17,6 +17,11 @@ h3 {
     padding-block: 1rem;
 }
 
+p,
+blockquote {
+    line-height: 150%;
+}
+
 @import 'header';
 .main {
     @import 'main_banner';
