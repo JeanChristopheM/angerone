@@ -64,19 +64,56 @@ table {
 
 h2 {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 600;
   padding-block: 1rem;
 }
 
 h3 {
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 600;
   padding-block: 1rem;
 }
 
 p,
 blockquote {
   line-height: 150%;
+}
+
+p {
+  font-weight: 300;
+}
+
+button {
+  border: none;
+  width: 90%;
+  padding: 1rem;
+  border-radius: .5rem;
+  margin-block: 1rem;
+  border: 1px solid #8121e0;
+  font-weight: 700;
+  -webkit-transition: -webkit-transform .1s;
+  transition: -webkit-transform .1s;
+  transition: transform .1s;
+  transition: transform .1s, -webkit-transform .1s;
+}
+
+button.purple {
+  color: white;
+  background-color: #8121e0;
+}
+
+button.white {
+  color: #282828;
+  background-color: white;
+  width: 60%;
+}
+
+button:hover {
+  background-color: #282828;
+  color: white;
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .header {
@@ -232,6 +269,7 @@ blockquote {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1rem;
 }
 
 .main__banner__container h2 {
@@ -256,9 +294,7 @@ blockquote {
           align-items: center;
 }
 
-.main__banner__container__audio button {
-  border: none;
-  background-color: unset;
+.main__banner__container__audio i {
   font-size: 2rem;
   color: white;
   cursor: pointer;
@@ -528,15 +564,6 @@ blockquote {
   font-size: 2rem;
 }
 
-.main__concert__container button {
-  color: white;
-  background-color: #8121e0;
-  border: none;
-  width: 90%;
-  padding: 1rem;
-  border-radius: .5rem;
-}
-
 .main__about {
   padding: 1rem 1rem 3rem 1rem;
 }
@@ -583,20 +610,6 @@ blockquote {
   background-repeat: repeat-y;
 }
 
-.main__discography h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-.main__discography button {
-  color: white;
-  background-color: #8121e0;
-  border: none;
-  width: 90%;
-  padding: 1rem;
-  border-radius: .5rem;
-}
-
 .main__releases {
   text-align: center;
   display: -webkit-box;
@@ -604,17 +617,13 @@ blockquote {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-block: 2rem;
 }
 
 .main__releases__description {
   padding: 1rem;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-}
-
-.main__releases__description h2 {
-  font-size: 2rem;
-  padding: 3rem 0 1rem 0;
 }
 
 .main__releases__description p {
@@ -1126,16 +1135,6 @@ blockquote {
   border-radius: .5rem;
   font-size: 1.1rem;
   line-height: 2rem;
-}
-
-.main__subscribe__div button {
-  color: white;
-  background-color: #8121e0;
-  border: none;
-  width: 90%;
-  padding: 1rem;
-  border-radius: .5rem;
-  margin-block: 1rem;
 }
 
 .main .dotz {

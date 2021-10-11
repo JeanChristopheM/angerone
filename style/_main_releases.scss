@@ -2,13 +2,10 @@
     text-align: center;
     display: flex;
     flex-wrap: wrap;
+    padding-block: 2rem;
     &__description {
         padding: 1rem;
         flex-basis: 100%;
-        h2 {
-            font-size: 2rem;
-            padding: 3rem 0 1rem 0;
-        }
         p {
             font-weight: 300;
         }

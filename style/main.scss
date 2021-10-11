@@ -7,19 +7,49 @@
 
 h2 {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
     padding-block: 1rem;
 }
 
 h3 {
     font-size: 1.3rem;
-    font-weight: 500;
+    font-weight: 600;
     padding-block: 1rem;
 }
 
 p,
 blockquote {
     line-height: 150%;
+}
+
+p {
+    font-weight: 300;
+}
+
+button {
+    border: none;
+    width: 90%;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-block: 1rem;
+    border: 1px solid $color_purple;
+    font-weight: 700;
+    transition: transform .1s;
+    &.purple {
+        color: $white;
+        background-color: $color_purple;
+    }
+    &.white {
+        color: $color_darkgrey;
+        background-color: $white;
+        width: 60%;
+    }
+    &:hover {
+        background-color: $color_darkgrey;
+        color: $white;
+        cursor: pointer;
+        transform: scale(1.05);
+    }
 }
 
 @import 'header';
