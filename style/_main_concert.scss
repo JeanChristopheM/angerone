@@ -7,10 +7,10 @@
         background-image: url('../ressources/images/soundwave.jpg');
         background-size: cover;
         background-position-y: center;
-        background-blend-mode: color;
+        background-blend-mode: lighten;
         border-radius: .5rem;
         padding: 1rem;
-        transform: translateY(-3rem);
+        transform: translateY(-2.5rem);
         h2 {
             font-size: 2rem;
             font-weight: bold;

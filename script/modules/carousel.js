@@ -22,8 +22,8 @@ const initialize = () => {
 }
 const reset = () => {
     let sponsorCarousel = document.querySelector('.main__partners__logos__ulsponsors');
-    sponsorCarousel.children[0].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+    //sponsorCarousel.children[0].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
     let ticketsCarousel = document.querySelector('.ticket_flex');
-    ticketsCarousel.children[0].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+    //ticketsCarousel.children[0].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
 }
 export { initialize, reset };

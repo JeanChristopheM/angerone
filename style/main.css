@@ -255,10 +255,10 @@ button:hover {
 }
 
 .main__banner {
-  border: 1px solid black;
   background-image: url("../ressources/images/homapage-banner-img.jpg");
   background-size: cover;
-  height: 400px;
+  background-position-x: 20%;
+  height: 40vh;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -269,7 +269,7 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
+  padding: 1rem 1rem 3rem 1rem;
 }
 
 .main__banner__container h2 {
@@ -348,7 +348,7 @@ button:hover {
 
 .main__banner.page_discography {
   background-image: url("../ressources/images/banner-img.jpg");
-  height: 200px;
+  height: 20vh;
   margin-bottom: 3rem;
 }
 
@@ -538,11 +538,11 @@ button:hover {
   background-image: url("../ressources/images/soundwave.jpg");
   background-size: cover;
   background-position-y: center;
-  background-blend-mode: color;
+  background-blend-mode: lighten;
   border-radius: .5rem;
   padding: 1rem;
-  -webkit-transform: translateY(-3rem);
-          transform: translateY(-3rem);
+  -webkit-transform: translateY(-2.5rem);
+          transform: translateY(-2.5rem);
 }
 
 .main__concert__container h2 {
