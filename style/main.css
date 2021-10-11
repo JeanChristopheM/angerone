@@ -732,7 +732,6 @@ button:hover {
 
 .main__fanbase__text i {
   font-size: 3rem;
-  padding-block: 1rem;
 }
 
 .main__fanbase__text h2 {
@@ -743,7 +742,7 @@ button:hover {
 
 .main__fanbase__text h3 {
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 700;
   padding-block: 1rem;
 }
 
@@ -753,7 +752,7 @@ button:hover {
 
 .main__fanbase__text__item {
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 4rem;
 }
 
 .main__fanbase__text__item:last-child {
@@ -1195,14 +1194,25 @@ button:hover {
   padding-block: .5rem;
 }
 
+@media screen and (min-width: 400px) {
+  .footer__nav1 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1rem;
+  }
+}
+
 .footer__nav2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 1rem;
+  gap: 1rem;
 }
 
 .footer__nav2 i {

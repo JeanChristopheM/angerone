@@ -21,11 +21,16 @@
         a {
             padding-block: .5rem;
         }
+        @media screen and (min-width: 400px) {
+            flex-direction: row;
+            gap: 1rem;
+        }
     }
     &__nav2 {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         padding: 1rem;
+        gap: 1rem;
         i {
             background-color: rgb(62, 62, 62);
             height: 3rem;
