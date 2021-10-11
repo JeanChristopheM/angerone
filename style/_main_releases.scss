@@ -1,7 +1,10 @@
 &__releases {
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
     &__description {
         padding: 1rem;
+        flex-basis: 100%;
         h2 {
             font-size: 2rem;
             padding: 3rem 0 1rem 0;
@@ -12,8 +15,9 @@
     }
     &__album {
         padding: 1rem;
+        flex-basis: 100%;
         img {
-            width: 100%;
+            max-width: 100%;
         }
         figcaption {
             display: flex;

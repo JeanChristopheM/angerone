@@ -24,11 +24,8 @@
     }
     &__nav2 {
         display: flex;
-        justify-content: center;
-        padding: 50px;
-        a {
-            padding: 0 1rem;
-        }
+        justify-content: space-between;
+        padding: 1rem;
         i {
             background-color: rgb(62, 62, 62);
             height: 3rem;

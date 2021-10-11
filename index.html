@@ -26,40 +26,43 @@
         <section class="header__options">
             <i class="fas fa-ellipsis-v"></i>
         </section>
-        <section class="header__mobile__menu">
-            <div class="header__mobile__menu__heading">
-                <i class="fas fa-bars header__mobile__menu__heading__hamburger"></i>
-                <figure class="header__mobile__menu__heading__figure">
+        <section class="header__mobile menu">
+            <div class="header__mobile__heading menu">
+                <i class="fas fa-bars header__mobile__heading__hamburger menu"></i>
+                <figure class="header__mobile__heading__figure menu">
                     <img src="./ressources/images/logo.png" alt="logo Angerone">
                 </figure>
+                <section class="header__mobile__heading__options menu">
+                    <i class="fas fa-ellipsis-v"></i>
+                </section>
             </div>
-            <nav class="header__mobile__menu__nav1">
+            <nav class="header__mobile__nav1 menu">
                 <a href="./html/about.html">
                     about
                 </a>
                 <a href="./html/discography.html">
                     discography
                 </a>
-                <a href="#">
+                <a href="./html/tour-schedule.html">
                     tours
                 </a>
-                <a href="#">
+                <a href="./html/gallery.html">
                     photos
                 </a>
             </nav>
             <p><span>&#169;</span> 2021 DJ Angerone. Privacy policy</p>
         </section>
-        <section class="header__mobile__social">
-            <div class="header__mobile__social__heading">
-                <i class="fas fa-bars header__mobile__social__heading__hamburger"></i>
-                <figure class="header__mobile__social__heading__figure">
+        <section class="header__mobile social">
+            <div class="header__mobile__heading social">
+                <i class="fas fa-bars header__mobile__heading__hamburger social"></i>
+                <figure class="header__mobile__heading__figure social">
                     <img src="./ressources/images/logo.png" alt="logo Angerone">
                 </figure>
-                <section class="header__mobile__social__heading__options">
+                <section class="header__mobile__heading__options social">
                     <i class="fas fa-ellipsis-v"></i>
                 </section>
             </div>
-            <nav class="header__mobile__social__nav1">
+            <nav class="header__mobile__nav1 social">
                 <a href="#">
                     <i class="fab fa-facebook"></i> Facebook <i class="fab fa-facebook"></i>
                 </a>
@@ -203,17 +206,17 @@
                     Take your chance to join DJ Angerone's fan club to receive exclusive tracks, free downloads, and other great offers.
                 </p>
                 <div class="main__fanbase__text__item">
-                    <p>icon</p>
+                    <i class="fas fa-microphone-alt"></i>
                     <h3>Exclusive Releases</h3>
                     <p>Get access to unreleased albums and EPs before they are published.</p>
                 </div>
                 <div class="main__fanbase__text__item">
-                    <p>icon</p>
+                    <i class="fas fa-compact-disc"></i>
                     <h3>Full DJ Sets & Podcasts</h3>
                     <p>Listen and download full sets and podcasts with tracklists by DJ Angerone.</p>
                 </div>
                 <div class="main__fanbase__text__item">
-                    <p>icon</p>
+                    <i class="fas fa-cart-arrow-down"></i>
                     <h3>Free Downloads</h3>
                     <p>Free tracks and remixes are regularly published for DJ Angerone's fan club.</p>
                 </div>
@@ -266,16 +269,17 @@
             <section class="main__partners_section">
                 <p class="main__partners__p">Partners & sponsors</p>
                 <ul class="main__partners__ulsponsors">
-                    <li><img src="ressources/images/sponsors/logoipsum-logo-10.svg" alt="image_1"></li>
-                    <li><img src="ressources/images/sponsors/logoipsum-logo-12.svg" alt="image_1"></li>
-                    <li><img src="ressources/images/sponsors/logoipsum-logo-18.svg" alt="image_1"></li>
-                    <li><img src="ressources/images/sponsors/logoipsum-logo-28.svg" alt="image_1"></li>
-                    <li><img src="ressources/images/sponsors/logoipsum-logo-29.svg" alt="image_1"></li>
-                    <li><img src="ressources/images/sponsors/logoipsum-logo-32.svg" alt="image_1"></li>
-                    <li><img src="ressources/images/sponsors/logoipsum-logo-33.svg" alt="image_1"></li>
-                    <li><img src="ressources/images/sponsors/logoipsum-logo-34.svg" alt="image_1"></li>
-                    <li><img src="ressources/images/sponsors/logoipsum-logo-40.svg" alt="image_1"></li>
-                    <li><img src="ressources/images/sponsors/logoipsum-logo-gen2.svg" alt="image_1"></li>
+                    <li><img src="./ressources/images/sponsors/logoipsum-logo-10.svg" alt="image_1"></li>
+                    <li><img src="./ressources/images/sponsors/logoipsum-logo-12.svg" alt="image_1"></li>
+                    <li><img src="./ressources/images/sponsors/logoipsum-logo-18.svg" alt="image_1"></li>
+                    <li><img src="./ressources/images/sponsors/logoipsum-logo-28.svg" alt="image_1"></li>
+                    <li><img src="./ressources/images/sponsors/logoipsum-logo-29.svg" alt="image_1"></li>
+                    <li><img src="./ressources/images/sponsors/logoipsum-logo-32.svg" alt="image_1"></li>
+                    <li><img src="./ressources/images/sponsors/logoipsum-logo-33.svg" alt="image_1"></li>
+                    <li><img src="./ressources/images/sponsors/logoipsum-logo-34.svg" alt="image_1"></li>
+                    <li><img src="./ressources/images/sponsors/logoipsum-logo-40.svg" alt="image_1"></li>
+                    <li><img src="./ressources/images/sponsors/logoipsum-logo-gen2.svg" alt="image_1"></li>
+                </ul>
             </section>
             <section class="main__partners_section">
                 <ul class="dotz">
@@ -344,11 +348,9 @@
         </article>
         <section class="main__subscribe">
             <div class="main__subscribe__div">
-                <p class="main__subscribe__p1">Subscribe to stay informed</p>
+                <p class="main__subscribe__div__p1">Subscribe to stay informed</p>
                 <input type="text" placeholder="Your E-mail" name="mail" required>
-            </div>
-            <div class="main__subscribe__div">
-                <input type="submit" value="Subscribe">
+                <button>Subscribe</button>
             </div>
         </section>
     </main>

@@ -1,9 +1,9 @@
-let burgerMenu = document.querySelector('.header__mobile__menu');
+let burgerMenu = document.querySelector('.header__mobile.menu');
 let burgerButton = document.querySelector('.header__hamburger');
-let burgerMenuActivated = document.querySelector('.header__mobile__menu__heading__hamburger');
-let optionsMenu = document.querySelector('.header__mobile__social');
+let burgerMenuActivated = document.querySelector('.header__mobile__heading__hamburger.menu');
+let optionsMenu = document.querySelector('.header__mobile.social');
 let optionsButton = document.querySelector('.header__options');
-let optionsButtonActivated = document.querySelector('.header__mobile__social__heading__options');
+let optionsButtonActivated = document.querySelector('.header__mobile__heading__options.social');
 
 burgerButton.addEventListener('click', () => {
     burgerMenu.classList.add('active');

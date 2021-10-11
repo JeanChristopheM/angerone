@@ -1,46 +1,60 @@
 &__fanbase {
     background-color: $color_darkgrey;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
     &__images {
         padding: 1rem;
-        background-image: url('../ressources/images/bg-circle-2.png');
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: bottom;
-        background-size: 900%;
+        figure {
+            display: flex;
+            &:first-of-type {
+                justify-content: right;
+            }
+            &:nth-of-type(2) {
+                justify-content: center;
+            }
+            &:nth-of-type(3) {
+                img {
+                    max-width: 60%;
+                }
+            }
+            &:nth-of-type(4) {
+                justify-content: center;
+                img {
+                    max-width: 80%;
+                }
+            }
+            &:nth-of-type(5) {
+                justify-content: right;
+            }
+            &:nth-of-type(6) {
+                justify-content: right;
+            }
+        }
         img {
             max-width: 100%;
+            border-radius: .5rem;
+        }
+        figure+figure {
+            padding-top: 1rem;
         }
     }
     &__text {
         padding: 1rem;
         position: relative;
         color: white;
-        isolation: isolate;
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('../ressources/images/bg-circle-2.png');
-            background-repeat: no-repeat;
-            background-position-x: center;
-            background-position-y: bottom;
-            background-size: 900%;
-            transform: rotate(180);
-            -moz-transform: rotate(180deg);
-            z-index: -1;
-        }
         i {
             font-size: 3rem;
             padding-block: 1rem;
         }
         h2 {
-            font-size: 2rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding-block: 1rem;
         }
         h3 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
+            font-weight: 500;
             padding-block: 1rem;
         }
         p {
@@ -53,6 +67,19 @@
                 padding-bottom: 2rem;
             }
         }
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        width: 50vw;
+        aspect-ratio: 1;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        border: .2rem solid $color_transparentWhite;
+        box-shadow: 0px 0px 0px 10rem $color_darkgrey, 0px 0px 0px 10.2rem $color_transparentWhite, 0px 0px 0px 20rem $color_darkgrey, 0px 0px 0px 20.2rem $color_transparentWhite, 0px 0px 0px 30rem $color_darkgrey, 0px 0px 0px 30.2rem $color_transparentWhite, 0px 0px 0px 40rem $color_darkgrey, 0px 0px 0px 40.2rem $color_transparentWhite, 0px 0px 0px 50rem $color_darkgrey, 0px 0px 0px 50.2rem $color_transparentWhite, 0px 0px 0px 60rem $color_darkgrey, 0px 0px 0px 60.2rem $color_transparentWhite, 0px 0px 0px 70rem $color_darkgrey, 0px 0px 0px 70.2rem $color_transparentWhite, 0px 0px 0px 80rem $color_darkgrey, 0px 0px 0px 80.2rem $color_transparentWhite, 0px 0px 0px 90rem $color_darkgrey;
     }
     &.page_about {
         background-color: rgb(239, 239, 239);

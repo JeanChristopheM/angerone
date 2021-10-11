@@ -2,19 +2,20 @@
     font-family: Poppins, sans-serif;
     color: $white;
     text-align: center;
-    font-style: 30px;
     background-image: url('../ressources/images/homepage-sponsors-background.jpg');
-    height: 450px;
     background-size: cover;
     &__p {
-        padding: 60px;
-        font-size: 30px;
+        padding-block: 2rem;
+        font-size: 2rem;
     }
     &__ulsponsors {
+        padding-top: 2rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding-top: 50px;
+        &>* {
+            flex: 1 1 50%;
+        }
         img {
             max-width: 100%;
         }
