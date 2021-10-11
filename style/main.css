@@ -568,10 +568,19 @@ button:hover {
   padding: 1rem 1rem 3rem 1rem;
 }
 
+.main__about__image figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .main__about__image img {
   border-radius: .5rem;
   height: 100%;
-  width: 100%;
+  max-width: 100%;
 }
 
 .main__about__text p {
@@ -597,6 +606,22 @@ button:hover {
   color: #8121e0;
   z-index: -1;
   opacity: .25;
+}
+
+@media screen and (min-width: 500px) {
+  .main__about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main__about > * {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
+  .main__about figure {
+    padding: 1rem;
+  }
 }
 
 .main__discography {

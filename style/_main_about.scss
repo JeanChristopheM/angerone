@@ -1,10 +1,14 @@
 &__about {
     padding: 1rem 1rem 3rem 1rem;
     &__image {
+        figure {
+            display: flex;
+            justify-content: center;
+        }
         img {
             border-radius: .5rem;
             height: 100%;
-            width: 100%;
+            max-width: 100%;
         }
     }
     &__text {
@@ -29,6 +33,15 @@
                 z-index: -1;
                 opacity: .25;
             }
+        }
+    }
+    @media screen and (min-width: 500px) {
+        display: flex;
+        &>* {
+            flex: 1 0 50%;
+        }
+        figure {
+            padding: 1rem;
         }
     }
 }
