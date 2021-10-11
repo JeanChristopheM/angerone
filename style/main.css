@@ -88,7 +88,6 @@ button {
   width: 90%;
   padding: 1rem;
   border-radius: .5rem;
-  margin-block: 1rem;
   border: 1px solid #8121e0;
   font-weight: 700;
   -webkit-transition: -webkit-transform .1s;
@@ -1336,6 +1335,8 @@ button:hover {
 
 .main__subscribe__div {
   padding-block: 2rem;
+  max-width: 768px;
+  margin: 0 auto;
 }
 
 .main__subscribe__div__p1 {
@@ -1353,6 +1354,38 @@ button:hover {
   border-radius: .5rem;
   font-size: 1.1rem;
   line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main__subscribe__div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 2rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main__subscribe__div p {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+  }
+  .main__subscribe__div input {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 65%;
+            flex: 0 0 65%;
+    display: inline;
+    margin-bottom: 0;
+  }
+  .main__subscribe__div button {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 32%;
+            flex: 0 0 32%;
+  }
 }
 
 .main .dotz {
