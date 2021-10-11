@@ -1,0 +1,37 @@
+&__tickets {
+    padding: 2rem 1rem;
+    text-align: center;
+    &__section {
+        color: $color_darkgrey;
+        h3,
+        p {
+            font-weight: 300;
+        }
+        h4 {
+            font-size: 3.5rem;
+            position: relative;
+            display: inline-block;
+            &::before {
+                content: '$';
+                position: absolute;
+                width: 1rem;
+                height: 1rem;
+                top: 50%;
+                left: -1rem;
+                font-size: 1.5rem;
+                transform: translateY(-100%);
+            }
+        }
+        p {
+            padding-block: .5rem;
+        }
+        button {
+            background-color: inherit;
+            border: 1px solid $color_darkgrey;
+            padding: 1rem 3rem;
+            border-radius: .5rem;
+            margin-block: 1rem;
+            font-weight: 600;
+        }
+    }
+}

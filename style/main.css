@@ -922,6 +922,51 @@ h3 {
   max-width: 100%;
 }
 
+.main__tickets {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.main__tickets__section {
+  color: #282828;
+}
+
+.main__tickets__section h3,
+.main__tickets__section p {
+  font-weight: 300;
+}
+
+.main__tickets__section h4 {
+  font-size: 3.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.main__tickets__section h4::before {
+  content: '$';
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  top: 50%;
+  left: -1rem;
+  font-size: 1.5rem;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.main__tickets__section p {
+  padding-block: .5rem;
+}
+
+.main__tickets__section button {
+  background-color: inherit;
+  border: 1px solid #282828;
+  padding: 1rem 3rem;
+  border-radius: .5rem;
+  margin-block: 1rem;
+  font-weight: 600;
+}
+
 .main__images {
   text-align: center;
 }
