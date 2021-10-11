@@ -863,6 +863,22 @@ h3 {
   margin-block: 1rem;
 }
 
+.main .dotz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 130px;
+}
+
+.main .dotz li {
+  padding: 15px;
+}
+
 .footer {
   background-color: #282828;
   -webkit-box-align: center;
