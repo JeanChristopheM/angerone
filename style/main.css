@@ -910,31 +910,65 @@ blockquote {
   padding-block: 2rem;
 }
 
-.main__partners__p {
-  padding-block: 2rem;
-  font-size: 2rem;
-}
-
-.main__partners__ulsponsors {
+.main__partners__logos__ulsponsors {
   padding-block: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
-.main__partners__ulsponsors > * {
+.main__partners__logos__ulsponsors > * {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
 }
 
-.main__partners__ulsponsors img {
+.main__partners__logos__ulsponsors img {
   max-width: 100%;
+}
+
+.main__partners__logos__ulsponsors li:nth-child(4) {
+  display: list-item;
+  visibility: visible;
+}
+
+@media screen and (min-width: 321px) {
+  .main__partners__logos__ulsponsors > * {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .main__partners__logos__ulsponsors > * {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 25%;
+            flex: 1 0 25%;
+  }
+}
+
+@media screen and (min-width: 321px) {
+  .main__partners__nav li:nth-child(even) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .main__partners__nav li {
+    display: none;
+    visibility: hidden;
+  }
+  .main__partners__nav li:nth-child(1),
+  .main__partners__nav li:nth-child(3) {
+    display: list-item;
+    visibility: visible;
+  }
 }
 
 .main__tickets {
@@ -1043,11 +1077,11 @@ blockquote {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-block: 1rem;
   gap: 1rem;
 }

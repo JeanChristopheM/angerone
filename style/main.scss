@@ -39,8 +39,8 @@ blockquote {
     @import 'main_subscribe';
     .dotz {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-wrap: wrap;
         padding-block: 1rem;
         gap: 1rem;
         & li {

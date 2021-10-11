@@ -5,20 +5,52 @@
     background-image: url('../ressources/images/homepage-sponsors-background.jpg');
     background-size: cover;
     padding-block: 2rem;
-    &__p {
-        padding-block: 2rem;
-        font-size: 2rem;
-    }
-    &__ulsponsors {
-        padding-block: 1rem;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        &>* {
-            flex: 1 1 100%;
+    &__logos {
+        &__ulsponsors {
+            padding-block: 1rem;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            scroll-behavior: smooth;
+            &>* {
+                flex: 1 0 100%;
+            }
+            img {
+                max-width: 100%;
+            }
+            li:nth-child(4) {
+                display: list-item;
+                visibility: visible;
+            }
+            @media screen and (min-width: 321px) {
+                &>* {
+                    flex: 1 0 50%;
+                }
+            }
+            @media screen and (min-width: 769px) {
+                &>* {
+                    flex: 1 0 25%;
+                }
+            }
         }
-        img {
-            max-width: 100%;
+    }
+    &__nav {
+        @media screen and (min-width: 321px) {
+            li:nth-child(even) {
+                display: none;
+                visibility: hidden;
+            }
+        }
+        @media screen and (min-width: 769px) {
+            li {
+                display: none;
+                visibility: hidden;
+            }
+            li:nth-child(1),
+            li:nth-child(3) {
+                display: list-item;
+                visibility: visible;
+            }
         }
     }
 }
