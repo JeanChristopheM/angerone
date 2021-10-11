@@ -915,8 +915,6 @@ blockquote {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   overflow: hidden;
   scroll-behavior: smooth;
 }
@@ -976,22 +974,69 @@ blockquote {
   text-align: center;
 }
 
-.main__tickets__section {
+.main__tickets__container {
   color: #282828;
+  position: relative;
 }
 
-.main__tickets__section h3,
-.main__tickets__section p {
+.main__tickets__container::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 1px solid white;
+  pointer-events: none;
+}
+
+.main__tickets__container .ticket_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -ms-scroll-snap-type: start;
+      scroll-snap-type: start;
+  scroll-behavior: smooth;
+}
+
+.main__tickets__container .ticket_flex > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+}
+
+@media screen and (min-width: 767px) {
+  .main__tickets__container .ticket_flex > div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
+  .main__tickets__container .ticket_flex div + div {
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .main__tickets__container .ticket_flex > div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 33%;
+            flex: 1 0 33%;
+  }
+}
+
+.main__tickets__container .ticket_flex h3,
+.main__tickets__container .ticket_flex p {
   font-weight: 300;
 }
 
-.main__tickets__section h4 {
+.main__tickets__container .ticket_flex h4 {
   font-size: 3.5rem;
   position: relative;
   display: inline-block;
 }
 
-.main__tickets__section h4::before {
+.main__tickets__container .ticket_flex h4::before {
   content: '$';
   position: absolute;
   width: 1rem;
@@ -1003,17 +1048,37 @@ blockquote {
           transform: translateY(-100%);
 }
 
-.main__tickets__section p {
+.main__tickets__container .ticket_flex p {
   padding-block: .5rem;
 }
 
-.main__tickets__section button {
+.main__tickets__container .ticket_flex button {
   background-color: inherit;
   border: 1px solid #282828;
   padding: 1rem 3rem;
   border-radius: .5rem;
   margin-block: 1rem;
   font-weight: 600;
+}
+
+.main__tickets__container .ticket_flex button:hover {
+  background-color: #282828;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 767px) {
+  .main__tickets__nav li:nth-child(2) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main__tickets__nav li {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 .main__images {

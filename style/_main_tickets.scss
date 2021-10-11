@@ -1,37 +1,89 @@
 &__tickets {
     padding: 2rem 1rem;
     text-align: center;
-    &__section {
+    &__container {
         color: $color_darkgrey;
-        h3,
-        p {
-            font-weight: 300;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: 1px solid $white;
+            pointer-events: none;
         }
-        h4 {
-            font-size: 3.5rem;
-            position: relative;
-            display: inline-block;
-            &::before {
-                content: '$';
-                position: absolute;
-                width: 1rem;
-                height: 1rem;
-                top: 50%;
-                left: -1rem;
-                font-size: 1.5rem;
-                transform: translateY(-100%);
+        .ticket_flex {
+            display: flex;
+            overflow: hidden;
+            scroll-snap-type: start;
+            scroll-behavior: smooth;
+            &>div {
+                flex: 1 0 100%;
+            }
+            @media screen and (min-width: 767px) {
+                &>div {
+                    flex: 1 0 50%;
+                }
+                div+div {
+                    border-left: 1px solid $color_lightgrey;
+                }
+            }
+            @media screen and (min-width: 1023px) {
+                &>div {
+                    flex: 1 0 33%;
+                }
+            }
+            h3,
+            p {
+                font-weight: 300;
+            }
+            h4 {
+                font-size: 3.5rem;
+                position: relative;
+                display: inline-block;
+                &::before {
+                    content: '$';
+                    position: absolute;
+                    width: 1rem;
+                    height: 1rem;
+                    top: 50%;
+                    left: -1rem;
+                    font-size: 1.5rem;
+                    transform: translateY(-100%);
+                }
+            }
+            p {
+                padding-block: .5rem;
+            }
+            button {
+                background-color: inherit;
+                border: 1px solid $color_darkgrey;
+                padding: 1rem 3rem;
+                border-radius: .5rem;
+                margin-block: 1rem;
+                font-weight: 600;
+                &:hover {
+                    background-color: $color_darkgrey;
+                    color: $white;
+                    cursor: pointer;
+                }
             }
         }
-        p {
-            padding-block: .5rem;
+    }
+    &__nav {
+        @media screen and (min-width: 767px) {
+            li:nth-child(2) {
+                display: none;
+                visibility: hidden;
+            }
         }
-        button {
-            background-color: inherit;
-            border: 1px solid $color_darkgrey;
-            padding: 1rem 3rem;
-            border-radius: .5rem;
-            margin-block: 1rem;
-            font-weight: 600;
+        @media screen and (min-width: 1024px) {
+            li {
+                display: none;
+                visibility: hidden;
+            }
         }
     }
 }
