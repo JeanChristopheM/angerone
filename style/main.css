@@ -63,13 +63,15 @@ table {
 }
 
 h2 {
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-block: 1rem;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.3rem;
   font-weight: 500;
+  padding-block: 1rem;
 }
 
 .header {
@@ -769,6 +771,119 @@ h3 {
 
 .main__fanbase.page_about .main__fanbase__text h2 {
   padding-block: 2rem;
+}
+
+.main__tour {
+  text-align: center;
+  padding: 1rem;
+}
+
+.main__tour h2 {
+  padding-block: 2rem;
+}
+
+.main__tour__calendar {
+  background-color: #282828;
+  border-radius: .5rem .5rem 0 0;
+  padding-block: 1rem;
+}
+
+.main__tour__calendar li {
+  padding-block: 1rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.25);
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.main__tour__calendar li.active {
+  color: white;
+}
+
+.main__tour__calendar li.active::after {
+  content: '';
+  position: absolute;
+  width: calc(100% - 2rem);
+  height: 4px;
+  background-color: #8121e0;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.main__tour__news {
+  padding: 2rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.main__tour__news ul {
+  list-style-type: none;
+  padding-left: 4rem;
+  position: relative;
+}
+
+.main__tour__news ul li {
+  text-align: left;
+  padding-top: 2rem;
+  position: relative;
+}
+
+.main__tour__news ul li > * {
+  padding-block: .5rem;
+}
+
+.main__tour__news ul li p {
+  font-weight: 300;
+}
+
+.main__tour__news ul li p:first-child {
+  font-size: 1.1rem;
+}
+
+.main__tour__news ul li a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.main__tour__news ul li::before {
+  content: '';
+  position: absolute;
+  height: 2rem;
+  aspect-ratio: 1;
+  border-radius: 1rem;
+  left: -3.5rem;
+  top: 2rem;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+}
+
+.main__tour__news ul li:first-child::after {
+  content: '';
+  position: absolute;
+  height: 2rem;
+  aspect-ratio: 1;
+  border-radius: 1rem;
+  left: -3.5rem;
+  top: 2rem;
+  background-color: #8121e0;
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+}
+
+.main__tour__news ul::before {
+  content: '';
+  position: absolute;
+  left: 1.5rem;
+  top: 0;
+  height: 80%;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.25);
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
 }
 
 .main__partners {

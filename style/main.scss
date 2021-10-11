@@ -6,13 +6,15 @@
 }
 
 h2 {
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-block: 1rem;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: 500;
+    padding-block: 1rem;
 }
 
 @import 'header';
@@ -24,6 +26,7 @@ h3 {
     @import 'main_discography';
     @import 'main_releases';
     @import 'main_fanbase';
+    @import 'main_tour';
     @import 'main_partners';
     @import 'main_images';
     @import 'main_news';
