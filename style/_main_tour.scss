@@ -1,0 +1,16 @@
+&__tour {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    &__news__list {
+        margin: 0 auto;
+        width: 400px;
+    }
+    &__calendar li {
+        padding: 10px 0 0 10px;
+    }
+    &__news li {
+        padding: 50px 20px;
+        text-align: left;
+    }
+}

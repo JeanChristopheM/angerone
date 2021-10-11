@@ -1,0 +1,22 @@
+&__partners {
+    font-family: Poppins, sans-serif;
+    color: $white;
+    text-align: center;
+    font-style: 30px;
+    background-image: url('../ressources/images/homepage-sponsors-background.jpg');
+    height: 450px;
+    background-size: cover;
+    &__p {
+        padding: 60px;
+        font-size: 30px;
+    }
+    &__ulsponsors {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 50px;
+        img {
+            max-width: 100%;
+        }
+    }
+}

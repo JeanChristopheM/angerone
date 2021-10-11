@@ -1,0 +1,48 @@
+.footer {
+    background-color: $color_darkgrey;
+    align-items: center;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    color: $white;
+    a {
+        text-decoration: none;
+        color: $white;
+    }
+    &__figure {
+        padding: 3rem 0 1rem 0;
+    }
+    &__nav1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-transform: uppercase;
+        padding: 10px;
+        font-weight: bold;
+        a {
+            padding-block: .5rem;
+        }
+    }
+    &__nav2 {
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+        a {
+            padding: 0 1rem;
+        }
+        i {
+            background-color: rgb(62, 62, 62);
+            height: 3rem;
+            width: 3rem;
+            border-radius: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    p {
+        padding-bottom: 4rem;
+    }
+    &.page_discography {
+        margin-top: 3rem;
+    }
+}

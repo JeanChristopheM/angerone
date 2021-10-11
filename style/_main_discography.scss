@@ -1,0 +1,22 @@
+&__discography {
+    padding: 3rem 1rem 3rem 1rem;
+    color: white;
+    text-align: center;
+    background-color: turquoise;
+    background-image: url('../ressources/images/homepage-latest-releases-background.jpg');
+    background-position: 0px -700%;
+    background-size: cover;
+    background-repeat: repeat-y;
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    button {
+        color: white;
+        background-color: $color_purple;
+        border: none;
+        width: 90%;
+        padding: 1rem;
+        border-radius: .5rem;
+    }
+}

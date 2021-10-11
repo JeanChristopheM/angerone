@@ -1,0 +1,16 @@
+&__subscribe {
+    //height: 150px;
+    text-align: center;
+    background-image: url('../ressources/images/homepage-footer-background.jpg');
+    background-size: cover;
+    &__p1 {
+        font-size: 30px;
+        color: $white;
+        font-family: Poppins, sans-serif;
+        text-align: center;
+        padding: 60px;
+    }
+    & input {
+        size: 30px;
+    }
+}
