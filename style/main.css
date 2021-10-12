@@ -1314,6 +1314,11 @@ button:hover {
   padding-block: 2rem;
 }
 
+.main__partners__logos {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
 .main__partners__logos__ulsponsors {
   padding-block: 1rem;
   display: -webkit-box;

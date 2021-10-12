@@ -31,6 +31,7 @@ const initialize = () => {
             }
         });
     }
+<<<<<<< HEAD
     /* Tour carousel */
     let tourCarousel = document.querySelector('.main__tour__news');
     let tourCarouselButtons = document.querySelector('.main__tour__calendar__list');
@@ -44,6 +45,17 @@ const initialize = () => {
             if (target.nodeName === "LI") {
                 let index = target.id.slice(-1, target.id.length);
                 tourCarousel.children[index - 1].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+=======
+    /* News caroussel */
+    let newsCarousel = document.querySelector('.container');
+    let newsCarouselButtons = document.querySelector('.dotz.news');
+    if (newsCarouselButtons) {
+        newsCarouselButtons.addEventListener('click', (e) => {
+            let target = e.target;
+            if (target.nodeName === "LI") {
+                let index = target.id.slice(-1, target.id.length);
+                newsCarousel.children[index - 1].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+>>>>>>> max
             }
         });
     }
@@ -53,6 +65,7 @@ const reset = () => {
     //sponsorCarousel.children[0].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
     let ticketsCarousel = document.querySelector('.ticket_flex');
     //ticketsCarousel.children[0].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+<<<<<<< HEAD
     let tourCarousel = document.querySelector('.main__tour__news');
     let tourCarouselButtons = document.querySelector('.main__tour__calendar__list');
     /* tourCarousel.children[0].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
@@ -61,5 +74,9 @@ const reset = () => {
     }
     tourCarouselButtons.children[0].classList.add('active'); */
 
+=======
+    let newsCarousel = document.querySelector('.container');
+    //...................exact!
+>>>>>>> max
 }
 export { initialize, reset };
