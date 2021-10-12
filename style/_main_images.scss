@@ -1,6 +1,22 @@
-&__images {
+.main__images {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     text-align: center;
-    img {
+    align-items: center;
+    justify-content: center;
+    img {        
         max-width: 100%;
     }
+}
+@media only screen and (min-width: 768px) {
+    .main__images{
+        flex-direction: row;
+        figure {
+            flex: 0 0 33%;
+            overflow: hidden;
+            padding: 1px;
+        }
+    }
+    
 }
