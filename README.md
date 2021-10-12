@@ -23,20 +23,28 @@
 
 
                 ---ABOUT PAGE---
+
 - Banner
 - Responsiveness
+
                 ---DISCOGRAPHY PAGE---
+
 - Banner
+
                 ---TOUR PAGE---
+
 - Banner
 - Fix style of agenda
+
                 ---PHOTOS PAGE---
+
 - Banner
 - Reponsiveness 
 
 
 
                 ---JS Effects---
--Parallax on images
--Scroll to top button
--Actual countdown
+
+- Parallax on images
+- Scroll to top button
+- Actual countdown
