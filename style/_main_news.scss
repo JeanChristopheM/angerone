@@ -1,10 +1,43 @@
-&__news {
+.main__news {
     text-align: center;
     width: 100%;
-    margin: 0 auto;
-    &__section {
-        margin: 0 auto;
-        text-align: justify;
-        padding: 30px;
+    margin: 0 auto;      
+    padding: 30px 0;      
+}
+.container{
+    display: flex;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    max-width: 960px;
+    & .section{
+        text-align: left;
+        padding: 1rem;
+        flex: 1 0 33%;        
     }
 }
+@media only screen and (max-width: 768px) {
+    .container{
+        display: flex;
+        overflow: hidden;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        max-width: 640px;
+        .section{  
+            flex: 1 0 50%;
+        }
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .container{
+        display: flex;
+        overflow: hidden;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        max-width: 320px;
+        .section{
+            flex: 1 0 100%;            
+        }
+    }
+  }
+  
