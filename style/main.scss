@@ -9,7 +9,6 @@ h2 {
     font-size: 1.5rem;
     font-weight: 600;
     padding-block: 1rem;
-    text-align: center;
 }
 
 h3 {
@@ -38,7 +37,7 @@ button {
     &.purple {
         color: $white;
         background-color: $color_purple;
-    }    
+    }
     &.white {
         color: $color_darkgrey;
         background-color: $white;
