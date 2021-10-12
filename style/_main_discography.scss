@@ -11,9 +11,11 @@
         text-shadow: 0px 0px 5px black;
     }
     @media only screen and (min-width: 768px) {
-        &__button{
-            max-width: max-content;
+        &__button {
+            button {
+                max-width: max-content;
+            }
             margin: 0 auto;
-        }    
+        }
     }
 }

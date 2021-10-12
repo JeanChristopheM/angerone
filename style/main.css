@@ -66,7 +66,6 @@ h2 {
   font-size: 1.5rem;
   font-weight: 600;
   padding-block: 1rem;
-  text-align: center;
 }
 
 h3 {
@@ -843,10 +842,12 @@ button:hover {
 
 @media only screen and (min-width: 768px) {
   .main__discography__button {
+    margin: 0 auto;
+  }
+  .main__discography__button button {
     max-width: -webkit-max-content;
     max-width: -moz-max-content;
     max-width: max-content;
-    margin: 0 auto;
   }
 }
 
@@ -927,6 +928,10 @@ button:hover {
 
 .main__fanbase {
   background-color: #282828;
+  background-image: url("../ressources/images/bg-circle-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -1089,24 +1094,11 @@ button:hover {
   }
 }
 
-.main__fanbase::after {
-  position: absolute;
-  content: '';
-  width: 50vh;
-  aspect-ratio: 1;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  z-index: -1;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  border: 0.2rem solid rgba(255, 255, 255, 0.25);
-  -webkit-box-shadow: 0px 0px 0px 10rem #282828, 0px 0px 0px 10.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 20rem #282828, 0px 0px 0px 20.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 30rem #282828, 0px 0px 0px 30.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 40rem #282828, 0px 0px 0px 40.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 50rem #282828, 0px 0px 0px 50.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 60rem #282828, 0px 0px 0px 60.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 70rem #282828, 0px 0px 0px 70.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 80rem #282828, 0px 0px 0px 80.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 90rem #282828;
-          box-shadow: 0px 0px 0px 10rem #282828, 0px 0px 0px 10.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 20rem #282828, 0px 0px 0px 20.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 30rem #282828, 0px 0px 0px 30.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 40rem #282828, 0px 0px 0px 40.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 50rem #282828, 0px 0px 0px 50.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 60rem #282828, 0px 0px 0px 60.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 70rem #282828, 0px 0px 0px 70.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 80rem #282828, 0px 0px 0px 80.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 90rem #282828;
-}
-
 .main__fanbase.page_about {
   background-color: #efefef;
+  background-image: url("../ressources/images/bg-circle-2.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 .main__fanbase.page_about .main__fanbase__text {
@@ -1124,6 +1116,20 @@ button:hover {
 
 .main__fanbase.page_about .main__fanbase__text h2 {
   padding-block: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .main__fanbase.page_about .main__fanbase__text div:not(:first-child) {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.3%;
+            flex: 0 0 33.3%;
+    padding-left: 3rem;
+  }
+  .main__fanbase.page_about .main__fanbase__text div:first-child {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+  }
 }
 
 .main__tour {

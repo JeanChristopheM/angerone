@@ -90,3 +90,9 @@ if (document.querySelector('.days')) {
         document.querySelector('.seconds').children[0].textContent = secondsDiff[0];
     }, 1000);
 }
+
+// Parallax
+let parallaxBG = document.querySelectorAll('.parallaxBG');
+for (item of parallaxBG) {
+    console.log(item);
+}
