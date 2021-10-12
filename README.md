@@ -20,6 +20,22 @@
     -check progress with Maxim
 - Add wee purple pseudo elements all over the joint
 
+
+
+                ---ABOUT PAGE---
+- Banner
+- Responsiveness
+                ---DISCOGRAPHY PAGE---
+- Banner
+                ---TOUR PAGE---
+- Banner
+- Fix style of agenda
+                ---PHOTOS PAGE---
+- Banner
+- Reponsiveness 
+
+
+
                 ---JS Effects---
 -Parallax on images
 -Scroll to top button
