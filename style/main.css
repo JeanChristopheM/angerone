@@ -421,6 +421,10 @@ button:hover {
   height: 200px;
 }
 
+.main__banner.page_about h2 {
+  text-align: center;
+}
+
 .main__banner.page_about h4 {
   font-size: .8rem;
   font-weight: 600;
@@ -451,6 +455,10 @@ button:hover {
   background-image: url("../ressources/images/banner-img.jpg");
   height: 20vh;
   margin-bottom: 3rem;
+}
+
+.main__banner.page_discography h2 {
+  text-align: center;
 }
 
 .main__banner.page_discography h4 {
@@ -484,6 +492,10 @@ button:hover {
   height: 200px;
 }
 
+.main__banner.page_tour h2 {
+  text-align: center;
+}
+
 .main__banner.page_tour h4 {
   font-size: .8rem;
   font-weight: 600;
@@ -513,6 +525,10 @@ button:hover {
 .main__banner.page_gallery {
   background-image: url("../ressources/images/banner-img.jpg");
   height: 200px;
+}
+
+.main__banner.page_gallery h2 {
+  text-align: center;
 }
 
 .main__banner.page_gallery h4 {
