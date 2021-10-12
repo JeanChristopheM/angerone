@@ -21,34 +21,35 @@ optionsButtonActivated.addEventListener('click', () => {
 
 // AUDIO MODULE -> READING MUSIC IN THE BANNER
 import * as audioModule from './modules/audioPlayer.js';
-let player = document.querySelector('#player');
-let play = document.querySelector('#play');
-let interval;
 window.onload = () => {
-    audioModule.updateAudio();
-    player.volume = .5;
-    play.addEventListener('click', () => {
-        if (player.paused) {
-            interval = setInterval(audioModule.updateAudio, 1000);
-            player.play();
-            play.children[0].classList.remove('fa-play');
-            play.children[0].classList.add('fa-pause');
-        } else {
-            clearInterval(interval);
-            player.pause();
-            play.children[0].classList.remove('fa-pause');
-            play.children[0].classList.add('fa-play');
-        }
-    });
+    if (document.querySelector('#play')) {
+        let player = document.querySelector('#player');
+        let play = document.querySelector('#play');
+        let interval;
+
+        audioModule.updateAudio();
+        player.volume = .5;
+        play.addEventListener('click', () => {
+            if (player.paused) {
+                interval = setInterval(audioModule.updateAudio, 1000);
+                player.play();
+                play.children[0].classList.remove('fa-play');
+                play.children[0].classList.add('fa-pause');
+            } else {
+                clearInterval(interval);
+                player.pause();
+                play.children[0].classList.remove('fa-pause');
+                play.children[0].classList.add('fa-play');
+            }
+        });
+    }
 }
 
 // CAROUSELS
 import * as carouselModule from './modules/carousel.js';
-if (document.querySelector('#play')) {
-    carouselModule.initialize();
-    window.onresize = () => {
-        carouselModule.reset();
-    }
+carouselModule.initialize();
+window.onresize = () => {
+    carouselModule.reset();
 }
 
 // DISAPEARING HEADER
@@ -57,15 +58,12 @@ let headerDesktop = document.querySelector('.header__desktop');
 let prevScroll = 0;
 window.addEventListener('scroll', () => {
     let bannerPos = document.querySelector('.main__banner').getBoundingClientRect();
-    console.log(bannerPos.y);
     let currentScroll = window.scrollY;
     if (currentScroll > prevScroll) {
         //GOING DOWN
-        console.log("down");
         header.style.transform = "translateY(-100%)";
     } else {
         //GOING UP
-        console.log("up");
         header.style.transform = "translateY(0%)";
         if (bannerPos.y < 0) {
             headerDesktop.style.backgroundColor = "#282828";
