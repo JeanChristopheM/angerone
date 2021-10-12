@@ -73,3 +73,20 @@ window.addEventListener('scroll', () => {
     }
     prevScroll = window.scrollY;
 })
+
+// COUNTDOWN
+let gigDate = new Date('March 13, 2022 21:00:00');
+if (document.querySelector('.days')) {
+    setInterval(() => {
+        let currentDate = new Date();
+        let diff = gigDate.getTime() - currentDate.getTime();
+        let daysDiff = (diff / (1000 * 60 * 60 * 24)).toString().split('.');
+        let hoursDiff = (parseFloat(`0.${daysDiff[1]}`) * 24).toString().split('.');
+        let minutesDiff = (parseFloat(`0.${hoursDiff[1]}`) * 60).toString().split('.');
+        let secondsDiff = (parseFloat(`0.${minutesDiff[1]}`) * 60).toString().split('.');
+        document.querySelector('.days').children[0].textContent = daysDiff[0];
+        document.querySelector('.hours').children[0].textContent = hoursDiff[0];
+        document.querySelector('.minutes').children[0].textContent = minutesDiff[0];
+        document.querySelector('.seconds').children[0].textContent = secondsDiff[0];
+    }, 1000);
+}
