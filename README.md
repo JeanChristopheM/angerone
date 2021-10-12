@@ -1,6 +1,6 @@
 # DJ ANGERONE -> MAX & JC
 
- RESTE A FAIRE --
+
                 ---HOME PAGE----
 - Header
     1. desktop design
@@ -18,3 +18,9 @@
     3. actual zoom with js
 - News
     -check progress with Maxim
+- Add wee purple pseudo elements all over the joint
+
+                ---JS Effects---
+-Parallax on images
+-Scroll to top button
+-Actual countdown
