@@ -4,7 +4,6 @@ let burgerMenuActivated = document.querySelector('.header__mobile__heading__hamb
 let optionsMenu = document.querySelector('.header__mobile.social');
 let optionsButton = document.querySelector('.header__options');
 let optionsButtonActivated = document.querySelector('.header__mobile__heading__options.social');
-
 burgerButton.addEventListener('click', () => {
     burgerMenu.classList.add('active');
 });
@@ -39,4 +38,10 @@ window.onload = () => {
             play.children[0].classList.add('fa-play');
         }
     });
+}
+
+import * as carouselModule from './modules/carousel.js';
+carouselModule.initialize();
+window.onresize = () => {
+    carouselModule.reset();
 }

@@ -1,13 +1,16 @@
 &__banner {
-    border: 1px solid black;
     background-image: url('../ressources/images/homapage-banner-img.jpg');
     background-size: cover;
+    background-position-x: 20%;
     height: 400px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem 1rem 3rem 1rem;
     &__container {
+        flex: 1;
+        max-width: $limiter;
         h2 {
             font-size: 2rem;
             font-weight: bold;
@@ -15,16 +18,14 @@
         h3 {
             font-size: 3rem;
             font-weight: bold;
-            -webkit-text-stroke: 2px white;
+            -webkit-text-stroke: 1px white;
             color: hsla(0, 0%, 0%, 0)
         }
         &__audio {
             padding-top: 1rem;
             display: flex;
             align-items: center;
-            button {
-                border: none;
-                background-color: unset;
+            i {
                 font-size: 2rem;
                 color: $white;
                 cursor: pointer;
@@ -41,6 +42,10 @@
                 }
             }
         }
+    }
+    @media screen and (min-width: 321px) {
+        height: 60vh;
+        background-position-y: center;
     }
     &.page_about {
         background-image: url('../ressources/images/banner-img.jpg');
@@ -70,7 +75,7 @@
     }
     &.page_discography {
         background-image: url('../ressources/images/banner-img.jpg');
-        height: 200px;
+        height: 20vh;
         margin-bottom: 3rem;
         h4 {
             font-size: .8rem;

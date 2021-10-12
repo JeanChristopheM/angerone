@@ -83,15 +83,14 @@
         </section>
     </header>
     <main class="main">
-        <section class="main__banner">
+        <section class="main__banner" id="test">
             <div class="main__banner__container">
                 <h2>New Single</h2>
                 <h3>Feel the Rythm</h3>
                 <div class="main__banner__container__audio">
                     <audio id="player" src="https://www.bensound.com/bensound-music/bensound-creativeminds.mp3"></audio>
-                    <button id="play">
-                        <i class="fas fa-play"></i>
-                    </button>
+
+                    <i class="fas fa-play" id="play"></i>
                     <div class="progress">
                         <div class="progressBar"></div>
                     </div>
@@ -116,12 +115,12 @@
                         <p>58</p>
                         <p>MINUTES</p>
                     </div>
-                    <div class="seconds" style="display:none;">
+                    <div class="seconds">
                         <p>41</p>
                         <p>SECONDS</p>
                     </div>
                 </div>
-                <button>BUY TICKETS</button>
+                <button class="purple">BUY TICKETS</button>
             </div>
         </section>
         <article class="main__about">
@@ -135,9 +134,9 @@
                 <p>
                     Mike Myers, professionally known as DJ Angerone, is internationally acclaimed Progressive House & Trance DJ & musician.
                 </p>
-                <q>
+                <blockquote>
                     I try to experiment with various music genres in every track that I make.
-                </q>
+                </blockquote>
                 <p>
                     Since the beginning of his career in 2010, he has already released 5 EPs on a range of worldwide known labels (Booster Records, DSTRCT Recordings etc.) and received a number of music awards.
                 </p>
@@ -150,7 +149,7 @@
                 </h2>
             </div>
             <div class="main__discography__button">
-                <button>VIEW DISCOGRAPHY</button>
+                <button class="purple">VIEW DISCOGRAPHY</button>
             </div>
         </section>
         <article class="main__releases">
@@ -201,10 +200,12 @@
                 </figure>
             </section>
             <section class="main__fanbase__text">
-                <h2>Join the Fanbase</h2>
-                <p>
-                    Take your chance to join DJ Angerone's fan club to receive exclusive tracks, free downloads, and other great offers.
-                </p>
+                <div class="main__fanbase__text__title">
+                    <h2>Join the Fanbase</h2>
+                    <p>
+                        Take your chance to join DJ Angerone's fan club to receive exclusive tracks, free downloads, and other great offers.
+                    </p>
+                </div>
                 <div class="main__fanbase__text__item">
                     <i class="fas fa-microphone-alt"></i>
                     <h3>Exclusive Releases</h3>
@@ -226,88 +227,98 @@
             <h2>Tour Schedule</h2>
             <div class="main__tour__calendar">
                 <ul class="main__tour__calendar__list">
-                    <li>MARCH</li>
+                    <li class="active">MARCH</li>
                     <li>APRIL</li>
                     <li>MAY</li>
                 </ul>
             </div>
             <div class="main__tour__news">
-                <ul class="main__tour__news__list">
+                <ul>
                     <li>
-                        <div><span>&#9679</span></div>
-                        <div>March 13, 2019</div>
-                        <div><h3>Encore Beach Club, Las Vegas</h3></div>
-                        <div>DJ Angeron will visit one of the most famous night clubs in Las Vegas in March to play his latest tracks and the greatest trance hits as a part of his US tour.</div>
-                        <div><a href="http://" target="_blank" rel="noopener noreferrer">BUY TICKETS >></a></div>
+                        <p class="date">March 13, 2019</p>
+                        <h3>Encore Beach Club, Las Vegas</h3>
+                        <p>DJ Angeron will visit one of the most famous night clubs in Las Vegas in March to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+                        <a href="#">BUY TICKETS >></a>
                     </li>
                     <li>
-                        <div><span>&#9679</span></div>
-                        <div>March 21, 2019</div>
-                        <div><h3>Soundscape Weekender Festival, Coventry</h3></div>
-                        <div>DJ Angeron will visit Soundscape Weekender Festival in Coventry.</div>
-                        <div><a href="http://" target="_blank" rel="noopener noreferrer">BUY TICKETS >></a></div>
+                        <p class="date">March 21, 2019</p>
+                        <h3>Soundscape Weekender Festival, Coventry</h3>
+                        <a href="#">BUY TICKETS >></a>
                     </li>
                     <li>
-                        <div><span>&#9679</span></div>
-                        <div>March 25, 2019</div>
-                        <div><h3>Barcelona Beach Festival, Barcelona</h3></div>
-                        <div>Meeting at BBF.</div>
-                        <div><a href="http://" target="_blank" rel="noopener noreferrer">BUY TICKETS >></a></div>
+                        <p class="date">March 25, 2019</p>
+                        <h3>Barcelona Beach Festival, Barcelona</h3>
+                        <a href="#">BUY TICKETS >></a>
                     </li>
                     <li>
-                        <div><span>&#9679</span></div>
-                        <div>March 29, 2019</div>
-                        <div><h3>Barclaycard Arena, Hamburg</h3></div>
-                        <div>Great event will be organized in Hamburg Barclaycard Arena. DJ Angerone will take part.</div>
-                        <div><a href="http://" target="_blank" rel="noopener noreferrer">BUY TICKETS >></a></div>
+                        <p class="date">March 29, 2019</p>
+                        <h3>Barclaycard Arena, Hamburg</h3>
+                        <a href="#">BUY TICKETS >></a>
                     </li>
                 </ul>
-                
             </div>
         </article>
         <article class="main__partners">
-            <section class="main__partners_section">
-                <p class="main__partners__p">Partners & sponsors</p>
-                <ul class="main__partners__ulsponsors">
-                    <li><img src="./ressources/images/sponsors/logoipsum-logo-10.svg" alt="image_1"></li>
-                    <li><img src="./ressources/images/sponsors/logoipsum-logo-12.svg" alt="image_1"></li>
-                    <li><img src="./ressources/images/sponsors/logoipsum-logo-18.svg" alt="image_1"></li>
-                    <li><img src="./ressources/images/sponsors/logoipsum-logo-28.svg" alt="image_1"></li>
-                    <li><img src="./ressources/images/sponsors/logoipsum-logo-29.svg" alt="image_1"></li>
-                    <li><img src="./ressources/images/sponsors/logoipsum-logo-32.svg" alt="image_1"></li>
-                    <li><img src="./ressources/images/sponsors/logoipsum-logo-33.svg" alt="image_1"></li>
-                    <li><img src="./ressources/images/sponsors/logoipsum-logo-34.svg" alt="image_1"></li>
-                    <li><img src="./ressources/images/sponsors/logoipsum-logo-40.svg" alt="image_1"></li>
-                    <li><img src="./ressources/images/sponsors/logoipsum-logo-gen2.svg" alt="image_1"></li>
+            <h2>Partners & sponsors</h2>
+            <section class="main__partners__logos">
+                <ul class="main__partners__logos__ulsponsors">
+                    <li><img src="./ressources/images/sponsors/logoipsum-logo-10.svg" alt="sponsor_1"></li>
+                    <li><img src="./ressources/images/sponsors/logoipsum-logo-12.svg" alt="sponsor_2"></li>
+                    <li><img src="./ressources/images/sponsors/logoipsum-logo-18.svg" alt="sponsor_3"></li>
+                    <li><img src="./ressources/images/sponsors/logoipsum-logo-28.svg" alt="sponsor_4"></li>
+                    <li><img src="./ressources/images/sponsors/logoipsum-logo-29.svg" alt="sponsor_5"></li>
+                    <li><img src="./ressources/images/sponsors/logoipsum-logo-32.svg" alt="sponsor_6"></li>
                 </ul>
             </section>
-            <section class="main__partners_section">
-                <ul class="dotz">
-                    <li><span>&#9679</span></li>
-                    <li><span>&#9679</span></li>
-                    <li><span>&#9679</span></li>
+            <section class="main__partners__nav">
+                <ul class="dotz partners">
+                    <li id="sponsor_link_1">&#9679</li>
+                    <li id="sponsor_link_2">&#9679</li>
+                    <li id="sponsor_link_3">&#9679</li>
+                    <li id="sponsor_link_4">&#9679</li>
+                    <li id="sponsor_link_5">&#9679</li>
+                    <li id="sponsor_link_6">&#9679</li>
                 </ul>
             </section>
         </article>
         <section class="main__tickets">
             <h2>Tickets</h2>
-            <section class="main__news__section">
-                <div></div>
-                <h3>BASIC</h3>
-                <p>
-                    1 event
-                    <br> Basic access
-                    <br> Club Events Only
-                    <br> Free snacks
-                    <br>
-                </p>
-                <input class="main__tickets__buybutton" type="button" value="BUY NOW">
+            <section class="main__tickets__container">
+                <div class="ticket_flex">
+                    <div class="ticket_1">
+                        <h3>BASIC</h3>
+                        <h4>50</h4>
+                        <p>1 Event</p>
+                        <p>Basic Access</p>
+                        <p>Club Events Only</p>
+                        <p>Free Snacks</p>
+                        <button class="white" name="buy now">BUY NOW</button>
+                    </div>
+                    <div class="ticket_2">
+                        <h3>STANDARD</h3>
+                        <h4>80</h4>
+                        <p>3 Event</p>
+                        <p>Extended Access</p>
+                        <p>Club & Beach Events</p>
+                        <p>Free Snacks & Merch</p>
+                        <button class="white">BUY NOW</button>
+                    </div>
+                    <div class="ticket_3">
+                        <h3>GOLD</h3>
+                        <h4>120</h4>
+                        <p>5+ Event</p>
+                        <p>Unlimited Access</p>
+                        <p>All Events</p>
+                        <p>Free Accommodation</p>
+                        <button class="white">BUY NOW</button>
+                    </div>
+                </div>
             </section>
-            <section class="main__news__section">
-                <ul class="dotz">
-                    <li><span>&#9679</span></li>
-                    <li><span>&#9679</span></li>
-                    <li><span>&#9679</span></li>
+            <section class="main__tickets__nav">
+                <ul class="dotz tickets">
+                    <li id="tickets_1">&#9679</li>
+                    <li id="tickets_2">&#9679</li>
+                    <li id="tickets_3">&#9679</li>
                 </ul>
             </section>
         </section>
@@ -368,7 +379,7 @@
             <div class="main__subscribe__div">
                 <p class="main__subscribe__div__p1">Subscribe to stay informed</p>
                 <input type="text" placeholder="Your E-mail" name="mail" required>
-                <button>Subscribe</button>
+                <button class="purple" name="subscribe">SUBSCRIBE</button>
             </div>
         </section>
     </main>
