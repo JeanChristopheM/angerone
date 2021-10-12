@@ -53,6 +53,10 @@ const initialize = () => {
     if (newsCarouselButtons) {
         newsCarouselButtons.addEventListener('click', (e) => {
             let target = e.target;
+            for (let item of newsCarouselButtons.children) {
+                item.classList.remove('active');
+            }
+            target.classList.add('active');
             if (target.nodeName === "LI") {
                 let index = target.id.slice(-1, target.id.length);
                 newsCarousel.children[index - 1].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
