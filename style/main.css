@@ -117,12 +117,19 @@ button:hover {
 
 .header {
   background-color: #282828;
+  position: fixed;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  z-index: 3000;
 }
 
 .header > * {
@@ -253,6 +260,87 @@ button:hover {
   width: 100%;
 }
 
+.header__desktop {
+  display: none;
+  visibility: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    background-color: transparent;
+    position: fixed;
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .header__hamburger, .header__logo, .header__options, .header__mobile {
+    display: none;
+    visibility: hidden;
+  }
+  .header__desktop {
+    visibility: visible;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .header__desktop .limiter {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__desktop .limiter a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  .header__desktop .limiter .header__desktop__nav1 a {
+    padding: 0 1rem;
+    position: relative;
+  }
+  .header__desktop .limiter .header__desktop__nav1 a::after {
+    content: '';
+    position: absolute;
+    width: calc(100% - 2rem);
+    height: 4px;
+    border-radius: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 0;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+  }
+  .header__desktop .limiter .header__desktop__nav1 a:hover::after {
+    opacity: 1;
+  }
+  .header__desktop .limiter .header__desktop__nav2 a {
+    padding: 0 .5rem;
+  }
+  .header__desktop .limiter .header__desktop__nav2 a i {
+    font-size: 1.2rem;
+    opacity: .6;
+  }
+  .header__desktop .limiter .header__desktop__nav2 a:hover i {
+    opacity: 1;
+  }
+  .header__desktop .limiter figure {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
 .main__banner {
   background-image: url("../ressources/images/homapage-banner-img.jpg");
   background-size: cover;
@@ -268,7 +356,7 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem 1rem 3rem 1rem;
+  padding: 8rem 1rem 3rem 1rem;
 }
 
 .main__banner__container {
@@ -333,6 +421,10 @@ button:hover {
   height: 200px;
 }
 
+.main__banner.page_about h2 {
+  text-align: center;
+}
+
 .main__banner.page_about h4 {
   font-size: .8rem;
   font-weight: 600;
@@ -363,6 +455,10 @@ button:hover {
   background-image: url("../ressources/images/banner-img.jpg");
   height: 20vh;
   margin-bottom: 3rem;
+}
+
+.main__banner.page_discography h2 {
+  text-align: center;
 }
 
 .main__banner.page_discography h4 {
@@ -396,6 +492,10 @@ button:hover {
   height: 200px;
 }
 
+.main__banner.page_tour h2 {
+  text-align: center;
+}
+
 .main__banner.page_tour h4 {
   font-size: .8rem;
   font-weight: 600;
@@ -425,6 +525,10 @@ button:hover {
 .main__banner.page_gallery {
   background-image: url("../ressources/images/banner-img.jpg");
   height: 200px;
+}
+
+.main__banner.page_gallery h2 {
+  text-align: center;
 }
 
 .main__banner.page_gallery h4 {
@@ -601,6 +705,45 @@ button:hover {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .main__concert__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem;
+  }
+  .main__concert__container__text, .main__concert__container__button {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+  }
+  .main__concert__container__counter {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main__concert__container__counter p:first-child {
+    font-size: 4rem;
+    font-weight: 400;
+  }
+  .main__concert__container__counter button {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .main__concert {
     padding: 0 3rem 0 3rem;
@@ -676,9 +819,13 @@ button:hover {
   text-align: center;
   background-color: turquoise;
   background-image: url("../ressources/images/homepage-latest-releases-background.jpg");
-  background-position: 0px -700%;
+  background-position-y: top;
   background-size: cover;
   background-repeat: repeat-y;
+}
+
+.main__discography h2 {
+  text-shadow: 0px 0px 5px black;
 }
 
 .main__releases {
@@ -1002,12 +1149,19 @@ button:hover {
 .main__tour__news {
   padding: 2rem 1rem;
   border: 1px solid rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
 }
 
 .main__tour__news ul {
   list-style-type: none;
   padding-left: 4rem;
   position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
 }
 
 .main__tour__news ul li {
@@ -1072,6 +1226,19 @@ button:hover {
           transform: translateY(10%);
 }
 
+.main__tour__news ul::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 300;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0px 0px 0px 1rem white;
+          box-shadow: 0px 0px 0px 1rem white;
+  pointer-events: none;
+}
+
 @media screen and (min-width: 500px) {
   .main__tour {
     padding: 5rem 3rem;
@@ -1110,7 +1277,8 @@ button:hover {
     -ms-grid-columns: 1fr 33%;
         grid-template-columns: 1fr 33%;
   }
-  .main__tour__news li p, .main__tour__news li h3 {
+  .main__tour__news li p,
+  .main__tour__news li h3 {
     -ms-grid-column: 1;
         grid-column-start: 1;
   }
@@ -1474,29 +1642,6 @@ button:hover {
   cursor: pointer;
 }
 
-/* * RESTE A FAIRE --
-                ---HOME PAGE----
-- Header
-    1. desktop design
-    2. reponsiveness
-    3. java appears on scroll up
-- Discography
-    -limit size on desktop
-- Fanbase
-    -polish the reponsiveness with image positioning
-- Sponsors
-    -limit size on desktop
-- Images
-    1. responsiveness
-    2. zoom icon on hover
-    3. actual zoom with js
-- News
-    -check progress with Maxim
-
-
-
-
-*/
 .footer {
   background-color: #212121;
   -webkit-box-align: center;
@@ -1538,6 +1683,27 @@ button:hover {
 
 .footer__nav1 a {
   padding-block: .5rem;
+  position: relative;
+}
+
+.footer__nav1 a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: white;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.footer__nav1 a:hover::after {
+  opacity: 1;
 }
 
 @media screen and (min-width: 400px) {
@@ -1564,12 +1730,19 @@ button:hover {
 
 .footer__nav2 a {
   font-size: .7rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  height: 3rem;
+  aspect-ratio: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: 50%;
 }
 
-.footer__nav2 a i {
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: .8rem;
-  border-radius: 50%;
+.footer__nav2 a:hover {
+  background-color: white;
+  color: #282828;
 }
 
 .footer p {
@@ -1583,16 +1756,19 @@ button:hover {
 @media screen and (max-width: 300px) {
   .footer__nav2 {
     padding: 2rem .5rem;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    justify-items: center;
+    padding: 1rem 2rem;
   }
-  .footer__nav2 > * {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-    display: block;
-    margin: 0 auto;
-    padding: 1rem;
+  .footer__nav2 a {
+    margin: .5rem;
+  }
+  .footer__nav2 a:last-child {
+    grid-column: span 2;
   }
 }
 

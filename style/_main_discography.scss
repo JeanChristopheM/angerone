@@ -4,7 +4,10 @@
     text-align: center;
     background-color: turquoise;
     background-image: url('../ressources/images/homepage-latest-releases-background.jpg');
-    background-position: 0px -700%;
+    background-position-y: top;
     background-size: cover;
     background-repeat: repeat-y;
+    h2 {
+        text-shadow: 0px 0px 5px black;
+    }
 }

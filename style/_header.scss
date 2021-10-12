@@ -1,7 +1,11 @@
 .header {
     background-color: $color_darkgrey;
+    position: fixed;
+    width: 100%;
     display: flex;
     align-items: center;
+    transition: transform .2s;
+    z-index: 3000;
     &>* {
         padding: .5rem 1rem;
     }
@@ -90,6 +94,82 @@
             left: 50%;
             transform: translate(-50%, -100%);
             width: 100%;
+        }
+    }
+    &__desktop {
+        display: none;
+        visibility: hidden;
+    }
+    @media screen and (min-width: 1200px) {
+        background-color: transparent;
+        position: fixed;
+        display: block;
+        width: 100%;
+        top: 0;
+        left: 0;
+        &__hamburger,
+        &__logo,
+        &__options,
+        &__mobile {
+            display: none;
+            visibility: hidden;
+        }
+        &__desktop {
+            visibility: visible;
+            display: block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            .limiter {
+                max-width: $limiter;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                a {
+                    color: $white;
+                    font-size: 1rem;
+                    text-decoration: none;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                }
+                .header__desktop__nav1 {
+                    a {
+                        padding: 0 1rem;
+                        position: relative;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: calc(100% - 2rem);
+                            height: 4px;
+                            border-radius: 2px;
+                            background-color: $white;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            opacity: 0;
+                            transition: opacity .2s;
+                        }
+                        &:hover::after {
+                            opacity: 1;
+                        }
+                    }
+                }
+                .header__desktop__nav2 {
+                    a {
+                        padding: 0 .5rem;
+                        i {
+                            font-size: 1.2rem;
+                            opacity: .6;
+                        }
+                        &:hover i {
+                            opacity: 1;
+                        }
+                    }
+                }
+                figure {
+                    flex: 1;
+                }
+            }
         }
     }
 }
