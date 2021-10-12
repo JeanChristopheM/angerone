@@ -17,7 +17,7 @@
     2. zoom icon on hover
     3. actual zoom with js
 - News
-    -check progress with Maxim
+    - Finish the dot menu
 - Add wee purple pseudo elements all over the joint
 
 
