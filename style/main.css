@@ -831,10 +831,12 @@ button:hover {
 
 @media only screen and (min-width: 768px) {
   .main__discography__button {
+    margin: 0 auto;
+  }
+  .main__discography__button button {
     max-width: -webkit-max-content;
     max-width: -moz-max-content;
     max-width: max-content;
-    margin: 0 auto;
   }
 }
 
