@@ -131,6 +131,23 @@
                 .header__desktop__nav1 {
                     a {
                         padding: 0 1rem;
+                        position: relative;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: calc(100% - 2rem);
+                            height: 4px;
+                            border-radius: 2px;
+                            background-color: $white;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            opacity: 0;
+                            transition: opacity .2s;
+                        }
+                        &:hover::after {
+                            opacity: 1;
+                        }
                     }
                 }
                 .header__desktop__nav2 {
@@ -139,6 +156,9 @@
                         i {
                             font-size: 1.2rem;
                             opacity: .6;
+                        }
+                        &:hover i {
+                            opacity: 1;
                         }
                     }
                 }

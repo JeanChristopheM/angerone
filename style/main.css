@@ -297,6 +297,25 @@ button:hover {
   }
   .header__desktop .limiter .header__desktop__nav1 a {
     padding: 0 1rem;
+    position: relative;
+  }
+  .header__desktop .limiter .header__desktop__nav1 a::after {
+    content: '';
+    position: absolute;
+    width: calc(100% - 2rem);
+    height: 4px;
+    border-radius: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 0;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+  }
+  .header__desktop .limiter .header__desktop__nav1 a:hover::after {
+    opacity: 1;
   }
   .header__desktop .limiter .header__desktop__nav2 a {
     padding: 0 .5rem;
@@ -304,6 +323,9 @@ button:hover {
   .header__desktop .limiter .header__desktop__nav2 a i {
     font-size: 1.2rem;
     opacity: .6;
+  }
+  .header__desktop .limiter .header__desktop__nav2 a:hover i {
+    opacity: 1;
   }
   .header__desktop .limiter figure {
     -webkit-box-flex: 1;
