@@ -1158,6 +1158,7 @@ button:hover {
 .main__tour__news ul {
   list-style-type: none;
   padding-left: 4rem;
+  margin-left: 1rem;
   position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
@@ -1195,7 +1196,7 @@ button:hover {
   aspect-ratio: 1;
   border-radius: 1rem;
   left: -3.5rem;
-  top: 2rem;
+  top: 2.3rem;
   background-color: white;
   -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
@@ -1208,7 +1209,7 @@ button:hover {
   aspect-ratio: 1;
   border-radius: 1rem;
   left: -3.5rem;
-  top: 2rem;
+  top: 2.3rem;
   background-color: #8121e0;
   -webkit-transform: scale(0.3);
           transform: scale(0.3);
@@ -1219,7 +1220,7 @@ button:hover {
   position: absolute;
   left: 1.5rem;
   top: 0;
-  height: 80%;
+  height: 79%;
   width: 1px;
   background-color: rgba(0, 0, 0, 0.25);
   -webkit-transform: translateY(10%);
@@ -1359,6 +1360,10 @@ button:hover {
     display: list-item;
     visibility: visible;
   }
+}
+
+.main__partners__nav .dotz li {
+  color: rgba(255, 255, 255, 0.25);
 }
 
 .main__tickets {
@@ -1521,6 +1526,10 @@ button:hover {
   padding: 30px 0;
 }
 
+.main .main__news .dotz li.active {
+  color: black;
+}
+
 .main .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1634,12 +1643,16 @@ button:hover {
       flex-wrap: wrap;
   padding-block: 1rem;
   gap: 1rem;
+  color: rgba(0, 0, 0, 0.25);
 }
 
 .main .dotz li {
   padding: .5rem;
-  opacity: .5;
   cursor: pointer;
+}
+
+.main .dotz .active {
+  color: #8121e0;
 }
 
 .footer {

@@ -72,10 +72,13 @@ button {
         flex-wrap: wrap;
         padding-block: 1rem;
         gap: 1rem;
+        color: $color_lightgrey;
         & li {
             padding: .5rem;
-            opacity: .5;
             cursor: pointer;
+        }
+        .active {
+            color: $color_purple;
         }
     }
 }
