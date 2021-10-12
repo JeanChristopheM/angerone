@@ -3,8 +3,8 @@
 
                 ---HOME PAGE----
 - Header
-    1. desktop design
-    2. reponsiveness
+    1. desktop design -> DONE
+    2. reponsiveness -> DONE
     3. java appears on scroll up
 - Discography
     -limit size on desktop
