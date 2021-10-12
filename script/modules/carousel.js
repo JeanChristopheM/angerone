@@ -72,8 +72,8 @@ const reset = () => {
         item.classList.remove('active');
     }
     tourCarouselButtons.children[0].classList.add('active'); */
-    let newsCarousel = document.querySelector('.container');
-    //newsCarousel.children[0].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
 
+    let newsCarousel = document.querySelector('.container');
+    //...................exact!
 }
 export { initialize, reset };
