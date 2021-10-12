@@ -1590,29 +1590,6 @@ button:hover {
   cursor: pointer;
 }
 
-/* * RESTE A FAIRE --
-                ---HOME PAGE----
-- Header
-    1. desktop design
-    2. reponsiveness
-    3. java appears on scroll up
-- Discography
-    -limit size on desktop
-- Fanbase
-    -polish the reponsiveness with image positioning
-- Sponsors
-    -limit size on desktop
-- Images
-    1. responsiveness
-    2. zoom icon on hover
-    3. actual zoom with js
-- News
-    -check progress with Maxim
-
-
-
-
-*/
 .footer {
   background-color: #212121;
   -webkit-box-align: center;
@@ -1654,6 +1631,27 @@ button:hover {
 
 .footer__nav1 a {
   padding-block: .5rem;
+  position: relative;
+}
+
+.footer__nav1 a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: white;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.footer__nav1 a:hover::after {
+  opacity: 1;
 }
 
 @media screen and (min-width: 400px) {
@@ -1688,6 +1686,11 @@ button:hover {
   -ms-flex-line-pack: center;
       align-content: center;
   border-radius: 50%;
+}
+
+.footer__nav2 a:hover {
+  background-color: white;
+  color: #282828;
 }
 
 .footer p {
