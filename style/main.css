@@ -63,15 +63,15 @@ table {
 }
 
 h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  padding-block: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-block: 3rem;
 }
 
 h3 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  padding-block: 1rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding-block: 1.5rem;
 }
 
 p,
@@ -339,17 +339,6 @@ button:hover {
         -ms-flex: 1;
             flex: 1;
   }
-}
-
-.main {
-  /*@media only screen and (min-width: 1200px) {
-    .container {
-        max-width: $limiter;
-        section {
-            flex: 1 0 33,3%;
-        }
-    }
-}*/
 }
 
 .main__banner {
@@ -1618,8 +1607,40 @@ button:hover {
   padding: 30px 0;
 }
 
+.main .main__news__section {
+  position: relative;
+}
+
+.main .main__news__section .main__news__more {
+  display: none;
+}
+
+.main .main__news__section__date {
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 0;
+  color: white;
+  font-weight: 700;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  background-color: #8121e0;
+}
+
+.main .main__news__section__text {
+  padding-bottom: 2rem;
+}
+
 .main .main__news .dotz li.active {
   color: black;
+}
+
+.main .main__news__section__readme {
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  margin: 1rem 0 0 0;
 }
 
 .main .container {
@@ -1650,6 +1671,17 @@ button:hover {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 50%;
             flex: 1 0 50%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main .container {
+    max-width: 1200px;
+  }
+  .main .container section {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 33%;
+            flex: 1 0 33%;
   }
 }
 
@@ -1745,6 +1777,7 @@ button:hover {
   text-align: center;
   font-family: Poppins, sans-serif;
   color: white;
+  position: relative;
 }
 
 .footer a {
@@ -1758,6 +1791,17 @@ button:hover {
 
 .footer__figure img {
   max-width: 100%;
+}
+
+.footer__scrollUp {
+  border-radius: 5px;
+  width: 60px;
+  height: 65px;
+  color: white;
+  background-color: #8121e0;
+  position: absolute;
+  right: 40px;
+  bottom: 45px;
 }
 
 .footer__nav1 {

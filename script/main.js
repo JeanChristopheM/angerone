@@ -96,3 +96,25 @@ let parallaxBG = document.querySelectorAll('.parallaxBG');
 for (item of parallaxBG) {
     console.log(item);
 }
+//Read more START
+function ReadMore() {
+    var dots = document.getElementsByClassName("main__news__dots");
+    var moreText = document.getElementsByClassName("main__news__more");
+    var btnText = document.getElementsByClassName("main__news__readmore");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
+//Read more END
+//Scroll to top function START
+function scrollToTop() {
+    window.scrollTo(0, 0);
+}
+//Scroll to top function END
