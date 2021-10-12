@@ -253,6 +253,65 @@ button:hover {
   width: 100%;
 }
 
+.header__desktop {
+  display: none;
+  visibility: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    background-color: transparent;
+    position: fixed;
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .header__hamburger, .header__logo, .header__options, .header__mobile {
+    display: none;
+    visibility: hidden;
+  }
+  .header__desktop {
+    visibility: visible;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .header__desktop .limiter {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__desktop .limiter a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  .header__desktop .limiter .header__desktop__nav1 a {
+    padding: 0 1rem;
+  }
+  .header__desktop .limiter .header__desktop__nav2 a {
+    padding: 0 .5rem;
+  }
+  .header__desktop .limiter .header__desktop__nav2 a i {
+    font-size: 1.2rem;
+    opacity: .6;
+  }
+  .header__desktop .limiter figure {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
 .main__banner {
   background-image: url("../ressources/images/homapage-banner-img.jpg");
   background-size: cover;
