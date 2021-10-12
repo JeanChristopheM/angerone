@@ -917,6 +917,10 @@ button:hover {
 
 .main__fanbase {
   background-color: #282828;
+  background-image: url("../ressources/images/bg-circle-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -1079,24 +1083,11 @@ button:hover {
   }
 }
 
-.main__fanbase::after {
-  position: absolute;
-  content: '';
-  width: 50vh;
-  aspect-ratio: 1;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  z-index: -1;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  border: 0.2rem solid rgba(255, 255, 255, 0.25);
-  -webkit-box-shadow: 0px 0px 0px 10rem #282828, 0px 0px 0px 10.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 20rem #282828, 0px 0px 0px 20.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 30rem #282828, 0px 0px 0px 30.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 40rem #282828, 0px 0px 0px 40.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 50rem #282828, 0px 0px 0px 50.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 60rem #282828, 0px 0px 0px 60.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 70rem #282828, 0px 0px 0px 70.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 80rem #282828, 0px 0px 0px 80.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 90rem #282828;
-          box-shadow: 0px 0px 0px 10rem #282828, 0px 0px 0px 10.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 20rem #282828, 0px 0px 0px 20.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 30rem #282828, 0px 0px 0px 30.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 40rem #282828, 0px 0px 0px 40.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 50rem #282828, 0px 0px 0px 50.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 60rem #282828, 0px 0px 0px 60.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 70rem #282828, 0px 0px 0px 70.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 80rem #282828, 0px 0px 0px 80.2rem rgba(255, 255, 255, 0.25), 0px 0px 0px 90rem #282828;
-}
-
 .main__fanbase.page_about {
   background-color: #efefef;
+  background-image: url("../ressources/images/bg-circle-2.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 .main__fanbase.page_about .main__fanbase__text {
