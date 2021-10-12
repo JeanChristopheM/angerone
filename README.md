@@ -22,10 +22,6 @@
 
 - Responsiveness
 
-                ---TOUR PAGE---
-
-- Fix style of agenda
-
                 ---PHOTOS PAGE---
 
 - Reponsiveness 
