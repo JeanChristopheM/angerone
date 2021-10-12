@@ -1327,15 +1327,13 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   max-width: 960px;
 }
 
-.main .container .section {
+.main .container section {
   text-align: left;
   padding: 1rem;
   -webkit-box-flex: 1;
@@ -1345,18 +1343,9 @@ button:hover {
 
 @media only screen and (max-width: 768px) {
   .main .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    overflow: hidden;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     max-width: 640px;
   }
-  .main .container .section {
+  .main .container section {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 50%;
             flex: 1 0 50%;
@@ -1365,18 +1354,9 @@ button:hover {
 
 @media only screen and (max-width: 320px) {
   .main .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    overflow: hidden;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     max-width: 320px;
   }
-  .main .container .section {
+  .main .container section {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 100%;
             flex: 1 0 100%;
@@ -1463,6 +1443,29 @@ button:hover {
   cursor: pointer;
 }
 
+/* * RESTE A FAIRE --
+                ---HOME PAGE----
+- Header
+    1. desktop design
+    2. reponsiveness
+    3. java appears on scroll up
+- Discography
+    -limit size on desktop
+- Fanbase
+    -polish the reponsiveness with image positioning
+- Sponsors
+    -limit size on desktop
+- Images
+    1. responsiveness
+    2. zoom icon on hover
+    3. actual zoom with js
+- News
+    -check progress with Maxim
+
+
+
+
+*/
 .footer {
   background-color: #212121;
   -webkit-box-align: center;
