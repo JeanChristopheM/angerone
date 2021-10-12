@@ -705,6 +705,45 @@ button:hover {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .main__concert__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem;
+  }
+  .main__concert__container__text, .main__concert__container__button {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+  }
+  .main__concert__container__counter {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main__concert__container__counter p:first-child {
+    font-size: 4rem;
+    font-weight: 400;
+  }
+  .main__concert__container__counter button {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .main__concert {
     padding: 0 3rem 0 3rem;

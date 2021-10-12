@@ -31,11 +31,11 @@
                 font-weight: 400;
             }
             .seconds {
-                display:none;
+                display: none;
             }
-            @media screen and (min-width:768px){
+            @media screen and (min-width:768px) {
                 .seconds {
-                    display:block;
+                    display: block;
                 }
                 p {
                     font-size: .8rem;
@@ -45,8 +45,30 @@
                 }
             }
         }
+        @media screen and (min-width:1024px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem;
+            &__text,
+            &__button {
+                flex: 0 0 20%;
+            }
+            &__counter {
+                flex: 0 0 50%;
+                justify-content: space-between;
+                p:first-child {
+                    font-size: 4rem;
+                    font-weight: 400;
+                }
+                button {
+                    flex-grow: 0;
+                    flex-shrink: 0;
+                }
+            }
+        }
     }
-    @media screen and (min-width:768px){
+    @media screen and (min-width:768px) {
         padding: 0 3rem 0 3rem;
     }
 }
