@@ -17,8 +17,8 @@ const updateAudio = () => {
     currentTimeSpan.textContent = `${currentTime[0]}:${currentTime[1]}`;
     durationSpan.textContent = `${duration[0]}:${duration[1].slice(0, 2)}`;
     if (progress === 100) {
-        play.children[0].classList.remove('fa-pause');
-        play.children[0].classList.add('fa-play');
+        play.classList.remove('fa-pause');
+        play.classList.add('fa-play');
         progress = 0;
         progressBar.style.width = `0%`;
         currentTimeSpan.textContent = `00:00`;
