@@ -33,13 +33,13 @@ window.onload = () => {
             if (player.paused) {
                 interval = setInterval(audioModule.updateAudio, 1000);
                 player.play();
-                play.children[0].classList.remove('fa-play');
-                play.children[0].classList.add('fa-pause');
+                play.classList.remove('fa-play');
+                play.classList.add('fa-pause');
             } else {
                 clearInterval(interval);
                 player.pause();
-                play.children[0].classList.remove('fa-pause');
-                play.children[0].classList.add('fa-play');
+                play.classList.remove('fa-pause');
+                play.classList.add('fa-play');
             }
         });
     }

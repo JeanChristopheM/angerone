@@ -412,6 +412,7 @@ button:hover {
 @media screen and (min-width: 321px) {
   .main__banner {
     height: 60vh;
+    min-height: 450px;
     background-position-y: center;
   }
 }
