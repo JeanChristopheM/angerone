@@ -20,21 +20,14 @@
 
                 ---ABOUT PAGE---
 
-- Banner
 - Responsiveness
-
-                ---DISCOGRAPHY PAGE---
-
-- Banner
 
                 ---TOUR PAGE---
 
-- Banner
 - Fix style of agenda
 
                 ---PHOTOS PAGE---
 
-- Banner
 - Reponsiveness 
 
 
