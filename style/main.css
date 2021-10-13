@@ -1689,6 +1689,10 @@ button:hover {
   display: none;
 }
 
+.main .main__news__section .main__news__more.showIt {
+  display: inline;
+}
+
 .main .main__news__section__date {
   text-transform: uppercase;
   border-radius: 5px;
@@ -1713,7 +1717,7 @@ button:hover {
 .main .main__news__section__readme {
   position: absolute;
   bottom: 0px;
-  left: 10px;
+  left: 1rem;
   margin: 1rem 0 0 0;
 }
 

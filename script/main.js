@@ -96,23 +96,29 @@ let parallaxBG = document.querySelectorAll('.parallaxBG');
 for (item of parallaxBG) {
     console.log(item);
 }
-//Read more START
-function ReadMore() {
-    var dots = document.getElementsByClassName("main__news__dots");
-    var moreText = document.getElementsByClassName("main__news__more");
-    var btnText = document.getElementsByClassName("main__news__readmore");
 
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
+//Read more START
+let readBtn = document.querySelector('#test');
+const readMore = () => {
+    var dots = document.querySelector(".main__news__dots");
+    var moreText = document.querySelector(".main__news__more");
+    var btnText = document.querySelector(".main__news__readmore");
+
+    if (dots.id === "dotsinactive") {
+        dots.textContent = "...";
+        btnText.innerHTML = "Read more&#8227";
+        moreText.classList.remove('showIt');
+        dots.id = "dotsactive";
     } else {
-        dots.style.display = "none";
+        dots.textContent = "";
         btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
+        moreText.classList.add('showIt');
+        dots.id = "dotsinactive";
     }
 }
+readBtn.addEventListener('click', readMore);
 //Read more END
+
 //Scroll to top function START
 let scrollBtn = document.querySelector('#scrollToTop');
 scrollBtn.addEventListener('click', scrollToTop);
