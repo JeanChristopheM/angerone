@@ -5,6 +5,7 @@
     font-family: Poppins, sans-serif;
     color: $white;
     position: relative;
+    padding-block: 1rem;
     a {
         text-decoration: none;
         color: $white;
@@ -15,16 +16,15 @@
             max-width: 100%;
         }
     }
-    &__scrollUp{
-            border-radius: 5px;
-            width: 60px;    
-            height: 65px;        
-            color: $white;            
-            background-color: $color_purple;
-            position: absolute;
-            right: 40px;
-            bottom: 45px;
-            
+    &__scrollUp {
+        border-radius: 5px;
+        width: 60px;
+        height: 65px;
+        color: $white;
+        background-color: $color_purple;
+        position: absolute;
+        right: 40px;
+        bottom: 45px;
     }
     &__nav1 {
         display: flex;
@@ -99,5 +99,8 @@
                 grid-column: span 2;
             }
         }
+    }
+    @media screen and (min-width: 768px) {
+        padding-block: 5rem;
     }
 }

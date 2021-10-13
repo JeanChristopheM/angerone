@@ -68,6 +68,31 @@
         &__images {
             padding: 0 3rem;
             grid-template-columns: 1fr 1fr;
+            figure {
+                &:first-of-type {
+                    justify-content: right;
+                }
+                &:nth-of-type(2) {
+                    justify-content: center;
+                }
+                &:nth-of-type(3) {
+                    img {
+                        max-width: 60%;
+                    }
+                }
+                &:nth-of-type(4) {
+                    justify-content: center;
+                    img {
+                        max-width: 80%;
+                    }
+                }
+                &:nth-of-type(5) {
+                    justify-content: right;
+                }
+                &:nth-of-type(6) {
+                    justify-content: right;
+                }
+            }
         }
         &__text {
             display: flex;
