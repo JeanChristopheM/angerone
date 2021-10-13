@@ -1,5 +1,7 @@
 &__touch {
     padding: 1rem;
+    max-width: $limiter;
+    margin: 0 auto;
     &__text {
         font-weight: 300;
         h2 {
@@ -80,6 +82,7 @@
     }
     @media screen and (min-width: 1024px) {
         display: flex;
+        justify-content: center;
         &>* {
             flex: 1 0 50%;
         }
