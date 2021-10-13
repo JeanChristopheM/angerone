@@ -2282,6 +2282,7 @@ button:hover {
 .footer__nav1 a {
   padding-block: .5rem;
   position: relative;
+  margin: 0 auto;
 }
 
 .footer__nav1 a::after {

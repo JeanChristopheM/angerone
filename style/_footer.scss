@@ -36,6 +36,7 @@
         a {
             padding-block: .5rem;
             position: relative;
+            margin: 0 auto;
             &::after {
                 content: '';
                 position: absolute;
