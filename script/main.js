@@ -111,10 +111,12 @@ imagesContainer.addEventListener('click', (e) => {
         } else {
             zoomedImg.src = `../ressources/images/${newPic}`;
         }
-        zoomContainer.style.display = "grid";
+        //zoomContainer.style.display = "grid";
+        zoomContainer.classList.add('zoomed');
         zoomedImg.parentNode.addEventListener('click', () => {
             zoomedImg.src = "";
-            zoomContainer.style.display = "none";
+            //zoomContainer.style.display = "none";
+            zoomContainer.classList.remove('zoomed');
         });
     }
 });

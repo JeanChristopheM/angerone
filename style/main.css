@@ -1730,11 +1730,6 @@ button:hover {
           justify-content: center;
 }
 
-.main .zoomed {
-  display: -ms-grid;
-  display: grid;
-}
-
 .main .dotz {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1891,5 +1886,10 @@ button:hover {
 .hidden {
   display: none;
   visibility: hidden;
+}
+
+html body main .zoomed {
+  display: -ms-grid;
+  display: grid;
 }
 /*# sourceMappingURL=main.css.map */
