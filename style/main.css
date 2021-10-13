@@ -2282,7 +2282,6 @@ button:hover {
 .footer__nav1 a {
   padding-block: .5rem;
   position: relative;
-  margin: 0 auto;
 }
 
 .footer__nav1 a::after {
@@ -2303,6 +2302,12 @@ button:hover {
 
 .footer__nav1 a:hover::after {
   opacity: 1;
+}
+
+@media screen and (max-width: 320px) {
+  .footer__nav1 a {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 400px) {
