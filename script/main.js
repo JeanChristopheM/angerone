@@ -165,7 +165,10 @@ if (newsContainer) {
     newsContainer.addEventListener('click', (e) => {
         let target = e.target;
         if (target.nodeName == "LI") {
-            console.log(target);
+            for (let item of target.parentNode.children) {
+                item.classList.remove('active');
+            }
+            target.classList.add('active');
         }
     });
 }
