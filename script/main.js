@@ -146,7 +146,7 @@ if (imagesContainer) {
             //zoomContainer.style.display = "grid";
             zoomContainer.classList.add('zoomed');
             zoomContainer.addEventListener('click', () => {
-                zoomedImg.src = "";
+                zoomedImg.src = "//:0";
                 //zoomContainer.style.display = "none";
                 zoomContainer.classList.remove('zoomed');
             });

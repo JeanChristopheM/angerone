@@ -2273,4 +2273,9 @@ html body main .zoomed {
   display: -ms-grid;
   display: grid;
 }
+
+.headingValidator {
+  display: none;
+  visibility: hidden;
+}
 /*# sourceMappingURL=main.css.map */
