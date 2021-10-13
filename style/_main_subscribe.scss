@@ -1,0 +1,69 @@
+&__subscribe {
+    text-align: center;
+    background-image: url('../ressources/images/homepage-footer-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    &__div {
+        padding-block: 2rem;
+        max-width: 768px;
+        margin: 0 auto;
+        &__p1 {
+            color: $white;
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: Poppins, sans-serif;
+            text-align: center;
+            padding-block: 2rem;
+        }
+        & input {
+            padding: 1rem;
+            width: 90%;
+            border-radius: .5rem;
+            font-size: 1.1rem;
+            line-height: 2rem;
+            margin-bottom: 1rem;
+        }
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2rem;
+            justify-content: space-between;
+            p {
+                flex: 1 0 100%;
+            }
+            input {
+                flex: 0 0 65%;
+                display: inline;
+                margin-bottom: 0;
+            }
+            button {
+                flex: 0 0 32%;
+            }
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        position: relative;
+        padding-block: 5rem;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 40px;
+            background-color: $color_purple;
+            bottom: -20px;
+            left: 5%;
+            z-index: 250;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 40px;
+            background-color: $color_purple;
+            top: -20px;
+            right: 5%;
+            box-shadow: 20px 0px 0px 0px $color_purple;
+            z-index: 250;
+        }
+    }
+}

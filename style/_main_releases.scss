@@ -1,0 +1,54 @@
+&__releases {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-block: 2rem;
+    max-width: $limiter;
+    margin: 0 auto;
+    &__description {
+        padding: 1rem;
+        flex: 1 0 100%;
+    }
+    &__album {
+        padding: 1rem;
+        flex: 1 0 100%;
+        justify-items: flex-start;
+        img {
+            max-width: 100%;
+        }
+        figcaption {
+            display: flex;
+            flex-direction: column;
+        }
+        &__title {
+            font-size: 1.5rem;
+            padding-block: 1rem;
+        }
+        &__date {
+            font-size: .8rem;
+            font-weight: 300;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        &__description {
+            p {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
+        &__album {
+            flex: 0 0 50%;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        &__description {
+            p {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
+        &__album {
+            flex: 0 0 33%;
+        }
+    }
+}

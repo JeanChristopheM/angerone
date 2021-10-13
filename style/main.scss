@@ -1,0 +1,100 @@
+@import 'reset';
+@import 'vars';
+@import 'fonts';
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding-block: 3rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding-block: 1.5rem;
+}
+
+p,
+blockquote {
+    line-height: 150%;
+}
+
+p {
+    font-weight: 300;
+}
+
+button {
+    border: none;
+    width: 90%;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1px solid $color_purple;
+    font-weight: 700;
+    transition: transform .1s;
+    &.purple {
+        color: $white;
+        background-color: $color_purple;
+    }
+    &.white {
+        color: $color_darkgrey;
+        background-color: $white;
+        width: 60%;
+    }
+    &:hover {
+        background-color: $color_darkgrey;
+        color: $white;
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+}
+
+@import 'header';
+.main {
+    @import 'main_banner';
+    @import 'main_touch';
+    @import 'main_concert';
+    @import 'main_about';
+    @import 'main_discography';
+    @import 'main_releases';
+    @import 'main_fanbase';
+    @import 'main_tour';
+    @import 'main_partners';
+    @import 'main_tickets';
+    @import 'main_images';
+    @import 'main_news';
+    @import 'main_subscribe';
+    @import 'main_zoom';
+    .dotz {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-block: 1rem;
+        gap: 1rem;
+        color: $color_lightgrey;
+        & li {
+            padding: .5rem;
+            cursor: pointer;
+        }
+        .active {
+            color: $color_purple;
+        }
+    }
+}
+
+@import 'footer';
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+html body main .zoomed {
+    display: grid;
+}
+
+.headingValidator {
+    display: none;
+    visibility: hidden;
+}

@@ -1,0 +1,97 @@
+&__touch {
+    padding: 1rem;
+    max-width: $limiter;
+    margin: 0 auto;
+    &__text {
+        font-weight: 300;
+        h2 {
+            padding: 3rem 0 1rem 0;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 110%;
+                height: 1px;
+                background-color: rgb(189, 189, 189);
+                bottom: 0;
+                left: 0;
+            }
+        }
+        ul {
+            font-size: 1.1rem;
+            .fas,
+            .far {
+                color: rgb(189, 189, 189);
+                padding-right: 1rem;
+            }
+            li {
+                padding-bottom: 1rem;
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    padding-right: .3rem;
+                }
+            }
+        }
+        p {
+            font-weight: 100;
+            padding-block: 1rem;
+            line-height: 1.5rem;
+        }
+        p+p {
+            font-weight: 200;
+            font-style: italic;
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+            letter-spacing: .1rem;
+        }
+        &__signature {
+            display: flex;
+            justify-content: flex-end;
+        }
+        button {
+            max-width: max-content;
+            padding: 1rem 3rem;
+        }
+    }
+    &__image {
+        padding-block: 1rem;
+        figure {
+            display: flex;
+            justify-content: center;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        &__text {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                li:nth-of-type(2) {
+                    margin-left: 1rem;
+                }
+                li:last-of-type {
+                    flex-basis: 100%;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        justify-content: center;
+        &>* {
+            flex: 1 0 50%;
+        }
+        &__text {
+            li:last-of-type {
+                a+a {
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+}

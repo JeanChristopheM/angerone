@@ -1,0 +1,252 @@
+&__fanbase {
+    background-color: $color_darkgrey;
+    background-image: url('../ressources/images/bg-circle-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: $limiter;
+    margin: 0 auto;
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem 1rem;
+    &>* {
+        flex: 1 0 100%;
+    }
+    &__images {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: max-content;
+        figure {
+            display: flex;
+            &:first-of-type {
+                justify-content: right;
+            }
+            &:nth-of-type(2) {
+                justify-content: center;
+            }
+            &:nth-of-type(3) {
+                img {
+                    max-width: 60%;
+                }
+            }
+            &:nth-of-type(4) {
+                justify-content: center;
+                img {
+                    max-width: 80%;
+                }
+            }
+            &:nth-of-type(5) {
+                justify-content: right;
+            }
+            &:nth-of-type(6) {
+                justify-content: right;
+            }
+        }
+        img {
+            max-width: 100%;
+            border-radius: .5rem;
+        }
+        figure+figure {
+            padding-top: 1rem;
+        }
+    }
+    &__text {
+        position: relative;
+        color: white;
+        i {
+            font-size: 3rem;
+        }
+        &__item {
+            text-align: center;
+            padding-top: 4rem;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        &__images {
+            padding: 0 3rem;
+            grid-template-columns: 1fr 1fr;
+            figure {
+                &:first-of-type {
+                    max-width: 80%;
+                    max-height: 80%;
+                    justify-self: right;
+                    align-self: end;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                &:nth-of-type(2) {
+                    justify-content: center;
+                }
+                &:nth-of-type(3) {
+                    justify-self: right;
+                    align-self: end;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                &:nth-of-type(4) {
+                    justify-self: left;
+                    justify-content: left;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    transform: translateX(-1rem);
+                }
+                &:nth-of-type(5) {
+                    justify-content: right;
+                }
+                &:nth-of-type(6) {
+                    justify-content: center;
+                }
+            }
+        }
+        &__text {
+            display: flex;
+            flex-wrap: wrap;
+            div {
+                flex: 0 0 50%;
+            }
+            div:first-child {
+                flex: 1 0 100%;
+            }
+            &__item {
+                text-align: left;
+                display: grid;
+                grid-template-columns: min-content 1fr;
+                padding: 2rem 1rem;
+                i {
+                    padding-right: 1rem;
+                    grid-row: span 2;
+                    align-self: center;
+                }
+                p {
+                    grid-column-start: 2;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        padding: 5rem 1rem;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 40px;
+            background-color: $color_purple;
+            bottom: -20px;
+            left: 5%;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 40px;
+            background-color: $color_purple;
+            top: -20px;
+            right: 5%;
+            box-shadow: 20px 0px 0px 0px $color_purple;
+        }
+        &>* {
+            flex: 1 0 50%;
+        }
+        figure {
+            &:first-of-type {
+                max-width: 80%;
+                max-height: 80%;
+                justify-self: right;
+                align-self: end;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                transform: translateX(-1rem);
+            }
+            &:nth-of-type(2) {
+                justify-content: center;
+            }
+            &:nth-of-type(3) {
+                justify-self: right;
+                align-self: end;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            &:nth-of-type(4) {
+                justify-self: left;
+                justify-content: left;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                transform: translateX(-1rem);
+            }
+            &:nth-of-type(5) {
+                max-width: 80%;
+                max-height: 80%;
+                justify-self: center;
+                align-self: center;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            &:nth-of-type(6) {
+                justify-content: center;
+            }
+        }
+        &__text {
+            div:not(:first-child) {
+                flex: 0 0 100%;
+                padding-left: 3rem;
+            }
+            div:first-child {
+                flex: 1 0 100%;
+            }
+        }
+    }
+    &.page_about {
+        background-color: rgb(239, 239, 239);
+        background-image: url('../ressources/images/bg-circle-2.png');
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        .main__fanbase__text {
+            text-align: center;
+            color: black;
+            isolation: isolate;
+            &::after {
+                transform: initial;
+                -moz-transform: initial;
+                z-index: -1;
+            }
+            h2 {
+                padding-block: 2rem;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            .main__fanbase__text {
+                div:not(:first-child) {
+                    flex: 0 0 33.3%;
+                    padding-left: 3rem;
+                }
+                div:first-child {
+                    flex: 1 0 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,12 +1,592 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official website of DJ Angerone. Check out his next events and join his fanbase now !">
     <title>Angerone</title>
+    <link rel="icon" href="./ressources/images/favicon.ico">
+    <link rel="stylesheet" href="./style/main.css">
+    <script src="https://kit.fontawesome.com/2028433eb8.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+    <header class="header">
+        <section class="header__hamburger">
+            <h6 class="headingValidator">Hamburger Menu</h6>
+            <i class="fas fa-bars"></i>
+        </section>
+        <section class="header__logo">
+            <h6 class="headingValidator">Header Logo</h6>
+            <figure>
+                <a href="./index.html">
+                    <img src="./ressources/images/logo.png" alt="LOGO">
+                </a>
+            </figure>
+        </section>
+        <section class="header__options">
+            <h6 class="headingValidator">Social Menu</h6>
+            <i class="fas fa-ellipsis-v"></i>
+        </section>
+        <section class="header__mobile menu">
+            <h6 class="headingValidator">Mobile Menu</h6>
+            <div class="header__mobile__heading menu">
+                <i class="fas fa-bars header__mobile__heading__hamburger menu"></i>
+                <figure class="header__mobile__heading__figure menu">
+                    <img src="./ressources/images/logo.png" alt="logo Angerone">
+                </figure>
+                <div class="header__mobile__heading__options menu">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            <nav class="header__mobile__nav1 menu">
+                <a href="./html/about.html">
+                    about
+                </a>
+                <a href="./html/discography.html">
+                    discography
+                </a>
+                <a href="./html/tour-schedule.html">
+                    tours
+                </a>
+                <a href="./html/gallery.html">
+                    photos
+                </a>
+            </nav>
+            <p><span>&#169;</span> 2021 DJ Angerone. Privacy policy</p>
+        </section>
+        <section class="header__mobile social">
+            <h6 class="headingValidator">Mobile Social</h6>
+            <div class="header__mobile__heading social">
+                <i class="fas fa-bars header__mobile__heading__hamburger social"></i>
+                <figure class="header__mobile__heading__figure social">
+                    <img src="./ressources/images/logo.png" alt="logo Angerone">
+                </figure>
+                <div class="header__mobile__heading__options social">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            <nav class="header__mobile__nav1 social">
+                <a href="#">
+                    <i class="fab fa-facebook"></i> Facebook <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram"></i> Instagram <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i> Twitter <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-youtube"></i> Youtube <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-pinterest"></i> Pinterest <i class="fab fa-pinterest"></i>
+                </a>
+            </nav>
+            <p><span>&#169;</span> 2021 DJ Angerone. Privacy policy</p>
+        </section>
+        <section class="header__desktop">
+            <h6 class="headingValidator">Desktop Menu</h6>
+            <div class="limiter">
+                <figure class="header__desktop__logo">
+                    <a href="./index.html">
+                        <img src="./ressources/images/logo.png" alt="logo Angerone">
+                    </a>
+                </figure>
+                <nav class="header__desktop__nav1">
+                    <a href="./html/about.html">ABOUT</a>
+                    <a href="./html/discography.html">DISCOGRAPHY</a>
+                    <a href="./html/tour-schedule.html">TOURS</a>
+                    <a href="./html/gallery.html">PHOTOS</a>
+                </nav>
+                <nav class="header__desktop__nav2">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <section class="main__banner">
+            <h6 class="headingValidator">Main Banner</h6>
+            <div class="main__banner__container">
+                <h2>New Single</h2>
+                <h3>Feel the Rythm</h3>
+                <div class="main__banner__container__audio">
+                    <audio id="player" src="https://www.bensound.com/bensound-music/bensound-creativeminds.mp3"></audio>
+
+                    <i class="fas fa-play" id="play"></i>
+                    <div class="progress">
+                        <div class="progressBar"></div>
+                    </div>
+                    <p><span class="currentTime">00:00</span> - <span class="duration">04-27</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="main__concert">
+            <h6 class="headingValidator">Main Concert</h6>
+            <div class="main__concert__container">
+                <div class="main__concert__container__text">
+                    <h2>Next Gig</h2>
+                    <p>Tickets for my next event are already available.</p>
+                </div>
+                <div class="main__concert__container__counter">
+                    <div class="days">
+                        <p>41</p>
+                        <p>DAYS</p>
+                    </div>
+                    <div class="hours">
+                        <p>23</p>
+                        <p>HOURS</p>
+                    </div>
+                    <div class="minutes">
+                        <p>58</p>
+                        <p>MINUTES</p>
+                    </div>
+                    <div class="seconds">
+                        <p>41</p>
+                        <p>SECONDS</p>
+                    </div>
+                </div>
+                <div class="main__concert__container__button">
+                    <button class="purple">BUY TICKETS</button>
+                </div>
+            </div>
+        </section>
+        <article class="main__about">
+            <h6 class="headingValidator">Main About</h6>
+            <section class="main__about__image">
+                <h6 class="headingValidator">About Images</h6>
+                <figure>
+                    <img src="./ressources/images/home-dj.jpg" alt="">
+                </figure>
+            </section>
+            <section class="main__about__text">
+                <h6 class="headingValidator">About Text</h6>
+                <h2>About DJ Angerone</h2>
+                <p>
+                    Mike Myers, professionally known as DJ Angerone, is internationally acclaimed Progressive House & Trance DJ & musician.
+                </p>
+                <blockquote>
+                    I try to experiment with various music genres in every track that I make.
+                </blockquote>
+                <p>
+                    Since the beginning of his career in 2010, he has already released 5 EPs on a range of worldwide known labels (Booster Records, DSTRCT Recordings etc.) and received a number of music awards.
+                </p>
+            </section>
+        </article>
+        <section class="main__discography">
+            <h6 class="headingValidator">Main Discography</h6>
+            <div class="main__discography__title">
+                <h2>
+                    Listen to the Latest Releases by DJ Angerone
+                </h2>
+            </div>
+            <div class="main__discography__button">
+                <button class="purple">VIEW DISCOGRAPHY</button>
+            </div>
+        </section>
+        <article class="main__releases">
+            <h6 class="headingValidator">Main Releases</h6>
+            <section class="main__releases__description">
+                <h6 class="headingValidator">Releases Description</h6>
+                <h2>Latest Releases</h2>
+                <p>
+                    Here are the most recent singles, EPs, and other releases that DJ Angerone has worked on. You can stream and buy them on our website and a variety of digital stores.
+                </p>
+            </section>
+            <section class="main__releases__album">
+                <h6 class="headingValidator">Releases Album 1</h6>
+                <figure>
+                    <img src="./ressources/images/dicography-album-cover-1.jpg" alt="discography_1">
+                    <figcaption><span class="main__releases__album__title">Intense</span><span class="main__releases__album__date">2019</span></figcaption>
+                </figure>
+            </section>
+            <section class="main__releases__album">
+                <h6 class="headingValidator">Releases Album 2</h6>
+                <figure>
+                    <img src="./ressources/images/dicography-album-cover-2.jpg" alt="discography_2">
+                    <figcaption><span class="main__releases__album__title">My space</span><span class="main__releases__album__date">2019</span></figcaption>
+                </figure>
+            </section>
+            <section class="main__releases__album">
+                <h6 class="headingValidator">Releases Album 3</h6>
+                <figure>
+                    <img src="./ressources/images/dicography-album-cover-3.jpg" alt="discography_3">
+                    <figcaption><span class="main__releases__album__title">Trance Year Mix</span><span class="main__releases__album__date">2019</span></figcaption>
+                </figure>
+            </section>
+        </article>
+        <article class="main__fanbase">
+            <h6 class="headingValidator">Main Fanbase</h6>
+            <section class="main__fanbase__images">
+                <h6 class="headingValidator">Fanbase Images</h6>
+                <figure>
+                    <img src="./ressources/images/fanbase-1.jpg" alt="fanbase_pic1">
+                </figure>
+                <figure>
+                    <img src="./ressources/images/fanbase-2.jpg" alt="fanbase_pic2">
+                </figure>
+                <figure>
+                    <img src="./ressources/images/about-us-dj-img.jpg" alt="fanbase_pic4">
+                </figure>
+                <figure>
+                    <img src="./ressources/images/fanbase-3.jpg" alt="fanbase_pic3">
+                </figure>
+                <figure>
+                    <img src="./ressources/images/fanbase-5.jpg" alt="fanbase_pic5">
+                </figure>
+                <figure>
+                    <img src="./ressources/images/fanbase-6.jpg" alt="fanbase_pic6">
+                </figure>
+            </section>
+            <section class="main__fanbase__text">
+                <h6 class="headingValidator">Fanbase Text</h6>
+                <div class="main__fanbase__text__title">
+                    <h2>Join the Fanbase</h2>
+                    <p>
+                        Take your chance to join DJ Angerone's fan club to receive exclusive tracks, free downloads, and other great offers.
+                    </p>
+                </div>
+                <div class="main__fanbase__text__item">
+                    <i class="fas fa-microphone-alt"></i>
+                    <h3>Exclusive Releases</h3>
+                    <p>Get access to unreleased albums and EPs before they are published.</p>
+                </div>
+                <div class="main__fanbase__text__item">
+                    <i class="fas fa-compact-disc"></i>
+                    <h3>Full DJ Sets & Podcasts</h3>
+                    <p>Listen and download full sets and podcasts with tracklists by DJ Angerone.</p>
+                </div>
+                <div class="main__fanbase__text__item">
+                    <i class="fas fa-cart-arrow-down"></i>
+                    <h3>Free Downloads</h3>
+                    <p>Free tracks and remixes are regularly published for DJ Angerone's fan club.</p>
+                </div>
+            </section>
+        </article>
+        <article class="main__tour">
+            <h6 class="headingValidator">Main Tour</h6>
+            <h2>Tour Schedule</h2>
+            <div class="main__tour__calendar">
+                <ul class="main__tour__calendar__list">
+                    <li id="tour_button_1" class="active">MARCH</li>
+                    <li id="tour_button_2">APRIL</li>
+                    <li id="tour_button_3">MAY</li>
+                </ul>
+            </div>
+            <div class="main__tour__news">
+                <ul class="news1">
+                    <li>
+                        <p class="date">March 13, 2022</p>
+                        <h3>Encore Beach Club, Las Vegas</h3>
+                        <p>DJ Angeron will visit one of the most famous night clubs in Las Vegas in March to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+                        <a href="#">BUY TICKETS >></a>
+                    </li>
+                    <li>
+                        <p class="date">March 21, 2022</p>
+                        <h3>Soundscape Weekender Festival, Coventry</h3>
+                        <a href="#">BUY TICKETS >></a>
+                    </li>
+                    <li>
+                        <p class="date">March 25, 2022</p>
+                        <h3>Barcelona Beach Festival, Barcelona</h3>
+                        <a href="#">BUY TICKETS >></a>
+                    </li>
+                    <li>
+                        <p class="date">March 29, 2022</p>
+                        <h3>Barclaycard Arena, Hamburg</h3>
+                        <a href="#">BUY TICKETS >></a>
+                    </li>
+                </ul>
+                <ul class="news2">
+                    <li>
+                        <p class="date">April 13, 2022</p>
+                        <h3>Encore Beach Club, Las Vegas</h3>
+                        <p>DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+                        <a href="#">BUY TICKETS >></a>
+                    </li>
+                    <li>
+                        <p class="date">April 21, 2022</p>
+                        <h3>Soundscape Weekender Festival, Coventry</h3>
+                        <a href="#">BUY TICKETS >></a>
+                    </li>
+                    <li>
+                        <p class="date">April 25, 2022</p>
+                        <h3>Barcelona Beach Festival, Barcelona</h3>
+                        <a href="#">BUY TICKETS >></a>
+                    </li>
+                    <li>
+                        <p class="date">April 29, 2022</p>
+                        <h3>Barclaycard Arena, Hamburg</h3>
+                        <a href="#">BUY TICKETS >></a>
+                    </li>
+                </ul>
+                <ul class="news3">
+                    <li>
+                        <p class="date">May 13, 2022</p>
+                        <h3>Encore Beach Club, Las Vegas</h3>
+                        <p>DJ Angeron will visit one of the most famous night clubs in Las Vegas in May to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+                        <a href="#">BUY TICKETS >></a>
+                    </li>
+                    <li>
+                        <p class="date">May 21, 2022</p>
+                        <h3>Soundscape Weekender Festival, Coventry</h3>
+                        <a href="#">BUY TICKETS >></a>
+                    </li>
+                    <li>
+                        <p class="date">May 25, 2022</p>
+                        <h3>Barcelona Beach Festival, Barcelona</h3>
+                        <a href="#">BUY TICKETS >></a>
+                    </li>
+                    <li>
+                        <p class="date">May 29, 2022</p>
+                        <h3>Barclaycard Arena, Hamburg</h3>
+                        <a href="#">BUY TICKETS >></a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="main__partners">
+            <h6 class="headingValidator">Main Partners</h6>
+            <h2>Partners & sponsors</h2>
+            <section class="main__partners__logos">
+                <h6 class="headingValidator">Partners Logos</h6>
+                <ul class="main__partners__logos__ulsponsors">
+                    <li><img src="./ressources/images/sponsors/logoipsum-logo-10.svg" alt="sponsor_1"></li>
+                    <li><img src="./ressources/images/sponsors/logoipsum-logo-12.svg" alt="sponsor_2"></li>
+                    <li><img src="./ressources/images/sponsors/logoipsum-logo-18.svg" alt="sponsor_3"></li>
+                    <li><img src="./ressources/images/sponsors/logoipsum-logo-28.svg" alt="sponsor_4"></li>
+                    <li><img src="./ressources/images/sponsors/logoipsum-logo-29.svg" alt="sponsor_5"></li>
+                    <li><img src="./ressources/images/sponsors/logoipsum-logo-32.svg" alt="sponsor_6"></li>
+                </ul>
+            </section>
+            <section class="main__partners__nav">
+                <h6 class="headingValidator">Partners Nav</h6>
+                <ul class="dotz partners">
+                    <li id="sponsor_link_1" class="active">&#9679;</li>
+                    <li id="sponsor_link_2">&#9679;</li>
+                    <li id="sponsor_link_3">&#9679;</li>
+                    <li id="sponsor_link_4">&#9679;</li>
+                    <li id="sponsor_link_5">&#9679;</li>
+                    <li id="sponsor_link_6">&#9679;</li>
+                </ul>
+            </section>
+        </article>
+        <article class="main__tickets">
+            <h6 class="headingValidator">Main Tickets</h6>
+            <h2>Tickets</h2>
+            <section class="main__tickets__container">
+                <h6 class="headingValidator">Tickets tickets</h6>
+                <div class="ticket_flex">
+                    <div class="ticket_1">
+                        <h3>BASIC</h3>
+                        <h4>50</h4>
+                        <p>1 Event</p>
+                        <p>Basic Access</p>
+                        <p>Club Events Only</p>
+                        <p>Free Snacks</p>
+                        <button class="white" name="buy now">BUY NOW</button>
+                    </div>
+                    <div class="ticket_2">
+                        <h3>STANDARD</h3>
+                        <h4>80</h4>
+                        <p>3 Event</p>
+                        <p>Extended Access</p>
+                        <p>Club & Beach Events</p>
+                        <p>Free Snacks & Merch</p>
+                        <button class="white">BUY NOW</button>
+                    </div>
+                    <div class="ticket_3">
+                        <h3>GOLD</h3>
+                        <h4>120</h4>
+                        <p>5+ Event</p>
+                        <p>Unlimited Access</p>
+                        <p>All Events</p>
+                        <p>Free Accommodation</p>
+                        <button class="white">BUY NOW</button>
+                    </div>
+                </div>
+            </section>
+            <section class="main__tickets__nav">
+                <h6 class="headingValidator">Tickets Nav</h6>
+                <ul class="dotz tickets">
+                    <li id="tickets_1" class="active">&#9679;</li>
+                    <li id="tickets_2">&#9679;</li>
+                    <li id="tickets_3">&#9679;</li>
+                </ul>
+            </section>
+        </article>
+        <section class="main__images">
+            <h6 class="headingValidator">Main Gallery</h6>
+            <figure>
+                <img src="ressources/images/gallery-1.jpg" alt="gallery_image_1">
+            </figure>
+            <figure>
+                <img src="ressources/images/gallery-3.jpg" alt="fgallery_image_2">
+            </figure>
+            <figure>
+                <img src="ressources/images/gallery-2.jpg" alt="gallery_image_3">
+            </figure>
+            <figure>
+                <img class="half" src="ressources/images/gallery-4.jpg" alt="gallery_image_4">
+            </figure>
+            <figure>
+                <img class="half" src="ressources/images/gallery-12.jpg" alt="gallery_image_5">
+            </figure>
+        </section>
+        <article class="main__news">
+            <h6 class="headingValidator">Main News</h6>
+            <div>
+                <h2>Recent News</h2>
+            </div>
+            <div class="container">
+                <section class="main__news__section">
+                    <h6 class="headingValidator">News 1</h6>
+                    <p class="main__news__section__date">
+                        Jun 02, 2019
+                    </p>
+                    <h3>New Single "Feel the Rhythm" is Already Available!</h3>
+                    <p class="main__news__section__text">
+                        DJ Angerone's new single "Feel the Rhythm" is already released via Divergence Records and it's now available for streaming and downloading<span class="main__news__dots" id="dotsactive">...</span><span class="main__news__more"> illegally. Now you can burn some CD's of your favorite DJ. Feel the Rhythm will send you into another realm of sound. You will smell a scent of geranium and citrus with a strange feeling of being drunk.</span>
+                    </p>
+                    <p class="main__news__section__readme">
+                        <a id="test" class="main__news__readmore">Read more &#62 &#62</a>
+                    </p>
+                </section>
+                <section class="main__news__section">
+                    <h6 class="headingValidator">News 2</h6>
+                    <p class="main__news__section__date">
+                        Feb 05, 2019
+                    </p>
+                    <h3>Old Single "Get da bit#h banned from music stores</h3>
+                    <p class="main__news__section__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facere excepturi, obcaecati alias reiciendis provident culpa sed sequi! Itaque, magni repellat. Laudantium officiis, aperiam sequi ipsa laborum tenetur amet. Quos? Lorem ipsum dolor sit amet
+                        ...
+                    </p>
+                    <p class="main__news__section__readme">
+                        <a href="">Read more &#62 &#62</a>
+                    </p>
+                </section>
+                <section class="main__news__section">
+                    <h6 class="headingValidator">News 3</h6>
+                    <p class="main__news__section__date">
+                        Jun 06, 2017
+                    </p>
+                    <h3>Angerone is busted when trying to break naked into music store.</h3>
+                    <p class="main__news__section__text">
+                        DJ Angerone's new single "Feel the Rhythm" is already released via Divergence Records and it's now available for streaming and downloading...
+                    </p>
+                    <p class="main__news__section__readme">
+                        <a href="">Read more&#8227;</a>
+                    </p>
+                </section>
+                <section class="main__news__section">
+                    <h6 class="headingValidator">News 4</h6>
+                    <p class="main__news__section__date">
+                        Mai 03, 2017
+                    </p>
+                    <h3>Jane Sluth, Angerone's wife, ask for a divorce.</h3>
+                    <p class="main__news__section__text">
+                        After the sex affair with young girls, Jane Sluth asks for a divorce, not willing to live with such an immoral man and ...
+                    </p>
+                    <p class="main__news__section__readme">
+                        <a href="">Read more&#8227;</a>
+                    </p>
+                </section>
+                <section class="main__news__section">
+                    <h6 class="headingValidator">News 5</h6>
+                    <p class="main__news__section__date">
+                        Apr 02, 2017
+                    </p>
+                    <h3>Police suspect DJ Angerone having s#xual relations with minor girls.</h3>
+                    <p class="main__news__section__text">
+                        DJ Angerone's new single "Feel the Rhythm" is already released via Divergence Records, but it seems that young girls felt not just the rhythm...
+                    </p>
+                    <p class="main__news__section__readme">
+                        <a href="">Read more&#8227;</a>
+                    </p>
+                </section>
+            </div>
+            <section class="main__news__nav">
+                <h6 class="headingValidator">News Nav</h6>
+                <ul class="dotz news">
+                    <li id="news_link_1" class="active">&#9679;</li>
+                    <li id="news_link_2">&#9679;</li>
+                    <li id="news_link_3">&#9679;</li>
+                    <li id="news_link_4">&#9679;</li>
+                    <li id="news_link_5">&#9679;</li>
+                </ul>
+            </section>
+        </article>
+        <section class="main__subscribe">
+            <h6 class="headingValidator">Main Subscribe</h6>
+            <div class="main__subscribe__div parallax">
+                <p class="main__subscribe__div__p1">Subscribe to stay informed</p>
+                <input type="text" placeholder="Your E-mail" name="mail" required>
+                <button class="purple" name="subscribe">SUBSCRIBE</button>
+            </div>
+        </section>
+        <section class="main__zoom">
+            <h6 class="headingValidator">Main Zoom</h6>
+            <figure>
+                <img id="zoomedImg" src="//:0" alt="zoomed picture">
+            </figure>
+        </section>
+    </main>
+    <footer class="footer">
+        <figure class="footer__figure">
+            <img src="./ressources/images/logo.png" alt="logo Angerone">
+        </figure>
+        <nav class="footer__nav1">
+            <a href="./html/about.html">
+                about
+            </a>
+            <a href="./html/discography.html">
+                discography
+            </a>
+            <a href="./html/tour-schedule.html">
+                tours
+            </a>
+            <a href="./html/gallery.html">
+                photos
+            </a>
+        </nav>
+        <nav class="footer__nav2">
+            <a href="#">
+                <i class="fab fa-facebook-f fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-youtube fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-pinterest-p fa-2x"></i>
+            </a>
+        </nav>
+        <p class="footer__p1"><span>&#169;</span> 2021 DJ Angerone. Privacy policy</p>
+        <p>
+            <button id="scrollToTop" class="footer__scrollUp">&#94;</button>
+        </p>
+    </footer>
+    <script src="./script/main.js" type="module"></script>
 </body>
+
 </html>

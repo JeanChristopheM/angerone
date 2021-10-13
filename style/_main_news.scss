@@ -1,0 +1,93 @@
+.main__news {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+    a {
+        text-decoration: underline;
+        color: $color_purple;
+    }
+    &__section {
+        .main__news__more {
+            display: none;
+            &.showIt {
+                display: inline;
+            }
+        }
+        position: relative;
+        &__date {
+            text-transform: uppercase;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 10px 0;
+            color: $white;
+            font-weight: 700;
+            max-width: max-content;
+            background-color: $color_purple;
+        }
+        &__text {
+            padding-bottom: 2rem;
+        }
+    }
+    .dotz {
+        li.active {
+            color: black;
+        }
+    }
+    &__section__readme {
+        position: absolute;
+        bottom: 0px;
+        left: 1rem;
+        margin: 1rem 0 0 0;
+    }
+    .container {
+        display: flex;
+        overflow: hidden;
+        justify-content: flex-start;
+        max-width: $limiter_mobile;
+        margin: 0 auto;
+        section {
+            text-align: left;
+            padding: 1rem;
+            flex: 1 0 100%;
+        }
+        .main__news__section:nth-child(even) {
+            //font-weight: 600;
+            color: $white;
+            background-image: url('/ressources/images/homepage-news-background.jpg');
+            background-size: cover;
+            a {
+                color: $white;
+            }
+        }
+    }
+    @media only screen and (min-width: $limiter_tablet) {
+        .container {
+            max-width: $limiter_tablet;
+            section {
+                flex: 1 0 50%;
+            }
+        }
+        li:nth-child(even) {
+            display: none;
+            visibility: hidden;
+        }
+    }
+    @media only screen and (min-width: $limiter) {
+        .container {
+            max-width: $limiter;
+            section {
+                flex: 1 0 33.33%;
+            }
+        }
+        li {
+            display: none;
+            visibility: hidden;
+        }
+        li:nth-child(1),
+        li:nth-child(3) {
+            display: list-item;
+            visibility: visible;
+        }
+    }
+}
