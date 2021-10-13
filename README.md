@@ -15,6 +15,10 @@ We started working hard on the 06th of October and gave the website back on the 
 
 Almost all assets were provided but we had to improvise on a few details as well as the animations.
 
+Here is the last lighthouse results we got : 
+
+![Image of Lighthouse results](ressources/images/lighthouse.png)
+
 The design we were give looks like this : 
 
 ![Image of Design](ressources/images/tablet-view.png)
