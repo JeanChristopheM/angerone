@@ -852,8 +852,29 @@ button:hover {
         -ms-flex: 1 0 50%;
             flex: 1 0 50%;
   }
-  .main__about figure {
+  .main__about__image figure {
     padding: 1rem;
+    position: relative;
+  }
+  .main__about__image figure::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background-color: #8121e0;
+    top: 0;
+    left: 10%;
+  }
+  .main__about__image figure::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 40px;
+    background-color: #8121e0;
+    bottom: 0;
+    right: 10%;
+    -webkit-box-shadow: 20px 0px 0px 0px #8121e0;
+            box-shadow: 20px 0px 0px 0px #8121e0;
   }
 }
 
