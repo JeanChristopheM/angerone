@@ -2001,8 +2001,10 @@ button:hover {
 }
 
 .main .main__news a {
-  text-decoration: underline;
+  text-decoration: none;
   color: #8121e0;
+  cursor: pointer;
+  font-weight: 400;
 }
 
 .main .main__news__section {
@@ -2069,6 +2071,7 @@ button:hover {
   color: white;
   background-image: url("../ressources/images/homepage-news-background.jpg");
   background-size: cover;
+  border-radius: 5px;
 }
 
 .main .main__news .container .main__news__section:nth-child(even) a {
