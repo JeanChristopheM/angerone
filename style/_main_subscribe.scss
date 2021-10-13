@@ -2,6 +2,7 @@
     text-align: center;
     background-image: url('../ressources/images/homepage-footer-background.jpg');
     background-size: cover;
+    background-attachment: fixed;
     &__div {
         padding-block: 2rem;
         max-width: 768px;
@@ -38,6 +39,31 @@
             button {
                 flex: 0 0 32%;
             }
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        position: relative;
+        padding-block: 5rem;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 40px;
+            background-color: $color_purple;
+            bottom: -20px;
+            left: 5%;
+            z-index: 250;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 40px;
+            background-color: $color_purple;
+            top: -20px;
+            right: 5%;
+            box-shadow: 20px 0px 0px 0px $color_purple;
+            z-index: 250;
         }
     }
 }

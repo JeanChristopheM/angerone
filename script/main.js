@@ -116,16 +116,19 @@ const readMore = () => {
         dots.id = "dotsinactive";
     }
 }
-readBtn.addEventListener('click', readMore);
+if (readBtn) {
+    readBtn.addEventListener('click', readMore);
+}
 //Read more END
 
 //Scroll to top function START
 let scrollBtn = document.querySelector('#scrollToTop');
-scrollBtn.addEventListener('click', scrollToTop);
+if (scrollBtn) {
+    scrollBtn.addEventListener('click', scrollToTop);
+}
 
 function scrollToTop() {
-    window.scrollTo(0, 0);
-    
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 }
 //Scroll to top function END
 
@@ -138,7 +141,7 @@ if (imagesContainer) {
         let target = e.target;
         if (target.nodeName === "FIGURE") {
             let picture = target.children[0].src.split('/');
-            let newPic = (picture[picture.length - 1].slice(0, picture[picture.length - 1].length - 4)).concat('-original.jpg');
+            let newPic = (picture[picture.length - 1].slice(0, picture[picture.length - 1].length - 4)).concat('-original.webp');
             if (document.querySelector('#play')) {
                 zoomedImg.src = `./ressources/images/${newPic}`;
             } else {
@@ -147,7 +150,7 @@ if (imagesContainer) {
             //zoomContainer.style.display = "grid";
             zoomContainer.classList.add('zoomed');
             zoomContainer.addEventListener('click', () => {
-                zoomedImg.src = "";
+                zoomedImg.src = "//:0";
                 //zoomContainer.style.display = "none";
                 zoomContainer.classList.remove('zoomed');
             });

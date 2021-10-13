@@ -38,11 +38,39 @@
     @media screen and (min-width: 768px) {
         display: flex;
         padding: 3rem 1rem 6rem 1rem;
+        gap: 1rem;
         &>* {
             flex: 1 0 50%;
         }
-        figure {
-            padding: 1rem;
+        &__image {
+            align-self: center;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        &__image {
+            figure {
+                padding: 1rem;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 20px;
+                    height: 40px;
+                    background-color: $color_purple;
+                    top: 0;
+                    left: 10%;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 40px;
+                    background-color: $color_purple;
+                    bottom: 0;
+                    right: 15%;
+                    box-shadow: 20px 0px 0px 0px $color_purple;
+                }
+            }
         }
     }
 }

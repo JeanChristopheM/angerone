@@ -12,7 +12,7 @@
         background-blend-mode: lighten;
         border-radius: .5rem;
         padding: 1rem;
-        transform: translateY(-2.5rem);
+        transform: translateY(-1rem);
         h2 {
             font-size: 2rem;
             font-weight: bold;
@@ -70,5 +70,8 @@
     }
     @media screen and (min-width:768px) {
         padding: 0 3rem 0 3rem;
+        &__container {
+            transform: translateY(-2.5rem);
+        }
     }
 }

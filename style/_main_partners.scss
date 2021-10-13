@@ -5,9 +5,10 @@
     background-image: url('../ressources/images/homepage-sponsors-background.jpg');
     background-size: cover;
     background-position-y: center;
+    background-attachment: fixed;
     padding-block: 2rem;
     &__logos {
-        max-width: 768px;
+        max-width: $limiter;
         margin: 0 auto;
         &__ulsponsors {
             padding-block: 1rem;
@@ -58,6 +59,29 @@
             li {
                 color: $color_transparentWhite;
             }
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        position: relative;
+        padding-block: 6rem;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 40px;
+            background-color: $color_purple;
+            top: -20px;
+            right: 5%;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 40px;
+            background-color: $color_purple;
+            bottom: -20px;
+            left: 5%;
+            box-shadow: 20px 0px 0px 0px $color_purple;
         }
     }
 }

@@ -24,6 +24,7 @@
             transition: opacity .2s;
             font-weight: 600;
             cursor: pointer;
+            z-index: 999;
         }
         &:hover::before {
             opacity: 1;

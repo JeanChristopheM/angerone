@@ -8,7 +8,6 @@
     margin: 0 auto;
     position: relative;
     isolation: isolate;
-    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     padding: 4rem 1rem;
@@ -70,27 +69,43 @@
             grid-template-columns: 1fr 1fr;
             figure {
                 &:first-of-type {
-                    justify-content: right;
+                    max-width: 80%;
+                    max-height: 80%;
+                    justify-self: right;
+                    align-self: end;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
                 }
                 &:nth-of-type(2) {
                     justify-content: center;
                 }
                 &:nth-of-type(3) {
+                    justify-self: right;
+                    align-self: end;
                     img {
-                        max-width: 60%;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
                     }
                 }
                 &:nth-of-type(4) {
-                    justify-content: center;
+                    justify-self: left;
+                    justify-content: left;
                     img {
-                        max-width: 80%;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
                     }
+                    transform: translateX(-1rem);
                 }
                 &:nth-of-type(5) {
                     justify-content: right;
                 }
                 &:nth-of-type(6) {
-                    justify-content: right;
+                    justify-content: center;
                 }
             }
         }
@@ -121,8 +136,78 @@
     }
     @media screen and (min-width: 1024px) {
         padding: 5rem 1rem;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 40px;
+            background-color: $color_purple;
+            bottom: -20px;
+            left: 5%;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 40px;
+            background-color: $color_purple;
+            top: -20px;
+            right: 5%;
+            box-shadow: 20px 0px 0px 0px $color_purple;
+        }
         &>* {
             flex: 1 0 50%;
+        }
+        figure {
+            &:first-of-type {
+                max-width: 80%;
+                max-height: 80%;
+                justify-self: right;
+                align-self: end;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                transform: translateX(-1rem);
+            }
+            &:nth-of-type(2) {
+                justify-content: center;
+            }
+            &:nth-of-type(3) {
+                justify-self: right;
+                align-self: end;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            &:nth-of-type(4) {
+                justify-self: left;
+                justify-content: left;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                transform: translateX(-1rem);
+            }
+            &:nth-of-type(5) {
+                max-width: 80%;
+                max-height: 80%;
+                justify-self: center;
+                align-self: center;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            &:nth-of-type(6) {
+                justify-content: center;
+            }
         }
         &__text {
             div:not(:first-child) {
