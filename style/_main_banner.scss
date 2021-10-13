@@ -47,7 +47,14 @@
     @media screen and (min-width: 321px) {
         background-position-y: center;
     }
+    @media screen and (min-width: 768px) {
+        padding: 8rem 1rem 3rem 1rem;
+    }
+    @media screen and (min-width: 1024px) {
+        padding: 10rem 1rem 3rem 1rem;
+    }
     &.page_about {
+        padding: 4rem 1rem 3rem 1rem;
         background-image: url('../ressources/images/banner-img.jpg');
         h2 {
             text-align: center;
@@ -76,6 +83,7 @@
         }
     }
     &.page_discography {
+        padding: 4rem 1rem 3rem 1rem;
         background-image: url('../ressources/images/banner-img.jpg');
         h2 {
             text-align: center;
@@ -104,6 +112,7 @@
         }
     }
     &.page_tour {
+        padding: 4rem 1rem 3rem 1rem;
         background-image: url('../ressources/images/banner-img.jpg');
         h2 {
             text-align: center;
@@ -132,6 +141,7 @@
         }
     }
     &.page_gallery {
+        padding: 4rem 1rem 3rem 1rem;
         background-image: url('../ressources/images/banner-img.jpg');
         h2 {
             text-align: center;
