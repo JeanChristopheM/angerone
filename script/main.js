@@ -116,12 +116,16 @@ const readMore = () => {
         dots.id = "dotsinactive";
     }
 }
-readBtn.addEventListener('click', readMore);
+if (readBtn) {
+    readBtn.addEventListener('click', readMore);
+}
 //Read more END
 
 //Scroll to top function START
 let scrollBtn = document.querySelector('#scrollToTop');
-scrollBtn.addEventListener('click', scrollToTop);
+if (scrollBtn) {
+    scrollBtn.addEventListener('click', scrollToTop);
+}
 
 function scrollToTop() {
     window.scrollTo(0, 0);
