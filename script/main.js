@@ -114,6 +114,9 @@ function ReadMore() {
 }
 //Read more END
 //Scroll to top function START
+let scrollBtn = document.querySelector('#scrollToTop');
+scrollBtn.addEventListener('click', scrollToTop);
+
 function scrollToTop() {
     window.scrollTo(0, 0);
 }
