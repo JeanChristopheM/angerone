@@ -9,5 +9,4 @@
     - Finish the dot menu
 
                 ---JS Effects---
-- Parallax on images
 - Scroll to top button
