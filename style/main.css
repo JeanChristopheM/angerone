@@ -1681,6 +1681,11 @@ button:hover {
   padding: 30px 0;
 }
 
+.main .main__news a {
+  text-decoration: underline;
+  color: #8121e0;
+}
+
 .main .main__news__section {
   position: relative;
 }
@@ -1741,6 +1746,16 @@ button:hover {
           flex: 1 0 100%;
 }
 
+.main .container .main__news__section:nth-child(even) {
+  color: white;
+  background-image: url("/ressources/images/homepage-news-background.jpg");
+  background-size: cover;
+}
+
+.main .container .main__news__section:nth-child(even) a {
+  color: white;
+}
+
 @media only screen and (min-width: 768px) {
   .main .container {
     max-width: 768px;
@@ -1750,6 +1765,10 @@ button:hover {
         -ms-flex: 1 0 50%;
             flex: 1 0 50%;
   }
+  .main li:nth-child(even) {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1758,8 +1777,17 @@ button:hover {
   }
   .main .container section {
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 33%;
-            flex: 1 0 33%;
+        -ms-flex: 1 0 33.33%;
+            flex: 1 0 33.33%;
+  }
+  .main li {
+    display: none;
+    visibility: hidden;
+  }
+  .main li:nth-child(1),
+  .main li:nth-child(3) {
+    display: list-item;
+    visibility: visible;
   }
 }
 
@@ -1911,7 +1939,7 @@ button:hover {
 .footer__scrollUp {
   border-radius: 5px;
   width: 60px;
-  height: 65px;
+  height: 60px;
   color: white;
   background-color: #8121e0;
   position: absolute;

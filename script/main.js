@@ -106,12 +106,12 @@ const readMore = () => {
 
     if (dots.id === "dotsinactive") {
         dots.textContent = "...";
-        btnText.innerHTML = "Read more&#8227";
+        btnText.innerHTML = "Read more &#62 &#62";
         moreText.classList.remove('showIt');
         dots.id = "dotsactive";
     } else {
         dots.textContent = "";
-        btnText.innerHTML = "Read less";
+        btnText.innerHTML = "Read less &#60 &#60";
         moreText.classList.add('showIt');
         dots.id = "dotsinactive";
     }
@@ -125,6 +125,7 @@ scrollBtn.addEventListener('click', scrollToTop);
 
 function scrollToTop() {
     window.scrollTo(0, 0);
+    
 }
 //Scroll to top function END
 

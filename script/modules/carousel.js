@@ -47,7 +47,8 @@ const initialize = () => {
             }
         });
     }
-    /* News caroussel */
+
+    // News caroussel START
     let newsCarousel = document.querySelector('.container');
     let newsCarouselButtons = document.querySelector('.dotz.news');
     if (newsCarouselButtons) {
@@ -63,6 +64,8 @@ const initialize = () => {
             }
         });
     }
+    // News caroussel END
+    
 }
 const reset = () => {
     let sponsorCarousel = document.querySelector('.main__partners__logos__ulsponsors');
