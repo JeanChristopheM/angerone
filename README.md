@@ -3,9 +3,7 @@
 
                 ---HOME PAGE----
 - Fanbase
-    -polish the reponsiveness with image positioning
-- Images
-    1. actual zoom with js
+    -polish the reponsiveness with image -positioning
 - News
     - Finish the dot menu
 
