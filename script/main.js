@@ -101,22 +101,24 @@ for (item of parallaxBG) {
 let imagesContainer = document.querySelector('.main__images');
 let zoomedImg = document.querySelector('#zoomedImg');
 let zoomContainer = document.querySelector('.main__zoom');
-imagesContainer.addEventListener('click', (e) => {
-    let target = e.target;
-    if (target.nodeName === "FIGURE") {
-        let picture = target.children[0].src.split('/');
-        let newPic = (picture[picture.length - 1].slice(0, picture[picture.length - 1].length - 4)).concat('-original.jpg');
-        if (document.querySelector('#play')) {
-            zoomedImg.src = `./ressources/images/${newPic}`;
-        } else {
-            zoomedImg.src = `../ressources/images/${newPic}`;
+if (imagesContainer) {
+    imagesContainer.addEventListener('click', (e) => {
+        let target = e.target;
+        if (target.nodeName === "FIGURE") {
+            let picture = target.children[0].src.split('/');
+            let newPic = (picture[picture.length - 1].slice(0, picture[picture.length - 1].length - 4)).concat('-original.jpg');
+            if (document.querySelector('#play')) {
+                zoomedImg.src = `./ressources/images/${newPic}`;
+            } else {
+                zoomedImg.src = `../ressources/images/${newPic}`;
+            }
+            //zoomContainer.style.display = "grid";
+            zoomContainer.classList.add('zoomed');
+            zoomContainer.addEventListener('click', () => {
+                zoomedImg.src = "";
+                //zoomContainer.style.display = "none";
+                zoomContainer.classList.remove('zoomed');
+            });
         }
-        //zoomContainer.style.display = "grid";
-        zoomContainer.classList.add('zoomed');
-        zoomContainer.addEventListener('click', () => {
-            zoomedImg.src = "";
-            //zoomContainer.style.display = "none";
-            zoomContainer.classList.remove('zoomed');
-        });
-    }
-});
+    });
+}

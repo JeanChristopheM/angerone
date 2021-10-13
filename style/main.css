@@ -578,8 +578,6 @@ button:hover {
 }
 
 .main__touch__text h2 {
-  font-size: 2rem;
-  font-weight: 400;
   padding: 3rem 0 1rem 0;
   position: relative;
   display: inline-block;
@@ -597,7 +595,7 @@ button:hover {
 }
 
 .main__touch__text ul {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .main__touch__text ul .fas,
@@ -610,9 +608,10 @@ button:hover {
   padding-bottom: 1rem;
 }
 
-.main__touch__text ul a {
+.main__touch__text ul li a {
   text-decoration: none;
   color: inherit;
+  padding-right: .3rem;
 }
 
 .main__touch__text p {
@@ -626,6 +625,7 @@ button:hover {
   font-style: italic;
   font-size: 1.2rem;
   line-height: 1.7rem;
+  letter-spacing: .1rem;
 }
 
 .main__touch__text__signature {
@@ -638,22 +638,60 @@ button:hover {
 }
 
 .main__touch__text button {
-  color: white;
-  background-color: #8121e0;
-  border: none;
-  width: 55%;
-  padding: 1.2rem 1rem;
-  border-radius: .5rem;
-  display: block;
-  margin-top: 1rem;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 1rem 3rem;
 }
 
 .main__touch__image {
   padding-block: 1rem;
 }
 
+.main__touch__image figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .main__touch__image img {
   max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .main__touch__text ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main__touch__text ul li:nth-of-type(2) {
+    margin-left: 1rem;
+  }
+  .main__touch__text ul li:last-of-type {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main__touch {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main__touch > * {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
+  .main__touch__text li:last-of-type a + a {
+    margin-left: 2rem;
+  }
 }
 
 .main__concert {
@@ -1781,6 +1819,7 @@ button:hover {
   text-align: center;
   font-family: Poppins, sans-serif;
   color: white;
+  padding-block: 1rem;
 }
 
 .footer a {
@@ -1900,6 +1939,12 @@ button:hover {
   }
   .footer__nav2 a:last-child {
     grid-column: span 2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-block: 5rem;
   }
 }
 
