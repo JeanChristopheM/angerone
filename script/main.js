@@ -98,26 +98,38 @@ for (item of parallaxBG) {
 }
 
 //Read more START
-let readBtn = document.querySelector('#test');
-const readMore = () => {
-    var dots = document.querySelector(".main__news__dots");
-    var moreText = document.querySelector(".main__news__more");
-    var btnText = document.querySelector(".main__news__readmore");
+//let readBtn = document.querySelector('#test');
+//todelete
+let dotList = document.getElementsByClassName ('main__news__readmore');
+console.log(dotList);
+//todelete
+const readMore = (targetInd) => {
+    var dots = document.getElementsByClassName('main__news__dots');
+    var moreText = document.getElementsByClassName("main__news__more");
+    var btnText = document.getElementsByClassName("main__news__readmore");
+    console.log(dots);
+    console.log(dots[targetInd]);
+    console.log(moreText);
+    console.log(btnText);
 
-    if (dots.id === "dotsinactive") {
-        dots.textContent = "...";
+    if (dots[targetInd].id === "dotsinactive") {
+        dots[targetInd].textContent = "...";
         btnText.innerHTML = "Read more &#62 &#62";
-        moreText.classList.remove('showIt');
-        dots.id = "dotsactive";
+        moreText[targetInd].classList.remove('showIt');
+        dots[targetInd].id = "dotsactive";
     } else {
-        dots.textContent = "";
-        btnText.innerHTML = "Read less &#60 &#60";
-        moreText.classList.add('showIt');
-        dots.id = "dotsinactive";
+        dots[targetInd].textContent = "";
+        btnText[targetInd].innerHTML = "Read less &#60 &#60";
+        moreText[targetInd].classList.add('showIt');
+        dots[targetInd].id = "dotsinactive";
     }
 }
-if (readBtn) {
+/*if (readBtn) {
     readBtn.addEventListener('click', readMore);
+}*/
+
+for (var i = 0; i < dotList.length; i++) {
+    dotList[i].addEventListener('click', readMore(i));
 }
 //Read more END
 

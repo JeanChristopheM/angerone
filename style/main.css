@@ -2036,6 +2036,7 @@ button:hover {
   color: white;
   background-image: url("/ressources/images/homepage-news-background.jpg");
   background-size: cover;
+  border-radius: 5px;
 }
 
 .main .main__news .container .main__news__section:nth-child(even) a {
