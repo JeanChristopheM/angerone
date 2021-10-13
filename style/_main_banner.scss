@@ -169,4 +169,14 @@
             }
         }
     }
+    &.page_about,
+    &.page_discography,
+    &.page_tour,
+    &.page_gallery {
+        h4 {
+            span:last-of-type {
+                opacity: .6;
+            }
+        }
+    }
 }
