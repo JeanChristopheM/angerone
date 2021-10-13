@@ -9,9 +9,6 @@
 
 - Add wee purple pseudo elements all over the joint
 
-                ---ABOUT PAGE---
-- Responsiveness
-
                 ---JS Effects---
 - Parallax on images
 - Scroll to top button
