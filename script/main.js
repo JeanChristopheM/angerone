@@ -91,45 +91,37 @@ if (document.querySelector('.days')) {
     }, 1000);
 }
 
-// Parallax
-let parallaxBG = document.querySelectorAll('.parallaxBG');
-for (item of parallaxBG) {
-    console.log(item);
-}
 
 //Read more START
 //let readBtn = document.querySelector('#test');
 //todelete
-let dotList = document.getElementsByClassName ('main__news__readmore');
-console.log(dotList);
+let dotList = document.getElementsByClassName('main__news__readmore');
 //todelete
 const readMore = (targetInd) => {
-    var dots = document.getElementsByClassName('main__news__dots');
-    var moreText = document.getElementsByClassName("main__news__more");
-    var btnText = document.getElementsByClassName("main__news__readmore");
-    console.log(dots);
-    console.log(dots[targetInd]);
-    console.log(moreText);
-    console.log(btnText);
+        var dots = document.getElementsByClassName('main__news__dots');
+        var moreText = document.getElementsByClassName("main__news__more");
+        var btnText = document.getElementsByClassName("main__news__readmore");
 
-    if (dots[targetInd].id === "dotsinactive") {
-        dots[targetInd].textContent = "...";
-        btnText.innerHTML = "Read more &#62 &#62";
-        moreText[targetInd].classList.remove('showIt');
-        dots[targetInd].id = "dotsactive";
-    } else {
-        dots[targetInd].textContent = "";
-        btnText[targetInd].innerHTML = "Read less &#60 &#60";
-        moreText[targetInd].classList.add('showIt');
-        dots[targetInd].id = "dotsinactive";
+        if (dots[targetInd].id === "dotsinactive") {
+            dots[targetInd].textContent = "...";
+            btnText[targetInd].innerHTML = "Read more &#62; &#62;";
+            moreText[targetInd].classList.remove('showIt');
+            dots[targetInd].id = "dotsactive";
+        } else {
+            dots[targetInd].textContent = "";
+            btnText[targetInd].innerHTML = "Read less &#60; &#60;";
+            moreText[targetInd].classList.add('showIt');
+            dots[targetInd].id = "dotsinactive";
+        }
     }
-}
-/*if (readBtn) {
-    readBtn.addEventListener('click', readMore);
-}*/
+    /*if (readBtn) {
+        readBtn.addEventListener('click', readMore);
+    }*/
 
-for (var i = 0; i < dotList.length; i++) {
-    dotList[i].addEventListener('click', readMore(i));
+for (let i = 0; i < dotList.length; i++) {
+    dotList[i].addEventListener('click', () => {
+        readMore(i);
+    });
 }
 //Read more END
 

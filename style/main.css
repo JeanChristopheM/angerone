@@ -1968,8 +1968,10 @@ button:hover {
 }
 
 .main .main__news a {
-  text-decoration: underline;
+  text-decoration: none;
   color: #8121e0;
+  cursor: pointer;
+  font-weight: 400;
 }
 
 .main .main__news__section {
