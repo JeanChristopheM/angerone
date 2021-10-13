@@ -141,7 +141,7 @@ if (imagesContainer) {
         let target = e.target;
         if (target.nodeName === "FIGURE") {
             let picture = target.children[0].src.split('/');
-            let newPic = (picture[picture.length - 1].slice(0, picture[picture.length - 1].length - 4)).concat('-original.jpg');
+            let newPic = (picture[picture.length - 1].slice(0, picture[picture.length - 1].length - 4)).concat('-original.webp');
             if (document.querySelector('#play')) {
                 zoomedImg.src = `./ressources/images/${newPic}`;
             } else {

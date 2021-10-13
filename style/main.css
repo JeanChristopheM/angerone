@@ -1906,6 +1906,7 @@ button:hover {
   transition: opacity .2s;
   font-weight: 600;
   cursor: pointer;
+  z-index: 999;
 }
 
 .main__images figure:hover::before {
