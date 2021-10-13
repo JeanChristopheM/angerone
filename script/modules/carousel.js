@@ -65,7 +65,7 @@ const initialize = () => {
         });
     }
     // News caroussel END
-    
+
 }
 const reset = () => {
     let sponsorCarousel = document.querySelector('.main__partners__logos__ulsponsors');
@@ -75,7 +75,7 @@ const reset = () => {
         for (let item of sponsorCarouselButtons.children) {
             item.classList.remove('active');
         }
-        target.classList.add('active');
+        sponsorCarouselButtons.children[0].classList.add('active');
     }
     let ticketsCarousel = document.querySelector('.ticket_flex');
     if (ticketsCarousel) {
@@ -84,7 +84,7 @@ const reset = () => {
         for (let item of ticketsCarouselButtons.children) {
             item.classList.remove('active');
         }
-        target.classList.add('active');
+        ticketsCarouselButtons.children[0].classList.add('active');
     }
     let tourCarousel = document.querySelector('.main__tour__news');
     if (tourCarousel) {
