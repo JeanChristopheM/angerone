@@ -2,9 +2,7 @@
 
 
                 ---HOME PAGE----
-- Fanbase
-    - polish the reponsiveness with image 
-    - positioning
+
 - News
     - Finish the dot menu
 
