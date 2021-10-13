@@ -2,7 +2,6 @@
     background-image: url('../ressources/images/homapage-banner-img.jpg');
     background-size: cover;
     background-position-x: 20%;
-    height: 400px;
     color: $white;
     display: flex;
     justify-content: center;
@@ -44,8 +43,6 @@
         }
     }
     @media screen and (min-width: 321px) {
-        height: 60vh;
-        min-height: 450px;
         background-position-y: center;
     }
     &.page_about {

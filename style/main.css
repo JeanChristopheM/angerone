@@ -345,7 +345,6 @@ button:hover {
   background-image: url("../ressources/images/homapage-banner-img.jpg");
   background-size: cover;
   background-position-x: 20%;
-  height: 400px;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -411,8 +410,6 @@ button:hover {
 
 @media screen and (min-width: 321px) {
   .main__banner {
-    height: 60vh;
-    min-height: 450px;
     background-position-y: center;
   }
 }
@@ -704,8 +701,8 @@ button:hover {
   background-blend-mode: lighten;
   border-radius: .5rem;
   padding: 1rem;
-  -webkit-transform: translateY(-2.5rem);
-          transform: translateY(-2.5rem);
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
 }
 
 .main__concert__container h2 {
@@ -791,6 +788,10 @@ button:hover {
 @media screen and (min-width: 768px) {
   .main__concert {
     padding: 0 3rem 0 3rem;
+  }
+  .main__concert__container {
+    -webkit-transform: translateY(-2.5rem);
+            transform: translateY(-2.5rem);
   }
 }
 
