@@ -157,3 +157,15 @@ if (imagesContainer) {
         }
     });
 }
+
+
+// TOUR DOT MOVER 
+let newsContainer = document.querySelector('.main__tour__news');
+if (newsContainer) {
+    newsContainer.addEventListener('click', (e) => {
+        let target = e.target;
+        if (target.nodeName == "LI") {
+            console.log(target);
+        }
+    });
+}
