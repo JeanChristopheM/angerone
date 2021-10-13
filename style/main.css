@@ -2378,8 +2378,14 @@ button:hover {
 
 @media screen and (min-width: 768px) {
   .footer {
-    padding-block: 5rem;
+    padding-block: 3rem;
   }
+}
+
+.footer #scrollToTop {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
 }
 
 .hidden {
