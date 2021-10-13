@@ -666,6 +666,10 @@ button:hover {
           transform: translateY(-50%);
 }
 
+.main__banner.page_about h4 span:last-of-type, .main__banner.page_discography h4 span:last-of-type, .main__banner.page_tour h4 span:last-of-type, .main__banner.page_gallery h4 span:last-of-type {
+  opacity: .6;
+}
+
 .main__touch {
   padding: 1rem;
   max-width: 1200px;
