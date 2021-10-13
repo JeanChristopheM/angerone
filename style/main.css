@@ -895,7 +895,7 @@ button:hover {
   background-image: url("../ressources/images/homepage-latest-releases-background.jpg");
   background-position-y: top;
   background-size: cover;
-  background-repeat: repeat-y;
+  background-attachment: fixed;
 }
 
 .main__discography h2 {
@@ -916,6 +916,7 @@ button:hover {
 @media screen and (min-width: 1024px) {
   .main__discography {
     position: relative;
+    padding-block: 5rem;
   }
   .main__discography::before {
     content: '';
@@ -1467,11 +1468,12 @@ button:hover {
   background-image: url("../ressources/images/homepage-sponsors-background.jpg");
   background-size: cover;
   background-position-y: center;
+  background-attachment: fixed;
   padding-block: 2rem;
 }
 
 .main__partners__logos {
-  max-width: 768px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -1541,6 +1543,7 @@ button:hover {
 @media screen and (min-width: 1024px) {
   .main__partners {
     position: relative;
+    padding-block: 6rem;
   }
   .main__partners::before {
     content: '';
@@ -1869,6 +1872,7 @@ button:hover {
   text-align: center;
   background-image: url("../ressources/images/homepage-footer-background.jpg");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .main__subscribe__div {
@@ -1929,6 +1933,7 @@ button:hover {
 @media screen and (min-width: 1024px) {
   .main__subscribe {
     position: relative;
+    padding-block: 5rem;
   }
   .main__subscribe::before {
     content: '';

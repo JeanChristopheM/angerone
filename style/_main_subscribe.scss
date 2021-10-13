@@ -2,6 +2,7 @@
     text-align: center;
     background-image: url('../ressources/images/homepage-footer-background.jpg');
     background-size: cover;
+    background-attachment: fixed;
     &__div {
         padding-block: 2rem;
         max-width: 768px;
@@ -42,6 +43,7 @@
     }
     @media screen and (min-width: 1024px) {
         position: relative;
+        padding-block: 5rem;
         &::before {
             content: '';
             position: absolute;
