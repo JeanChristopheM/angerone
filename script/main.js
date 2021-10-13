@@ -102,16 +102,18 @@ const readMore = (targetInd) => {
         var moreText = document.getElementsByClassName("main__news__more");
         var btnText = document.getElementsByClassName("main__news__readmore");
 
-        if (dots[targetInd].id === "dotsinactive") {
+        if (dots[targetInd].classList.contains("dotsinactive")) {
             dots[targetInd].textContent = "...";
             btnText[targetInd].innerHTML = "Read more &#62; &#62;";
             moreText[targetInd].classList.remove('showIt');
-            dots[targetInd].id = "dotsactive";
+            dots[targetInd].classList.remove('dotsinactive');
+            dots[targetInd].classList.add('dotsactive');
         } else {
             dots[targetInd].textContent = "";
             btnText[targetInd].innerHTML = "Read less &#60; &#60;";
             moreText[targetInd].classList.add('showIt');
-            dots[targetInd].id = "dotsinactive";
+            dots[targetInd].classList.add('dotsinactive');
+            dots[targetInd].classList.remove('dotsactive');
         }
     }
     /*if (readBtn) {
