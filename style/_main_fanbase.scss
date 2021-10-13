@@ -8,7 +8,6 @@
     margin: 0 auto;
     position: relative;
     isolation: isolate;
-    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     padding: 4rem 1rem;
@@ -121,6 +120,26 @@
     }
     @media screen and (min-width: 1024px) {
         padding: 5rem 1rem;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 40px;
+            background-color: $color_purple;
+            bottom: -20px;
+            left: 5%;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 40px;
+            background-color: $color_purple;
+            top: -20px;
+            right: 5%;
+            box-shadow: 20px 0px 0px 0px $color_purple;
+        }
         &>* {
             flex: 1 0 50%;
         }

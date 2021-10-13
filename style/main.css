@@ -846,12 +846,21 @@ button:hover {
     display: -ms-flexbox;
     display: flex;
     padding: 3rem 1rem 6rem 1rem;
+    gap: 1rem;
   }
   .main__about > * {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 50%;
             flex: 1 0 50%;
   }
+  .main__about__image {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .main__about__image figure {
     padding: 1rem;
     position: relative;
@@ -872,7 +881,7 @@ button:hover {
     height: 40px;
     background-color: #8121e0;
     bottom: 0;
-    right: 10%;
+    right: 15%;
     -webkit-box-shadow: 20px 0px 0px 0px #8121e0;
             box-shadow: 20px 0px 0px 0px #8121e0;
   }
@@ -901,6 +910,32 @@ button:hover {
     max-width: -webkit-max-content;
     max-width: -moz-max-content;
     max-width: max-content;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main__discography {
+    position: relative;
+  }
+  .main__discography::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background-color: #8121e0;
+    top: -20px;
+    right: 5%;
+  }
+  .main__discography::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 40px;
+    background-color: #8121e0;
+    bottom: -20px;
+    left: 5%;
+    -webkit-box-shadow: 20px 0px 0px 0px #8121e0;
+            box-shadow: 20px 0px 0px 0px #8121e0;
   }
 }
 
@@ -989,7 +1024,6 @@ button:hover {
   margin: 0 auto;
   position: relative;
   isolation: isolate;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1159,6 +1193,27 @@ button:hover {
 @media screen and (min-width: 1024px) {
   .main__fanbase {
     padding: 5rem 1rem;
+    position: relative;
+  }
+  .main__fanbase::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background-color: #8121e0;
+    bottom: -20px;
+    left: 5%;
+  }
+  .main__fanbase::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 40px;
+    background-color: #8121e0;
+    top: -20px;
+    right: 5%;
+    -webkit-box-shadow: 20px 0px 0px 0px #8121e0;
+            box-shadow: 20px 0px 0px 0px #8121e0;
   }
   .main__fanbase > * {
     -webkit-box-flex: 1;
@@ -1481,6 +1536,32 @@ button:hover {
 
 .main__partners__nav .dotz li {
   color: rgba(255, 255, 255, 0.25);
+}
+
+@media screen and (min-width: 1024px) {
+  .main__partners {
+    position: relative;
+  }
+  .main__partners::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background-color: #8121e0;
+    top: -20px;
+    right: 5%;
+  }
+  .main__partners::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 40px;
+    background-color: #8121e0;
+    bottom: -20px;
+    left: 5%;
+    -webkit-box-shadow: 20px 0px 0px 0px #8121e0;
+            box-shadow: 20px 0px 0px 0px #8121e0;
+  }
 }
 
 .main__tickets {
@@ -1842,6 +1923,34 @@ button:hover {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 32%;
             flex: 0 0 32%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main__subscribe {
+    position: relative;
+  }
+  .main__subscribe::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background-color: #8121e0;
+    bottom: -20px;
+    left: 5%;
+    z-index: 250;
+  }
+  .main__subscribe::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 40px;
+    background-color: #8121e0;
+    top: -20px;
+    right: 5%;
+    -webkit-box-shadow: 20px 0px 0px 0px #8121e0;
+            box-shadow: 20px 0px 0px 0px #8121e0;
+    z-index: 250;
   }
 }
 
