@@ -6,13 +6,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8rem 1rem 3rem 1rem;
+    padding: 4rem 1rem 3rem 1rem;
     &__container {
         flex: 1;
         max-width: $limiter;
         h2 {
             font-size: 2rem;
             font-weight: bold;
+            padding-block: 0;
+            padding-top: 5rem;
         }
         h3 {
             font-size: 3rem;
@@ -47,7 +49,6 @@
     }
     &.page_about {
         background-image: url('../ressources/images/banner-img.jpg');
-        height: 200px;
         h2 {
             text-align: center;
         }
@@ -76,8 +77,6 @@
     }
     &.page_discography {
         background-image: url('../ressources/images/banner-img.jpg');
-        height: 20vh;
-        margin-bottom: 3rem;
         h2 {
             text-align: center;
         }
@@ -106,7 +105,6 @@
     }
     &.page_tour {
         background-image: url('../ressources/images/banner-img.jpg');
-        height: 200px;
         h2 {
             text-align: center;
         }
@@ -135,7 +133,6 @@
     }
     &.page_gallery {
         background-image: url('../ressources/images/banner-img.jpg');
-        height: 200px;
         h2 {
             text-align: center;
         }

@@ -453,7 +453,7 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 8rem 1rem 3rem 1rem;
+  padding: 4rem 1rem 3rem 1rem;
 }
 
 .main__banner__container {
@@ -466,6 +466,8 @@ button:hover {
 .main__banner__container h2 {
   font-size: 2rem;
   font-weight: bold;
+  padding-block: 0;
+  padding-top: 5rem;
 }
 
 .main__banner__container h3 {
@@ -514,7 +516,6 @@ button:hover {
 
 .main__banner.page_about {
   background-image: url("../ressources/images/banner-img.jpg");
-  height: 200px;
 }
 
 .main__banner.page_about h2 {
@@ -549,8 +550,6 @@ button:hover {
 
 .main__banner.page_discography {
   background-image: url("../ressources/images/banner-img.jpg");
-  height: 20vh;
-  margin-bottom: 3rem;
 }
 
 .main__banner.page_discography h2 {
@@ -585,7 +584,6 @@ button:hover {
 
 .main__banner.page_tour {
   background-image: url("../ressources/images/banner-img.jpg");
-  height: 200px;
 }
 
 .main__banner.page_tour h2 {
@@ -620,7 +618,6 @@ button:hover {
 
 .main__banner.page_gallery {
   background-image: url("../ressources/images/banner-img.jpg");
-  height: 200px;
 }
 
 .main__banner.page_gallery h2 {
